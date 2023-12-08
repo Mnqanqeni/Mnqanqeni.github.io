@@ -3,35 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="max-width">
-        <div class="logo">
-          <a href="#">Portfo<span>lio.</span></a>
-        </div>
-        <ul class="manu">
+    <header>
+      <nav>
+        <label class="logo">Ndiyakholwa Mnqanqeni</label>
+        <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
+      </nav>
+      <div class="start">
+        <p class="hero-text">
+          Hello it's Me<br />
+          Ndiyakholwa Mnqanqeni <br />And I'm a
+          <span class="text-loop"></span>
+        </p>
+        <script src="main.js"></script>
       </div>
-    </nav>
-    <!--home section-->
-    <section class="home" id="home">
-      <div class="max-width">
-        <div class="home-content">
-          <div class="text-1">Hello, my name is</div>
-          <div class="text-2">Ndiyakholwa</div>
-          <div class="text-3">Mnqanqeni</div>
-          <div class="text-4">And I'm a Sofware Developer<span></span></div>
+    </header>
+    <main>
+      <!-------about section------>
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/num1-removebg-preview (1).png" />
+            </div>
+            <div class="about-col-2"><h2>About Me</h2></div>
+          </div>
         </div>
-      </div>
-    </section>
+        <p>
+          This is a basic HTML page to -help you get started with web
+          development.
+        </p>
+      </section>
+
+      <section>
+        <h2>Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Graphic Design</li>
+          <li>Content Writing</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
   </body>
 </html>
