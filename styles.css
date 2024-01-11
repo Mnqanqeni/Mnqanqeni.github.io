@@ -246,7 +246,10 @@ animation: html 1s linear forwards;
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
+#cv{
+  color:rgb(218, 40, 40) ;
 
+}
 .contact-details p {
   margin-bottom: 10px;
 }
