@@ -23,8 +23,9 @@ header {
 }
 nav {
   border: 3px solid blue;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: grid;
+  grid-template-columns: auto auto;
+  /*
   position: fixed;
   background-color: var(--red);
   height: 80px;
@@ -33,4 +34,16 @@ nav {
   justify-content: space-between;
   width: 100%;
   z-index: 1; */
+
+
+}
+
+nav ul{
+  border: 3px solid yellow;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+nav ul li{
+  border: 3px solid purple;
 }
