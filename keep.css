@@ -19,6 +19,7 @@
   }
   header {
     align-items: center;
+    background-color: var();
   }
   nav {
     display: grid;

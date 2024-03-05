@@ -11,39 +11,43 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  overflow-x: hidden;
 }
 /*basic style*/
 body {
   background: black;
   color: #fff;
 }
-header {
-  border:5px solid red;
-  align-items: center;
-}
+
 nav {
-  border: 3px solid blue;
   display: grid;
-  grid-template-columns: auto auto;
-  /*
-  position: fixed;
+  grid-template-columns: 30% 1fr;
+  padding: 2%;
   background-color: var(--red);
-  height: 80px;
-  display: grid;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 1; */
-
 
 }
-
+.logo{
+  font-size: medium;
+  margin-top: 6%;
+}
 nav ul{
-  border: 3px solid yellow;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
+  margin-top: 3%;
+  border: 2px solid var(--black);
 }
 
 nav ul li{
-  border: 3px solid purple;
+  border: 2px solid ;
+}
+nav ul li a{
+  border: 2px solid blue;
+  color:white;
+  overflow: hidden;
+  margin-left: 20%;
+}
+
+nav ul li a:hover{
+  border: 3px solid red;
+  color:white;
 }
