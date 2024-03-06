@@ -1,53 +1,133 @@
-/*varibles*/
-:root{
-  --red: rgb(218, 40, 40);
-  --black:black;
-}
-/*reset*/
+/* Mobile First Styles */
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
-  font-family: "poppins", sans-serif;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  overflow-x: hidden;
 }
-/*basic style*/
+
 body {
-  background: black;
-  color: #fff;
+  font-family: "poppins", sans-serif;
+  background-color: black;
+  color: white;
 }
 
+/* Navigation Styles */
 nav {
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  padding: 2%;
-  background-color: var(--red);
-
-}
-.logo{
-  font-size: medium;
-  margin-top: 6%;
-}
-nav ul{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin-top: 3%;
-  border: 2px solid var(--black);
+  background-color: rgb(218, 40, 40);
+  padding: 10px;
 }
 
-nav ul li{
-  border: 2px solid ;
-}
-nav ul li a{
-  border: 2px solid blue;
-  color:white;
-  overflow: hidden;
-  margin-left: 20%;
+.logo {
+  font-size: 24px;
 }
 
-nav ul li a:hover{
-  border: 3px solid red;
-  color:white;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+}
+
+/* Skills Section */
+.skills h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  margin-bottom: 20px;
+}
+
+.progress-bar h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.progress-bar div {
+  background-color: rgb(218, 40, 40);
+  height: 20px;
+  border-radius: 5px;
+}
+
+.progress-bar span {
+  display: block;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: rgb(218, 40, 40);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  /* Navigation Styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul li {
+    display: inline;
+    margin-right: 30px;
+  }
+
+  /* Section Styles */
+  section {
+    padding: 50px;
+  }
+
+  /* Skills Section */
+  .progress-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
 }
