@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <label class="logo">Ndiyakholwa Mnqanqeni</label>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#container">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="start">
-        <p class="hero-text">
-          Hello it's Me<br />
-          Ndiyakholwa Mnqanqeni <br />And I'm a
-          <span class="text-loop"></span>
-        </p>
-        <script src="main.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <h1 class="logo"><span>Portfolio.</span></h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <div>
+        <h1>This is the home page</h1>
       </div>
-    </header>
-    <main>
-      <!-------about section------>
-      <section id="about">
-        <div class="about-me">
-          <div class="about-content">
-            <h2>Introduction</h2>
-            <p>I am currently a student at Umuzi, diligently enhancing my skills in software development. Presently, I am engrossed in web development, aspiring to transition towards full-stack web development and/or software engineering. Coding is my passion—it enables the creation of entire worlds, and I derive immense satisfaction from solving problems that can significantly impact and improve our community, making the world a better place. As a hobby, I engage in rigorous activities and find joy in reading books across various fields.</p>
-          </div>
-        </div>
-      </section>
-      
+    </section>
 
-      <!-------skills------>
-      
-      <section class="container" id="container">
-        <div class="skills">         
-        <div class="text"><h2 id="text">My Tech Skills So Far</h2></div>
-          <h2>HTML</h2>
-          <div class="progress-bar">
-            <div class="html"><span>80%</span></div>
-          </div>
-          <h2>CSS</h2>
-          <div class="progress-bar">
-            <div class="css"><span>60%</span></div>
-          </div>
-          <h2>JavaScript</h2>
-          <div class="progress-bar">
-            <div class="javascript"><span>65%</span></div>
-          </div>
-          <h2>Python</h2>
-          <div class="progress-bar">
-            <div class="python"><span>75%</span></div>
-          </div>
-          <h2>JAVA</h2>
-          <div class="progress-bar">
-            <div class="java"><span>45%</span></div>
-          </div>
-          <h2>C Programming</h2>
-          <div class="progress-bar">
-            <div class="c"><span>40%</span></div>
-          </div>
-        </div>
-      </section>
-       <!-------contact me------>
-  <section class="contact" id=contact>
-  <h2>Contact me</h2>
-  <div class="contact-details">
-    <p>Email: ndiyakholwa.mnqanqeni@umuzi.org</p>
-    <p>Phone: +27673107178</p>
-    <p>Download CV: <a href="Ndiyakholwa_Mnqanqeni_Resume.pdf" download id="cv">Click here</a></p>
-  </div>
-  
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-    </div>
-    <div class="form-group">
-      <input type="hidden" name="access_key" value="8303725b-4580-4277-809c-9588cb719275">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-    </div>
-    <button type="submit">Submit</button>
-  </form>
-</section>
+    <section id="about">
+      <div class="about-me">
+        <h2>Introduction</h2>
+        <p>I am currently a student at Umuzi, diligently enhancing my skills in software development. Presently, I am engrossed in web development, aspiring to transition towards full-stack web development and/or software engineering. Coding is my passion—it enables the creation of entire worlds, and I derive immense satisfaction from solving problems that can significantly impact and improve our community, making the world a better place. As a hobby, I engage in rigorous activities and find joy in reading books across various fields.</p>
+      </div>
+    </section>
 
+    <section id="skills">
+      <div class="skills">
+        <h2>My Tech Skills So Far</h2>
+        <div class="progress-bar">
+          <h3>HTML</h3>
+          <div class="html"><span>80%</span></div>
+        </div>
+        <div class="progress-bar">
+          <h3>CSS</h3>
+          <div class="css"><span>60%</span></div>
+        </div>
+        <div class="progress-bar">
+          <h3>JavaScript</h3>
+          <div class="javascript"><span>65%</span></div>
+        </div>
+        <div class="progress-bar">
+          <h3>Python</h3>
+          <div class="python"><span>75%</span></div>
+        </div>
+        <div class="progress-bar">
+          <h3>JAVA</h3>
+          <div class="java"><span>45%</span></div>
+        </div>
+        <div class="progress-bar">
+          <h3>C Programming</h3>
+          <div class="c"><span>40%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact me</h2>
+      <div class="contact-details">
+        <p>Email: ndiyakholwa.mnqanqeni@umuzi.org</p>
+        <p>Phone: +27673107178</p>
+        <p>Download CV: <a href="Ndiyakholwa_Mnqanqeni_Resume.pdf" download id="cv">Click here</a></p>
+      </div>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <input type="hidden" name="access_key" value="8303725b-4580-4277-809c-9588cb719275">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact me</h2>
+      <div class="contact-details">
+        <p>Email: ndiyakholwa.mnqanqeni@umuzi.org</p>
+        <p>Phone: +27673107178</p>
+        <p>Download CV: <a href="Ndiyakholwa_Mnqanqeni_Resume.pdf" download id="cv">Click here</a></p>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <input type="hidden" name="access_key" value="8303725b-4580-4277-809c-9588cb719275">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
 </body>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 My Website. All rights reserved.</p>
-    </footer>
-  </body>
 </html>
