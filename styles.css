@@ -1,10 +1,23 @@
 /* Mobile First Styles */
 /* Global Styles */
+
+/*varibles*/
+:root{
+  --red: rgb(218, 40, 40);
+  --black:black;
+}
+
+/*reset*/
 * {
   margin: 0;
   padding: 0;
+  font-family: "poppins", sans-serif;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
+
+/*basic style*/
 
 body {
   font-family: "poppins", sans-serif;
@@ -16,6 +29,8 @@ body {
 nav {
   background-color: rgb(218, 40, 40);
   padding: 10px;
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 
 .logo {
@@ -23,14 +38,12 @@ nav {
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-ul li {
-  display: inline;
-  margin-right: 20px;
+ ul li {
+  margin-top: 20%;
 }
 
 ul li:last-child {
@@ -39,7 +52,6 @@ ul li:last-child {
 
 ul li a {
   color: white;
-  text-decoration: none;
 }
 
 /* Section Styles */
@@ -47,6 +59,11 @@ section {
   padding: 20px;
 }
 
+/* Section Home*/
+#home{
+  background-image: url(images/num5-removebg-preview.png);
+    
+}
 /* Skills Section */
 .skills h2 {
   font-size: 20px;
