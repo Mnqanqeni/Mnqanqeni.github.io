@@ -62,8 +62,19 @@ section {
 /* Section Home*/
 #home{
   background-image: url(images/num5-removebg-preview.png);
-    
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
 }
+
+#home div {
+  text-align: center;
+  margin-top: 70%;
+  color: var(--red);
+}
+
+/*about 
 /* Skills Section */
 .skills h2 {
   font-size: 20px;
