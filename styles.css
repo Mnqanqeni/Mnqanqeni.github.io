@@ -1,7 +1,7 @@
 /* Mobile First Styles */
 /* Global Styles */
 
-/*varibles*/
+/*variables*/
 :root{
   --red: rgb(218, 40, 40);
   --black:black;
@@ -55,14 +55,27 @@ ul li a {
 }
 
 /* Section Styles */
-section {
+main section {
   padding: 20px;
+  height: 100vh;
 }
 
 /* Section Home*/
 #home{
   background-image: url(images/num5-removebg-preview.png);
-    
+  background-repeat: no-repeat;
+
+}
+.hero-text {
+  padding-top: 50%;
+  font-size: 21px;
+  position: relative;
+  font-weight: 700;
+}
+.hero-text span {
+  color: rgb(218, 40, 40);
+  font-size:22px;
+  font-weight: 700;
 }
 /* Skills Section */
 .skills h2 {
