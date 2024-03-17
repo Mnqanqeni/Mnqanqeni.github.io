@@ -240,30 +240,4 @@ form button {
   cursor: pointer;
 }
 
-/* Media Queries */
-@media screen and (min-width: 768px) {
-  /* Navigation Styles */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  ul li {
-    display: inline;
-    margin-right: 30px;
-  }
-
-  /* Section Styles */
-  section {
-    padding: 50px;
-  }
-
-  /* Skills Section */
-  .progress-bar {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-  }
-}
 
