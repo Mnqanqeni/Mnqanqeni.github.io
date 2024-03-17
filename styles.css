@@ -28,9 +28,12 @@ body {
 /* Navigation Styles */
 nav {
   background-color: rgb(218, 40, 40);
+  width: 100%;
   padding: 10px;
   display: grid;
   grid-template-columns: 40% 60%;
+  position: fixed;
+  z-index: 1;
 }
 
 .logo {
