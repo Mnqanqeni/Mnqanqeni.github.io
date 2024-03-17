@@ -27,6 +27,7 @@ body {
 
 /* Navigation Styles */
 nav {
+  top: 0;
   background-color: rgb(218, 40, 40);
   width: 100%;
   padding: 10px;
@@ -57,21 +58,18 @@ ul li a {
   color: white;
 }
 
-/* Section Styles */
-main section {
-  height: 100vh;
-}
 
 /* Section Home*/
 #home{
+  margin-top: 15%;
+  height: 71vh;
   background-image: url(images/num5-removebg-preview.png);
   background-repeat: no-repeat;
   opacity: 0.8;
-  background-position: 0 20px 0 0;
 
 }
 .hero-text {
-  padding-top: 10%;
+  padding-top: 50%;
   font-size: 20px;
   position: relative;
   font-weight: 700;
@@ -91,16 +89,15 @@ main section {
   width: 100%;
   background:black;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .container{
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background:black;
   display: flex;
-  align-items: center;
   justify-content: center;
+  border:3px solid yellow;
 }
 
 .skills h2{
@@ -160,7 +157,7 @@ animation: html 1s linear forwards;
 }
 .c{
   background: #555555;
-  animation: c 2s linear forwards;
+  animation: c 3.5s linear forwards;
 }
 
 .html span{
