@@ -138,7 +138,7 @@ background: #E44D26;
 animation: html 1s linear forwards;
 }
 .css{
-  background: #1572B6;
+  background: #197cc2;
   animation: css 1.5s linear forwards;
 }
 .javascript{
@@ -147,23 +147,23 @@ animation: html 1s linear forwards;
 }
 .python{
 
-  background: #367C2B ;
+  background: rgb(97, 97, 194) ;
   animation: python 2.5s linear forwards;
 }
 .java{
-  background:  #FF7F50  ;
+  background:  #d48e74  ;
   animation: java 3s linear forwards;
 }
 .c{
-  background: #555555;
+  background: #4d06f3f3;
   animation: c 3.5s linear forwards;
 }
 .docker{
-  background: #555555;
+  background: orange;
   animation: docker 3.5s linear forwards;
 }
 .git{
-  background: #555555;
+  background: brown;
   animation: git 3.5s linear forwards;
 }
 
