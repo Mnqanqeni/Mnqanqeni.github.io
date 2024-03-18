@@ -100,13 +100,12 @@ ul li a {
   border:3px solid yellow;
 }
 
-.skills h2{
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  color:#fff;
-  font-size: 16px;
+.image {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Ensures aspect ratio is maintained */
+  display: inline; /* Ensures block-level display */
+  border-radius: 100%;
+  margin: 0 auto; /* Centers the image horizontally */
 }
 
 .progress-bar{
@@ -159,6 +158,14 @@ animation: html 1s linear forwards;
   background: #555555;
   animation: c 3.5s linear forwards;
 }
+.docker{
+  background: #555555;
+  animation: docker 3.5s linear forwards;
+}
+.git{
+  background: #555555;
+  animation: git 3.5s linear forwards;
+}
 
 .html span{
   border: 1px solid #E44D26;
@@ -178,6 +185,14 @@ animation: html 1s linear forwards;
   .c span{
     border:1px solid #555555;
   }
+
+  .docker span{
+    border:1px solid #555555;
+  }
+  .git span{
+    border:1px solid #555555;
+  }
+
 
   @keyframes html {
     100%{
@@ -210,6 +225,16 @@ animation: html 1s linear forwards;
     }
   }
 
+  @keyframes docker {
+    100%{
+      width:20%;
+    }
+  }
+  @keyframes git {
+    100%{
+      width:50%;
+    }
+  }
 /* Contact Section */
 .contact h2 {
   font-size: 20px;
