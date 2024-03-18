@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/674f95dacf.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
   <nav>
     <h1 class="logo"><span><a href="#home">Portfolio.</a></span></h1>
     <ul>
+      <li><a href="#home"></a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#container">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -25,12 +25,12 @@
         Ndiyakholwa Mnqanqeni <br />And I'm a
         <span class="text-loop"></span>
       </p>
-      <script src="main.js"></script>
     </section>
 
     <section class="container" id="container">
       <div class="skills">         
       <div class="text"><h2 id="text">My Tech Skills So Far</h2></div>
+      <br>
         <img src="images/HTML5_logo_and_wordmark.svg" class="image" alt="HTML">
         <br>
         <div class="progress-bar">
@@ -61,10 +61,12 @@
         <div class="progress-bar">
           <div class="c"><span>40%</span></div>
         </div>
+        <br>
         <img src="images/git-and-github.png" class="image" alt="">
         <div class="progress-bar">
           <div class="git"><span>50%</span></div>
         </div>
+        <br>
         <img src="images/docker.png" class="image" alt="">
         <div class="progress-bar">
           <div class="docker"><span>20%</span></div>
@@ -76,39 +78,45 @@
       <section id="about">
         <div class="about-me">
           <div class="about-content">
-            <h2>Introduction</h2>
+            <h2>About Me</h2>
             <p>I am currently a student at Umuzi, diligently enhancing my skills in software development. Presently, I am engrossed in web development, aspiring to transition towards full-stack web development and/or software engineering. Coding is my passion—it enables the creation of entire worlds, and I derive immense satisfaction from solving problems that can significantly impact and improve our community, making the world a better place. As a hobby, I engage in rigorous activities and find joy in reading books across various fields.</p>
           </div>
         </div>
       </section>
       
-    <section id="contact">
-      <h2>Contact me</h2>
-      <div class="contact-details">
-        <p>Email: ndiyakholwa.mnqanqeni@umuzi.org</p>
-        <p>Phone: +27673107178</p>
-        <!-- <p>Download CV: <a href="Ndiyakholwa_Mnqanqeni_Resume.pdf" download id="cv">Click here</a></p> -->
-      </div>
-
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+      <section id="contact">
+        <div class="contact-content">
+          <h2>Contact me</h2>
+          <div class="contact-details">
+            <p>Email: ndiyakholwa.mnqanqeni@umuzi.org</p>
+            <p>Phone: +27673107178</p>
+            <button class="download-button" onclick="window.location.href='Ndiyakholwa_Mnqanqeni_Resume.pdf'">Download CV</button>
+          </div>
+      
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <input type="hidden" name="access_key" value="8303725b-4580-4277-809c-9588cb719275">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
         </div>
-        <div class="form-group">
-          <input type="hidden" name="access_key" value="8303725b-4580-4277-809c-9588cb719275">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+      </section>      
+      
   </main>
 
   <footer>
     <p>&copy; 2023 My Website. All rights reserved.</p>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>

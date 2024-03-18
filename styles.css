@@ -28,26 +28,29 @@ body {
 /* Navigation Styles */
 nav {
   top: 0;
-  background-color: rgb(218, 40, 40);
+  background-color: var(--red);
   width: 100%;
   padding: 10px;
-  display: grid;
-  grid-template-columns: 40% 60%;
   position: fixed;
   z-index: 1;
+  display: flex;
+  justify-content: space-between; /* Add this */
+  align-items: center; /* Add this */
+  border:3px solid yellow;
 }
 
 .logo {
   font-size: 24px;
+  color: white; /* Add this */
 }
 
 ul {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  margin: 0;
 }
 
- ul li {
-  margin-top: 20%;
+ul li {
+  margin-left: 20px;
 }
 
 ul li:last-child {
@@ -56,20 +59,26 @@ ul li:last-child {
 
 ul li a {
   color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
 }
-
 
 /* Section Home*/
 #home{
-  margin-top: 15%;
-  height: 71vh;
+  margin-top: 54px;
+  left:0;
+  height: 45vh;
   background-image: url(images/num5-removebg-preview.png);
   background-repeat: no-repeat;
   opacity: 0.8;
+  background-position: right top;
+  border:solid salmon;
 
 }
 .hero-text {
-  padding-top: 50%;
+  padding-top: 60%;
+  padding-left: 10%;
   font-size: 20px;
   position: relative;
   font-weight: 700;
@@ -77,10 +86,12 @@ ul li a {
 }
 
 .hero-text span {
-  color: orangered;
+  background-color: var(--red);
+  color: white;
   font-size:22px;
   font-weight: 700;
 }
+
 /* Skills Section */
 #text {
   color: rgb(218, 40, 40);
@@ -93,11 +104,10 @@ ul li a {
 }
 .container{
   width: 100%;
-  height: 100vh;
   background:black;
   display: flex;
   justify-content: center;
-  border:3px solid yellow;
+  margin: 0 auto;
 }
 
 .image {
@@ -139,32 +149,32 @@ animation: html 1s linear forwards;
 }
 .css{
   background: #197cc2;
-  animation: css 1.5s linear forwards;
+  animation: css 1s linear forwards;
 }
 .javascript{
   background: #F7DF1E ;
-  animation: javascript 2s linear forwards;
+  animation: javascript 1s linear forwards;
 }
 .python{
 
   background: rgb(97, 97, 194) ;
-  animation: python 2.5s linear forwards;
+  animation: python 1s linear forwards;
 }
 .java{
   background:  #d48e74  ;
-  animation: java 3s linear forwards;
+  animation: java 1s linear forwards;
 }
 .c{
   background: #4d06f3f3;
-  animation: c 3.5s linear forwards;
+  animation: c 1s linear forwards;
 }
 .docker{
-  background: orange;
-  animation: docker 3.5s linear forwards;
+  background: hsl(240, 86%, 60%);
+  animation: docker 1s linear forwards;
 }
 .git{
   background: brown;
-  animation: git 3.5s linear forwards;
+  animation: git 1s linear forwards;
 }
 
 .html span{
@@ -187,10 +197,10 @@ animation: html 1s linear forwards;
   }
 
   .docker span{
-    border:1px solid #555555;
+    border:1px solid hsl(240, 86%, 60%);
   }
   .git span{
-    border:1px solid #555555;
+    border:1px solid brown;
   }
 
 
@@ -224,7 +234,6 @@ animation: html 1s linear forwards;
       width:40%;
     }
   }
-
   @keyframes docker {
     100%{
       width:20%;
@@ -235,34 +244,373 @@ animation: html 1s linear forwards;
       width:50%;
     }
   }
+  
+/* About Me Section */
+#about {
+  padding: 50px 0;
+  background-color: var(--black);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+}
+
 /* Contact Section */
-.contact h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+
+/* Contact Section */
+#contact {
+  padding: 50px 0;
+  background-color: var(--black);
 }
 
-.contact-details p {
-  margin-bottom: 10px;
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-form label {
-  display: block;
-  margin-bottom: 5px;
+.contact-content h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
 }
 
-form input,
-form textarea {
-  width: 100%;
+.contact-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: calc(100% - 22px); /* Adjust width for inline display */
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  display: inline-block; /* Display inputs inline */
 }
 
-form button {
-  background-color: rgb(218, 40, 40);
+.contact-form textarea {
+  resize: vertical;
+  height: 150px; /* Set a fixed height for the textarea */
+}
+
+.contact-form button {
+  background-color: var(--red);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: inline-block; /* Display button inline */
+}
+
+.contact-form button:hover {
+  background-color: #a82d2d;
+}
+
+.contact-details a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white; /* Add underline effect */
+  padding-bottom: 2px; /* Adjust padding for better spacing */
+}
+
+.contact-details a:hover {
+  color: #a82d2d; /* Change color on hover */
+}
+
+.download-button {
+  background-color: var(--red);
   color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.download-button:hover {
+  background-color: #a82d2d; /* Darken on hover */
 }
 
 
+/* Small tablets */
+@media screen and (min-width: 620px) {
+  /* Navigation Styles */
+  .logo {
+    font-size: 28px;
+  }
+
+  ul li {
+    margin-left: 30px;
+  }
+
+  /* Section Home */
+  #home {
+    margin-top: 15%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-text {
+    padding-top: 40%;
+    font-size: 24px;
+  }
+
+  /* Skills Section */
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .progress-bar {
+    width: 80%;
+  }
+
+  .progress-bar div {
+    height: 10px;
+  }
+
+  .progress-bar div span {
+    height: 30px;
+    width: 30px;
+    margin-top: -15px;
+    margin-right: -10px;
+    font-size: 14px;
+  }
+
+  /* About Me Section */
+  #about {
+    padding: 70px 0;
+  }
+
+  .about-content h2 {
+    font-size: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1.4rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 70px 0;
+  }
+
+  .contact-content h2 {
+    font-size: 3rem;
+  }
+
+  .contact-content p {
+    font-size: 1.4rem;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(50% - 22px);
+    margin-right: 10px;
+  }
+
+  .contact-form textarea {
+    width: calc(100% - 22px);
+  }
+
+  .contact-form button {
+    padding: 12px 30px;
+  }
+
+  .download-button {
+    padding: 12px 30px;
+  }
+}
+
+/* Medium tablets */
+@media screen and (min-width: 768px) {
+  /* Navigation Styles */
+  .logo {
+    font-size: 32px;
+  }
+
+  ul li {
+    margin-left: 40px;
+  }
+
+  /* Section Home */
+  #home {
+    margin-top: 10%;
+  }
+
+  .hero-text {
+    padding-top: 30%;
+    font-size: 28px;
+  }
+
+  /* Skills Section */
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .progress-bar {
+    width: 70%;
+  }
+
+  .progress-bar div span {
+    height: 35px;
+    width: 35px;
+    font-size: 16px;
+  }
+
+  /* About Me Section */
+  #about {
+    padding: 80px 0;
+  }
+
+  .about-content h2 {
+    font-size: 3.5rem;
+  }
+
+  .about-content p {
+    font-size: 1.6rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 80px 0;
+  }
+
+  .contact-content h2 {
+    font-size: 3.5rem;
+  }
+
+  .contact-content p {
+    font-size: 1.6rem;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(60% - 22px);
+    margin-right: 20px;
+  }
+
+  .contact-form button {
+    padding: 14px 32px;
+  }
+
+  .download-button {
+    padding: 14px 32px;
+  }
+}
+
+/* Large tablets and desktops */
+@media screen and (min-width: 992px) {
+  /* Navigation Styles */
+  .logo {
+    font-size: 36px;
+  }
+
+  ul li {
+    margin-left: 50px;
+  }
+
+  /* Section Home */
+  #home {
+    margin-top: 8%;
+  }
+
+  .hero-text {
+    padding-top: 25%;
+    font-size: 32px;
+  }
+
+  /* Skills Section */
+  .image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .progress-bar {
+    width: 80%;
+  }
+
+  .progress-bar div span {
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+  }
+
+  /* About Me Section */
+  #about {
+    padding: 100px 0;
+  }
+
+  .about-content h2 {
+    font-size: 4rem;
+  }
+
+  .about-content p {
+    font-size: 1.8rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 100px 0;
+  }
+
+  .contact-content h2 {
+    font-size: 4rem;
+  }
+
+  .contact-content p {
+    font-size: 1.8rem;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(70% - 22px);
+    margin-right: 30px;
+  }
+
+  .contact-form button {
+    padding: 16px 36px;
+  }
+
+  .download-button {
+    padding: 16px 36px;
+  }
+}
+
+/* Extra large desktops */
+@media screen and (min-width: 1200px) {
+  /* Additional styles for extra large desktops */
+}
