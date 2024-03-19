@@ -24,3 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// window.addEventListener('DOMContentLoaded', (event) => {
+//   const isLaptop = window.innerWidth >= 500; // Check if the device width is greater than or equal to the width of a large tablet or desktop
+
+//   if (isLaptop) {
+//     const nav = document.querySelector('nav ul');
+//     const homeListItem = document.createElement('li');
+//     homeListItem.innerHTML = '<a href="#home">Home</a>';
+//     nav.prepend(homeListItem);
+
+//     const logo = document.querySelector('.logo span a');
+//     logo.textContent = 'Ndiyakholwa Mnqanqeni';
+//   }
+// });
