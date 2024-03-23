@@ -6,35 +6,31 @@ var typed = new Typed(".text-loop", {
   loop: true,
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.querySelector('.contact-form');
-
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    fetch(form.action, {
-      method: form.method,
-      body: new FormData(form)
-    })
-    .then(response => {
-      console.log("Email sent successfully!");
-      form.reset();
-    })
-    .catch(error => {
-      console.error("Error sending email:", error);
-    });
-  });
-});
-
-window.addEventListener('DOMContentLoaded', (event) => {
-  const isLaptop = window.innerWidth >= 500; // Check if the device width is greater than or equal to the width of a large tablet or desktop
+function updateLayout() {
+  let isLaptop = document.documentElement.clientWidth >= 700;
+  console.log(document.documentElement.clientWidth)
+  const nav = document.querySelector('nav ul');
+  const homeLink = nav.querySelector('a[href="#home"]');
 
   if (isLaptop) {
-    const nav = document.querySelector('nav ul');
+    const logo = document.querySelector('.logo span a');
+    logo.textContent = 'Ndiyakholwa Mnqanqeni';
+  } else {
+    const logo = document.querySelector('.logo span a');
+    logo.textContent = 'Portfolio.';
+  }
+  
+  isLaptop = document.documentElement.clientWidth >= 460;
+  if (isLaptop && !homeLink) {
     const homeListItem = document.createElement('li');
     homeListItem.innerHTML = '<a href="#home">Home</a>';
     nav.prepend(homeListItem);
-
-    const logo = document.querySelector('.logo span a');
-    logo.textContent = 'Ndiyakholwa Mnqanqeni';
+  } else if (!isLaptop && homeLink) {
+    homeLink.parentNode.remove();
   }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  updateLayout(); 
+  setInterval(updateLayout, 100);
 });

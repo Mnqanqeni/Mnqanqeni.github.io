@@ -1,8 +1,11 @@
 /* Mobile First Styles */
 /*variables*/
 :root {
-  --red: rgb(218, 40, 40);
-  --black: black;
+  --first: black;
+  --second:rgb(218, 40, 40);
+  --third:white;
+  --fourth:red;
+  --size:2em;
 }
 
 /*reset*/
@@ -20,14 +23,14 @@
 
 body {
   font-family: "poppins", sans-serif;
-  background-color: black;
-  color: white;
+  background-color: var(--first);
+  color: var(--third)
 }
 
 /* Navigation Styles */
 nav {
   top: 0;
-  background-color: var(--red);
+  background-color:var(--second);
   width: 100%;
   padding: 10px;
   position: fixed;
@@ -37,9 +40,9 @@ nav {
   align-items: center;
 }
 
-.logo {
+.logo span a {
   font-size: 24px;
-  color: white;
+  color: var(--first);
 }
 
 ul {
@@ -56,7 +59,7 @@ ul li:last-child {
 }
 
 ul li a {
-  color: white;
+  color: var(--first);
   text-decoration: none;
   font-size: 15px;
   font-weight: 300;
@@ -78,30 +81,50 @@ ul li a {
   font-size: 20px;
   position: relative;
   font-weight: 700;
-  color: red;
+  color: var(--third);
 }
 
 .hero-text span {
-  background-color: var(--red);
-  color: white;
+  color: var(--third);
   font-size: 22px;
   font-weight: 700;
 }
 
+/* About Me Section */
+#about {
+  background-color: var(--first);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: var(--size);
+  color: var(--third);
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--third);
+}
+
 /* Skills Section */
 #text {
-  color: rgb(218, 40, 40);
-  font-size: 1.5em;
+  color: var(--third);
+  font-size: var(--size);
   font-weight: bold;
   width: 100%;
-  background: black;
   display: flex;
   justify-content: center;
 }
 
 .container {
   width: 100%;
-  background: black;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -116,7 +139,7 @@ ul li a {
 }
 
 .progress-bar {
-  background: #fff;
+  background: var(--third);
   width: 100%;
   height: 10px;
   border-radius: 5px;
@@ -132,86 +155,86 @@ ul li a {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: rgb(218, 40, 40);
+  background: var(--second);
   float: right;
   margin-top: -15px;
   margin-right: -20px;
-  color: #fff;
+  color: var(--third);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .html {
-  background: #e44d26;
+  background: var(--second);
   animation: html 1s linear forwards;
 }
 
 .css {
-  background: #197cc2;
+  background: var(--second);
   animation: css 1s linear forwards;
 }
 
 .javascript {
-  background: #f7df1e;
+  background: var(--second);
   animation: javascript 1s linear forwards;
 }
 
 .python {
-  background: rgb(97, 97, 194);
+  background: var(--second);
   animation: python 1s linear forwards;
 }
 
 .java {
-  background: #d48e74;
+  background: var(--second);
   animation: java 1s linear forwards;
 }
 
 .c {
-  background: #4d06f3f3;
+  background: var(--second);
   animation: c 1s linear forwards;
 }
 
 .docker {
-  background: hsl(240, 86%, 60%);
+  background: var(--second);
   animation: docker 1s linear forwards;
 }
 
 .git {
-  background: brown;
+  background: var(--second);
   animation: git 1s linear forwards;
 }
 
 .html span {
-  border: 1px solid #e44d26;
+  border: 1px solid var(--third);
 }
 
 .css span {
-  border: 1px solid #1572b6;
+  border: 1px solid var(--third);
 }
 
 .javascript span {
-  border: 1px solid #f7df1e;
+  border: 1px solid var(--third);
 }
 
 .python span {
-  border: 1px solid #367c2b;
+  border: 1px solid var(--third);
 }
 
 .java span {
-  border: 1px solid #ff7f50;
+  border: 1px solid var(--third);
 }
 
 .c span {
-  border: 1px solid #555555;
+  border: 1px solid var(--third);
 }
 
 .docker span {
-  border: 1px solid hsl(240, 86%, 60%);
+  border: 1px solid var(--third);
 }
 
 .git span {
-  border: 1px solid brown;
+  border: 1px solid var(--third);
 }
 
 @keyframes html {
@@ -262,34 +285,10 @@ ul li a {
   }
 }
 
-/* About Me Section */
-#about {
-  padding: 50px 0;
-  background-color: var(--black);
-}
-
-.about-content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.about-content h2 {
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.about-content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: white;
-}
 
 /* Contact Section */
 #contact {
-  padding: 50px 0;
-  background-color: var(--black);
+  background-color: var(--first);
 }
 
 .contact-content {
@@ -299,15 +298,15 @@ ul li a {
 }
 
 .contact-content h2 {
-  font-size: 2.5rem;
-  color: white;
+  font-size: var(--size);
+  color: var(--third);
   margin-bottom: 20px;
 }
 
 .contact-content p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: white;
+  color: var(--third);
 }
 
 .contact-form input[type="text"],
@@ -316,10 +315,10 @@ ul li a {
   width: calc(100% - 22px);
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--third);
   border-radius: 5px;
-  background-color: #333;
-  color: white;
+  background-color: var(--third);
+  color: var(--first);
   display: inline-block;
 }
 
@@ -329,8 +328,8 @@ ul li a {
 }
 
 .contact-form button {
-  background-color: var(--red);
-  color: white;
+  background-color: var(--second);
+  color: var(--third);
   border: none;
   padding: 12px 20px;
   cursor: pointer;
@@ -340,23 +339,23 @@ ul li a {
 }
 
 .contact-form button:hover {
-  background-color: #a82d2d;
+  background-color: var(--fourth);
 }
 
 .contact-details a {
-  color: white;
+  color: var(--third);
   text-decoration: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--third);
   padding-bottom: 2px;
 }
 
 .contact-details a:hover {
-  color: #a82d2d;
+  color: var(--fourth);
 }
 
 .download-button {
-  background-color: var(--red);
-  color: white;
+  background-color: var(--second);
+  color: var(--third);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -367,9 +366,12 @@ ul li a {
 }
 
 .download-button:hover {
-  background-color: #a82d2d;
+  background-color: var(--fourth);
 }
 
+footer{
+  text-align: center;
+}
 /* Media Queries */
 
 /* Small tablets */
@@ -386,6 +388,7 @@ ul li a {
   .hero-text {
     padding-top: 40%;
     font-size: 24px;
+    color: var(--third);
   }
 
   /* Skills Section */
@@ -492,6 +495,10 @@ ul li a {
     margin-left: 50px;
   }
 
+  .hero-text {
+    color: blue;
+  }
+
   /* Section Home */
   #home {
     margin-top: 8%;
@@ -500,6 +507,11 @@ ul li a {
   .hero-text {
     padding-top: 25%;
     font-size: 32px;
+    color: green;
+  }
+
+  .text-loop{
+    background-color: var(--first);
   }
 
   /* Skills Section */
@@ -573,7 +585,7 @@ ul li a {
 
   /* Section Home */
   #home {
-    margin-top: 0;
+    margin-top: 20px;
     height: 100vh;
     background-image: url(images/num5-removebg-preview.png);
     background-repeat: no-repeat;
@@ -582,10 +594,13 @@ ul li a {
   }
 
   .hero-text {
-    padding-top: 25%;
-    font-size: 32px;
+    padding-top: 20%;
+    font-size: 50px;
+    color:white;
   }
-
+  .text-loop{
+    font-size: 50px;
+  }
   /* Skills Section */
   .image {
     width: 90px;
