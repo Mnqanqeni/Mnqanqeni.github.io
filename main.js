@@ -1,5 +1,5 @@
 var typed = new Typed(".text-loop", {
-  strings: ["Web Developer", "Software Engineer"],
+  strings: ['Full-stack Developer', 'Software Engineer', 'Coding Enthusiast'],
   typeSpeed: 100,
   backSpeed: 50,
   backDelayed: 1000,
@@ -7,7 +7,7 @@ var typed = new Typed(".text-loop", {
 });
 
 function updateLayout() {
-  let isLaptop = document.documentElement.clientWidth >= 700;
+  let isLaptop = document.documentElement.clientWidth >= 670;
   console.log(document.documentElement.clientWidth)
   const nav = document.querySelector('nav ul');
   const homeLink = nav.querySelector('a[href="#home"]');
@@ -33,4 +33,20 @@ function updateLayout() {
 window.addEventListener('DOMContentLoaded', () => {
   updateLayout(); 
   setInterval(updateLayout, 100);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var skillBars = document.querySelectorAll('.skill-bar');
+
+  skillBars.forEach(function(skillBar) {
+    var percent = skillBar.getAttribute('data-percent');
+    var overlay = skillBar.querySelector('.skill-bar__overlay');
+    var angle = (360 * percent) / 100;
+
+    if (angle <= 180) {
+      overlay.style.backgroundImage = 'linear-gradient(' + (90 + angle) + 'deg, transparent 50%, white 50%),linear-gradient(90deg, white 50%, transparent 50%)';
+    } else {
+      overlay.style.backgroundImage = 'linear-gradient(' + (angle - 90) + 'deg, transparent 50%, rgb(218, 40, 40) 50%),linear-gradient(90deg, #ccc 50%, transparent 50%)';
+    }
+  });
 });

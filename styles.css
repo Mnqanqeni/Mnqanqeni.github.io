@@ -67,12 +67,13 @@ ul li a {
 
 /* Section Home*/
 #home {
-  margin-top: 54px;
+  margin-top: 48px;
   height: 48vh;
   background-image: url(images/num5-removebg-preview.png);
   background-repeat: no-repeat;
   opacity: 0.8;
   background-position: right top;
+  margin-bottom: -40px;
 }
 
 .hero-text {
@@ -81,12 +82,12 @@ ul li a {
   font-size: 20px;
   position: relative;
   font-weight: 700;
-  color: var(--third);
+  color: var(--fourth);
 }
 
 .hero-text span {
-  color: var(--third);
-  font-size: 22px;
+  color: var(--fourth);
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -104,7 +105,7 @@ ul li a {
 .about-content h2 {
   font-size: var(--size);
   color: var(--third);
-  margin-bottom: 20px;
+  margin: 10px;
 }
 
 .about-content p {
@@ -114,28 +115,34 @@ ul li a {
 }
 
 /* Skills Section */
-#text {
+.container {
+  width: 95%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.soft-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.text{
+  text-align: center;
+}
+.text h2 {
   color: var(--third);
   font-size: var(--size);
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.image {
-  width: 50px;
-  height: 50px;
-  display: inline;
-  border-radius: 100%;
-  margin: 0 auto;
+.fa-brands{
+  font-size: 50px;
+  color: var(--second);
+  padding: 10px;
 }
 
 .progress-bar {
@@ -285,10 +292,38 @@ ul li a {
   }
 }
 
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center;
+  margin-top: 40px;
+}
 
-/* Contact Section */
-#contact {
-  background-color: var(--first);
+.skill-bar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--second);
+  margin: 10px; /* Add margin between each skill bar */
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-bar__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-bar__text {
+  font-size: 14px;
+  color: var(--first);
+  text-align: center;
 }
 
 .contact-content {
@@ -300,7 +335,7 @@ ul li a {
 .contact-content h2 {
   font-size: var(--size);
   color: var(--third);
-  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .contact-content p {
@@ -392,13 +427,8 @@ footer{
   }
 
   /* Skills Section */
-  .container {
+  /* .container {
     flex-wrap: wrap;
-  }
-
-  .image {
-    width: 70px;
-    height: 70px;
   }
 
   .progress-bar {
@@ -415,28 +445,22 @@ footer{
     margin-top: -15px;
     margin-right: -10px;
     font-size: 14px;
-  }
+  } */
 
   /* About Me Section */
   #about {
-    padding: 70px 0;
-  }
-
-  .about-content h2 {
-    font-size: 3rem;
+    margin-top: -20px;
   }
 
   .about-content p {
     font-size: 1.4rem;
   }
-
+  .container{
+    padding: 70px;
+  }
   /* Contact Section */
   #contact {
     padding: 70px 0;
-  }
-
-  .contact-content h2 {
-    font-size: 3rem;
   }
 
   .contact-content p {
@@ -461,6 +485,20 @@ footer{
   .download-button {
     padding: 12px 30px;
   }
+  
+ .container {
+    width: 100%; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .progress-bar {
+    width: 45vh;
+    justify-content: center;
+  }
+
 }
 
 /* Medium tablets */
@@ -476,12 +514,23 @@ footer{
 
   /* Section Home */
   #home {
-    margin-top: 10%;
+    margin-top: 58px;
+  }
+  .about-content{
+    margin-top: -50px;
+  }
+  .container{
+    margin-top: -50px;
+  }
+  #contact{
+    margin-top: -60px;
   }
 
   .download-button {
     padding: 14px 32px;
   }
+
+ 
 }
 
 /* Large tablets and desktops */
@@ -495,19 +544,23 @@ footer{
     margin-left: 50px;
   }
 
-  .hero-text {
-    color: blue;
-  }
-
   /* Section Home */
   #home {
-    margin-top: 8%;
+    margin-top: 63px;
   }
-
+  .about-content{
+    margin-top: -80px;
+  }
+  .container{
+    margin-top: -85px;
+  }
+  #contact{
+    margin-top: -90px;
+    padding: 10px;
+  }
   .hero-text {
     padding-top: 25%;
     font-size: 32px;
-    color: green;
   }
 
   .text-loop{
@@ -515,14 +568,6 @@ footer{
   }
 
   /* Skills Section */
-  .image {
-    width: 90px;
-    height: 90px;
-  }
-
-  .progress-bar {
-    width: 45vh;
-  }
 
   .progress-bar div span {
     height: 40px;
@@ -534,11 +579,7 @@ footer{
   #about {
     padding: 100px 0;
   }
-
-  .about-content h2 {
-    font-size: 4rem;
-  }
-
+  
   .about-content p {
     font-size: 1.8rem;
   }
@@ -546,10 +587,6 @@ footer{
   /* Contact Section */
   #contact {
     padding: 100px 0;
-  }
-
-  .contact-content h2 {
-    font-size: 4rem;
   }
 
   .contact-content p {
@@ -585,16 +622,22 @@ footer{
 
   /* Section Home */
   #home {
-    margin-top: 20px;
+    margin-top: -152px;
     height: 100vh;
     background-image: url(images/num5-removebg-preview.png);
     background-repeat: no-repeat;
     opacity: 0.8;
     background-position: right;
+    background-size: 50%;
+
+  }
+
+  .container{
+    margin-top: -55px;
   }
 
   .hero-text {
-    padding-top: 20%;
+    padding-top: 35%;
     font-size: 50px;
     color:white;
   }
@@ -602,28 +645,17 @@ footer{
     font-size: 50px;
   }
   /* Skills Section */
-  .image {
-    width: 90px;
-    height: 90px;
-  }
-
-  .progress-bar {
-    width: 90vh;
-  }
 
   .progress-bar div span {
     height: 40px;
     width: 40px;
     font-size: 18px;
   }
-
+    
   /* About Me Section */
-  #about {
-    padding: 100px 0;
-  }
-
-  .about-content h2 {
-    font-size: 4rem;
+  .about-content{
+    margin-top: -250px;
+    padding: 10px;
   }
 
   .about-content p {
@@ -632,11 +664,7 @@ footer{
 
   /* Contact Section */
   #contact {
-    padding: 100px 0;
-  }
-
-  .contact-content h2 {
-    font-size: 4rem;
+    margin-top: -100px;
   }
 
   .contact-content p {
