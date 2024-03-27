@@ -10,7 +10,7 @@ function updateLayout() {
   let isLaptop = document.documentElement.clientWidth >= 670;
   console.log(document.documentElement.clientWidth)
   const nav = document.querySelector('nav ul');
-  const homeLink = nav.querySelector('a[href="#home"]');
+  const homeLink = nav.querySelector('a[href="#start"]');
 
   if (isLaptop) {
     const logo = document.querySelector('.logo span a');
@@ -23,7 +23,7 @@ function updateLayout() {
   isLaptop = document.documentElement.clientWidth >= 460;
   if (isLaptop && !homeLink) {
     const homeListItem = document.createElement('li');
-    homeListItem.innerHTML = '<a href="#home">Home</a>';
+    homeListItem.innerHTML = '<a href="#start">Home</a>';
     nav.prepend(homeListItem);
   } else if (!isLaptop && homeLink) {
     homeLink.parentNode.remove();
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (angle <= 180) {
       overlay.style.backgroundImage = 'linear-gradient(' + (90 + angle) + 'deg, transparent 50%, white 50%),linear-gradient(90deg, white 50%, transparent 50%)';
     } else {
-      overlay.style.backgroundImage = 'linear-gradient(' + (angle - 90) + 'deg, transparent 50%, rgb(218, 40, 40) 50%),linear-gradient(90deg, #ccc 50%, transparent 50%)';
+      overlay.style.backgroundImage = 'linear-gradient(' + (angle - 90) + 'deg, transparent 50%, rgb(218, 40, 40) 50%),linear-gradient(90deg, white 50%, transparent 50%)';
     }
   });
 });
