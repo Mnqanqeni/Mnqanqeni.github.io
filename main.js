@@ -8,7 +8,6 @@ var typed = new Typed(".text-loop", {
 
 function updateLayout() {
   let isLaptop = document.documentElement.clientWidth >= 670;
-  console.log(document.documentElement.clientWidth)
   const nav = document.querySelector('nav ul');
   const homeLink = nav.querySelector('a[href="#start"]');
 
