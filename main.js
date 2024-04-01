@@ -9,7 +9,7 @@ var typed = new Typed(".text-loop", {
 function updateLayout() {
   let isLaptop = document.documentElement.clientWidth >= 670;
   const nav = document.querySelector('nav ul');
-  const homeLink = nav.querySelector('a[href="#start"]');
+  const homeLink = nav.querySelector('a[href="#home"]');
 
   if (isLaptop) {
     const logo = document.querySelector('.logo span a');
@@ -22,7 +22,7 @@ function updateLayout() {
   isLaptop = document.documentElement.clientWidth >= 460;
   if (isLaptop && !homeLink) {
     const homeListItem = document.createElement('li');
-    homeListItem.innerHTML = '<a href="#start">Home</a>';
+    homeListItem.innerHTML = '<a href="#home">Home</a>';
     nav.prepend(homeListItem);
   } else if (!isLaptop && homeLink) {
     homeLink.parentNode.remove();
