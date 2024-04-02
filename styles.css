@@ -2,10 +2,10 @@
 /* Variables*/
 :root {
   --first: black;
-  --second:rgb(218, 40, 40);
-  --third:white;
-  --fourth:red;
-  --size:2em;
+  --second: rgb(218, 40, 40);
+  --third: white;
+  --fourth: red;
+  --size: 2em;
 }
 
 /* Reset*/
@@ -22,7 +22,7 @@
 body {
   font-family: "poppins", sans-serif;
   background-color: var(--first);
-  color: var(--third)
+  color: var(--third);
 }
 
 /* Navigation Styles */
@@ -77,7 +77,6 @@ ul li a {
   opacity: 0.8;
   background-position: right top;
   margin-bottom: -40px;
- 
 }
 
 .hero-text {
@@ -102,8 +101,7 @@ ul li a {
 /* About Me Section */
 #about {
   background-color: var(--first);
- 
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .about-content {
@@ -126,22 +124,22 @@ ul li a {
 
 /* Skills Section */
 .container {
-margin-top: 10px;
-width: 90%;
-padding: 10px;
-margin: 0 auto;
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-grid-gap: 20px;
-padding: 10px;
+  margin-top: 10px;
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 10px;
 }
 
 .soft-skills {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-grid-gap: 20px;
-justify-items: center;
-margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 40px;
 }
 
 .progress-bar {
@@ -149,7 +147,6 @@ margin-top: 40px;
   width: 100%;
   height: 10px;
   border-radius: 5px;
-  justify-content: center;
 }
 
 .progress-bar div {
@@ -161,193 +158,195 @@ margin-top: 40px;
 .text {
   position: absolute;
   width: 90%;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.fa-brands{
-font-size: 50px;
-color: var(--second);
-padding: 10px;
+.fa-brands {
+  font-size: 50px;
+  color: var(--second);
+  padding: 10px;
 }
 
 .progress-bar {
-background: var(--third);
-width: 100%;
-height: 10px;
-border-radius: 5px;
+  background: var(--third);
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
 }
 
 .progress-bar div {
-height: 10px;
-border-radius: 5px;
-width: 0%;
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
 }
 
 .progress-bar div span {
-height: 40px;
-width: 40px;
-font-size: 18px;
-border-radius: 50%;
-background: var(--second);
-float: right;
-margin-top: -15px;
-margin-right: -20px;
-color: var(--third);
-display: flex;
-align-items: center;
-justify-content: center;
+  height: 40px;
+  width: 40px;
+  font-size: 18px;
+  border-radius: 50%;
+  background: var(--second);
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: var(--third);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .html {
-background: var(--second);
-animation: html 1s linear forwards;
+  background: var(--second);
+  animation: html 1s linear forwards;
 }
 
-
 .css {
-background: var(--second);
-animation: css 1s linear forwards;
+  background: var(--second);
+  animation: css 1s linear forwards;
 }
 
 .javascript {
-background: var(--second);
-animation: javascript 1s linear forwards;
+  background: var(--second);
+  animation: javascript 1s linear forwards;
 }
 
 .python {
-background: var(--second);
-animation: python 1s linear forwards;
+  background: var(--second);
+  animation: python 1s linear forwards;
 }
 
 .java {
-background: var(--second);
-animation: java 1s linear forwards;
+  background: var(--second);
+  animation: java 1s linear forwards;
 }
 
 .c {
-background: var(--second);
-animation: c 1s linear forwards;
+  background: var(--second);
+  animation: c 1s linear forwards;
 }
 
 .docker {
-background: var(--second);
-animation: docker 1s linear forwards;
+  background: var(--second);
+  animation: docker 1s linear forwards;
 }
 
 .git {
-background: var(--second);
-animation: git 1s linear forwards;
+  background: var(--second);
+  animation: git 1s linear forwards;
 }
 
 .html span {
-border: 1px solid var(--third);
+  border: 1px solid var(--third);
 }
 
 .css span {
-border: 1px solid var(--third);
+  border: 1px solid var(--third);
 }
 
 .javascript span {
-border: 1px solid var(--third);
+  border: 1px solid var(--third);
 }
 
 .python span {
-border: 1px solid var(--third);
+  border: 1px solid var(--third);
 }
 
 .java span {
-border: 1px solid var(--third);
+  border: 1px solid var(--third);
 }
 
 .c span {
-border: 1px solid var(--third);
+  border: 1px solid var(--third);
 }
 
 .docker span {
-border: 1px solid var(--third);
+  border: 1px solid var(--third);
 }
 
 .git span {
-border: 1px solid var(--third);
+  border: 1px solid var(--third);
 }
 
 @keyframes html {
-100% {
-  width: 80%;
-}
+  100% {
+    width: 80%;
+  }
 }
 
 @keyframes css {
-100% {
-  width: 60%;
-}
+  100% {
+    width: 60%;
+  }
 }
 
 @keyframes javascript {
-100% {
-  width: 65%;
-}
+  100% {
+    width: 65%;
+  }
 }
 
 @keyframes python {
-100% {
-  width: 75%;
-}
+  100% {
+    width: 75%;
+  }
 }
 
 @keyframes java {
-100% {
-  width: 45%;
-}
+  100% {
+    width: 45%;
+  }
 }
 
 @keyframes c {
-100% {
-  width: 40%;
-}
+  100% {
+    width: 40%;
+  }
 }
 
 @keyframes docker {
-100% {
-  width: 20%;
-}
+  100% {
+    width: 20%;
+  }
 }
 
 @keyframes git {
-100% {
-  width: 50%;
+  100% {
+    width: 50%;
+  }
 }
-}
-
 
 .skill-bar {
-width: 120px;
-height: 120px;
-border-radius: 50%;
-background-color: var(--second);
-margin: 10px; /* Add margin between each skill bar */
-position: relative;
-overflow: hidden;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--second);
+  margin: 10px; /* Add margin between each skill bar */
+  position: relative;
+  overflow: hidden;
+  display: flex; /* To center the text vertically and horizontally */
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-bar__overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-bar__text {
-font-size: 14px;
-color: var(--first);
-text-align: center;
+  font-size: 14px;
+  color: var(--first);
+  text-align: center;
 }
+
 
 /* Contact Section */
 .contact-content {
@@ -404,6 +403,7 @@ text-align: center;
 .contact-details a {
   color: var(--third);
   text-decoration: none;
+  border-bottom: none !important;
   border-bottom: 1px solid var(--third);
   padding-bottom: 2px;
 }
@@ -429,6 +429,7 @@ text-align: center;
 }
  
 footer{
+  margin-top: 30px;
   text-align: center;
 }
 

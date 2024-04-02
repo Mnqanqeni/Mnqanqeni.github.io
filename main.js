@@ -49,3 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+function sendEmail() {
+  window.location.href = "mailto:ndiyakholwa.mnqanqeni@umuzi.org";
+}
