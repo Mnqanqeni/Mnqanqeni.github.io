@@ -43,9 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var angle = (360 * percent) / 100;
 
     if (angle <= 180) {
-      overlay.style.backgroundImage = 'linear-gradient(' + (90 + angle) + 'deg, transparent 50%, white 50%),linear-gradient(90deg, white 50%, transparent 50%)';
+      overlay.style.backgroundImage = 'linear-gradient(' + (90 + angle) + 'deg, transparent 50%, Beige 50%),linear-gradient(90deg, Biege 50%, transparent 50%)';
     } else {
-      overlay.style.backgroundImage = 'linear-gradient(' + (angle - 90) + 'deg, transparent 50%, rgb(218, 40, 40) 50%),linear-gradient(90deg, white 50%, transparent 50%)';
+      overlay.style.backgroundImage = 'linear-gradient(' + (angle - 90) + 'deg, transparent 50%, rgb(218, 40, 40) 50%),linear-gradient(90deg, Beige 50%, transparent 50%)';
     }
   });
 });
@@ -53,3 +53,51 @@ document.addEventListener("DOMContentLoaded", function() {
 function sendEmail() {
   window.location.href = "mailto:ndiyakholwa.mnqanqeni@umuzi.org";
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var skillBars = document.querySelectorAll('.skill-bar');
+
+  skillBars.forEach(function(skillBar) {
+    var percent = skillBar.getAttribute('data-percent');
+    var overlay = skillBar.querySelector('.skill-bar__overlay');
+    var angle = (360 * percent) / 100;
+
+    if (angle <= 180) {
+      overlay.style.backgroundImage = 'linear-gradient(' + (90 + angle) + 'deg, transparent 50%, Beige 50%),linear-gradient(90deg, Beige 50%, transparent 50%)';
+    } else {
+      overlay.style.backgroundImage = 'linear-gradient(' + (angle - 90) + 'deg, transparent 50%, rgb(218, 40, 40) 50%),linear-gradient(90deg, Beige 50%, transparent 50%)';
+    }
+  });
+
+  // Function to clear form fields
+  function clearFormFields() {
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+  }
+
+
+  document.querySelector('.contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    const formData = new FormData(event.target);
+
+    fetch(event.target.action, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        clearFormFields();
+        alert('Form submitted successfully!');
+      } else {
+        throw new Error('Form submission failed.');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Form submission failed. Please try again later.');
+    });
+  });
+});

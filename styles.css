@@ -3,7 +3,7 @@
 :root {
   --first: black;
   --second: rgb(218, 40, 40);
-  --third: white;
+  --third: Beige;
   --fourth: red;
   --size: 2em;
 }
@@ -85,7 +85,7 @@ ul li a {
   font-size: 20px;
   position: relative;
   font-weight: 700;
-  color: var(--fourth);
+  color: var(--third);
 }
 
 .hero-text span {
@@ -95,7 +95,6 @@ ul li a {
 
 .text-loop {
   background-color: var(--first);
-  color: var(--third);
 }
 
 /* About Me Section */
@@ -322,12 +321,13 @@ ul li a {
   height: 120px;
   border-radius: 50%;
   background-color: var(--second);
-  margin: 10px; /* Add margin between each skill bar */
+  margin: 10px; 
   position: relative;
   overflow: hidden;
-  display: flex; /* To center the text vertically and horizontally */
+  display: flex; 
   justify-content: center;
   align-items: center;
+  font-weight: 400;
 }
 
 .skill-bar__overlay {
@@ -345,6 +345,7 @@ ul li a {
   font-size: 14px;
   color: var(--first);
   text-align: center;
+  font-weight: 500;
 }
 
 
@@ -456,7 +457,6 @@ footer{
   .hero-text {
     padding-top: 40%;
     font-size: 24px;
-    color: var(--third);
   }
 
   .text-loop {
@@ -585,7 +585,6 @@ footer{
 
 .skill-bar__text {
   font-size: 14px;
-  color: var(--first);
   text-align: center;
 }
 
