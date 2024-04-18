@@ -71,7 +71,7 @@ ul li a {
 /* Section Home */
 #home {
   margin-top: 47px;
-  height: 87vh;
+  height: 60vh;
   background-image: url(images/num5-removebg-preview.png);
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -80,12 +80,12 @@ ul li a {
 }
 
 .hero-text {
-  padding-top: 45%;
+  padding-top: 60%;
   padding-left: 10%;
   font-size: 20px;
   position: relative;
   font-weight: 700;
-  color: var(--third);
+  color: red;
 }
 
 .hero-text span {
@@ -93,9 +93,6 @@ ul li a {
   font-weight: 700;
 }
 
-.text-loop {
-  background-color: var(--first);
-}
 
 /* About Me Section */
 #about {
@@ -451,7 +448,7 @@ footer{
   #home {
     margin-top: 50px;
   
-    height: 87vh;
+    height: 66vh;
   }
 
   .hero-text {
@@ -738,7 +735,7 @@ footer{
     
     margin-top: 50px;
     
-    height: 87vh;
+    height: 47vh;
   }
 
   .hero-text {
@@ -1039,7 +1036,7 @@ footer{
   /* Section Home */
   #home {
     margin-top: 63px;
-    height: 87vh;
+    height: 47vh;
   }
 
   .hero-text {

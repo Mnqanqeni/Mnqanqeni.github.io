@@ -100,4 +100,9 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('Form submission failed. Please try again later.');
     });
   });
+
+  document.getElementById("github-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    window.open("https://github.com/Mnqanqeni", "_blank");
+  });
 });
