@@ -607,10 +607,16 @@ footer{
  }
 
  .skill-bar__text {
-   font-size: 14px;
-   color: var(--first);
-   text-align: center;
- }
+  font-size: 14px;
+  color: var(--first);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-bar__text:hover {
+  transform: scale(1);
+  font-weight: 800;
+}
 
  .contact-content {
    max-width: 800px;
