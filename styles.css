@@ -1,9 +1,8 @@
 /* Variables*/
 :root {
-  --primary: #00A8CD;
-  --black: #1E1E1E;
+  --primary: #141819;
   --secondary: #00A8CD;
-  --fourth: red;
+  --fourth:#ffffff;
   --size: 2em;
 }
 
@@ -22,9 +21,10 @@ body {
   font-family: "poppins", sans-serif;
   background-color: var(--black);
   color: var(--third);
+  border: solid red;
 }
 
 /* Navigation Styles */
-nav {
- 
+.navbar {
+ border: solid red;
 }
