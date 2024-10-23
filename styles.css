@@ -16,9 +16,9 @@
 }
 
 
-body {
+/* body {
   border: solid red;
-}
+} */
 
 li, a, button{
   font-family: sans-serif;
@@ -28,21 +28,24 @@ li, a, button{
   text-decoration: none;
 }
 
-.navdiv{
+.nav-div{
   display: flex;
+  width: 100%;
   /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
-  /* padding: 30px 10px; */
-  border:solid green;
+  /* border:solid green; */
+}
+.nav-bar{
+  box-shadow:0 4px 4px 0 var(--secondary);
 }
 img{
-  border: solid blue;
-  height: 90px;
+  /* border: solid blue; */
+  height: 40px;
 }
-ul{
+/* ul{
   border: solid yellow;
-}
+} */
 
 .logo{
   cursor: pointer;
@@ -57,11 +60,12 @@ ul{
   padding:0px 20px;
 }
 
-/* .nav-links li a{
+/*
+.nav-links li a{
   transition: all 0.3s ease 0s;
-}  
-
+}
 */
+
 
 .nav-links li :hover{
   color: var(--fourth);
