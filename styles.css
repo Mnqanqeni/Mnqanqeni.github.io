@@ -83,3 +83,60 @@ img{
 
 
 /* landing page*/
+.column{
+  border: solid rebeccapurple;
+  /* padding-top: 3.38rem;
+  padding-bottom: 3.38rem; */
+  /* gap:38rem; */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.column-1{
+  border: solid red;
+  align-items: stretch;
+  background-color: rgba(255, 253, 253, 0.1); 
+}
+
+.profile{
+  border: 2px solid green;
+  display:flex;
+  height:auto; /*check check check*/
+  /* overflow: hidden; */
+}
+
+.profile-image-stack{
+
+    border: 2px solid yellow;
+    height: auto;
+    /* overflow: hidden; */
+}
+.flex-even{
+  flex:1;
+}
+.column__homepage-image{
+  border: solid white;
+  height: 5.78rem;
+  position: relative;
+}
+
+.column__row{
+  border: solid rgb(21, 99, 99);
+}
+
+.column__view{
+  border: solid goldenrod;
+  height: 22.13rem;
+  transform: rotate(22deg);
+  background:linear-gradient(225deg,#d9d9d942,#d9d9d900);
+  width: 22.13rem;
+  /* position: absolute; */
+  /* bottom: 0rem;
+  right: 0rem; */
+  margin: auto;
+  border-radius: 176px;
+
+}
