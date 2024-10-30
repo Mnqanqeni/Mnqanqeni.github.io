@@ -555,5 +555,19 @@ button {
   /* margin-left: 178px;
   margin-right: 178px; */
   /* line-height: 25px; */
-  font-size:25px
+  font-size:25px;
+}
+
+
+/*certificates*/
+.certificate{
+  padding-left: 56px;
+  padding-right: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificate-column{
+
 }
