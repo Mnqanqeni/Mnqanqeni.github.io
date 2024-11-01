@@ -1,0 +1,27 @@
+{
+  "name": "mnqanqeni.github.io",
+  "version": "1.0.0",
+  "description": "Porfolio website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mnqanqeni/Mnqanqeni.github.io.git"
+  },
+  "author": "Ndiyakholwa Mnqanqeni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mnqanqeni/Mnqanqeni.github.io/issues"
+  },
+  "homepage": "https://github.com/Mnqanqeni/Mnqanqeni.github.io#readme",
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.96.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "keywords": []
+}

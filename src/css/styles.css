@@ -1,4 +1,4 @@
-`:root {
+ :root {
   --primary: #141819;
   --secondary: #00a8cd;
   --fourth: #ffffff;
@@ -608,4 +608,115 @@ button {
 
 .certificate-column__button:hover {
   background-color: #008aa8;
+}
+.test{
+  width:760px;
+}
+.project{
+  /* border: solid red; */
+  /* gap: 50px; */
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  /* max-width: 1142px; */
+  width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+
+}
+
+.project__column{
+  border: solid green;
+  width: 100%;
+}
+
+.project__column__content{
+  /* border:solid yellow; */
+  /* gap: 10px; */
+  display: flex;
+  /* width: 32%; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__column__content__title-row{
+  /* border: solid orange; */
+  display: flex;
+  gap:15px;
+  padding: 30px;
+  /* flex:wrap; */
+}
+
+.project__column__content__title-row h1{
+  border: solid ;
+
+}
+
+.project__column__content__title-row h2{
+  border: solid ;
+  align-self: end;
+}
+
+.project__column p{
+  /* border: solid pink; */
+  padding: 30px;
+  font-size: 20px;
+}
+.project__list{
+  /* border: solid purple; */
+  gap:5px;
+  display: flex;
+  align-self: stretch;
+  flex-wrap: wrap;
+  
+}
+
+.project__list__profile{
+  display: flex;
+  flex-direction: column;
+  /* border: solid orange; */
+}
+
+.project__list__profile__buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10%;
+  margin: 10px;
+ 
+}
+
+.project__list__profile__buttons button{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  background-color: var(--secondary);
+  height:34px;
+  border-radius: 2px ;
+  padding: 10px;
+}
+
+.project__column__button{
+  display: flex;
+  gap:6px;
+  justify-self: center;
+  align-items: center;
+  /* border: solid blue; */
+  color: var(--fourth);
+  padding-left: 10px;
+  padding-right:10px;
+  background-color: var(--secondary);
+  height: 34px;
+  border-radius: 2px ;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrow-right{
+  height: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 20px;
+  /* align-self: end; */
 }
