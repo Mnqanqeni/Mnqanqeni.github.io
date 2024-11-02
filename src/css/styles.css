@@ -720,3 +720,5 @@ button {
   width: 20px;
   /* align-self: end; */
 }
+
+canvas { display: block; } 

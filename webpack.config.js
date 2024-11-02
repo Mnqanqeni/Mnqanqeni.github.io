@@ -1,18 +1,36 @@
 const path = require('path');
 
 module.exports = {
-  entry: './js/app.js', // Entry file for your app
+  entry: './src/js/index.js',  
   output: {
-    filename: 'bundle.js', // Output file name
-    path: path.resolve(__dirname, 'dist'), // Output folder
+    filename: 'main.js',       
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'], // Loaders for CSS
+        test: /\.js$/,         
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: /\.css$/,       
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,  
+        type: 'asset/resource',
       },
     ],
   },
-  mode: 'development', // Set to 'production' for minified output
+  devtool: 'source-map',        
+  devServer: {
+    static: './dist',
+    port: 3000,                 
+    open: true,                   
+    hot: true,                    
+},
+  mode: 'development',           
 };
