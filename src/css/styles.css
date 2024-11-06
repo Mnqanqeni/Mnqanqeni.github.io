@@ -8,7 +8,6 @@
  * {
    margin: 0;
    padding: 0;
-   font-family: "poppins", sans-serif;
    box-sizing: border-box;
    text-decoration: none;
    list-style: none;
@@ -16,12 +15,50 @@
  }
 
  body {
-   /* border: solid red; */
    background-color: var(--primary);
    height: 100vh;
+   font-family: 'Roboto', sans-serif;
+}
 
- }
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
 
+/* Body Text */
+body, p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px; /* adjust as needed */
+  line-height: 1.6;
+}
+
+/* Buttons */
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; /* optional, makes the button text stand out */
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 48px;
+  padding: 0 20px; 
+  border-radius: 6px; /* rounds the corners for a modern look */
+  border: none; /* removes default border */
+  cursor: pointer;
+  background-color: #007BFF; /* button background color */
+  color: #FFFFFF; /* text color */
+  transition: background-color 0.3s ease; /* smooth hover effect */
+}
+
+/* Hover Effect */
+button:hover {
+  background-color: #0056b3;
+}
  .nav-bar {
    box-shadow: 0 10px 10px 0 var(--secondary);
    padding: 0.3rem;
@@ -44,9 +81,7 @@
  }
 
  li,
- a,
- button {
-   font-family: sans-serif;
+ a{
    font-weight: 500;
    font-size: 16px;
    color: var(--fourth);
@@ -120,19 +155,16 @@
    /* border: solid blue; */
    width: 100%;
    padding: 10px;
-   font-family: "Poppins";
  }
 
  .landing-column-1__text__name h2 {
    padding: 10px;
-   font-family: "Poppins";
    color: #00a8cd;
  }
 
  .landing-column-1__hero-text {
    /* border: solid palevioletred; */
    width: 100%;
-   font-family: "Poppins";
    line-height: auto;
    padding-left: 10px;
    padding-top: 20px;
@@ -228,10 +260,10 @@
        #00a8cdff 0%,
        rgba(0, 0, 0, 0.3),
        #84848400 80%);
-   box-shadow: 0 4px 4px 0 #00a8cd;
+   box-shadow: 2px 2px 0px 1px #00a8cd;
    /*not showing*/
    height: 400px;
-   width: 291px;
+   width: 310px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -245,7 +277,8 @@
 
  .landing-column-2__gallary-stack__main-image-block {
    /* border: solid green; */
-   height: 259.9px;
+   height: 450px;
+   
  }
 
  .flex-even {
@@ -394,7 +427,11 @@
    width: 100%;
  }
 
-
+.main-image{
+  /* border: 1px solid; */
+  margin-bottom: 127px;
+  margin-right: 127px;
+}
  .about-me {
    /* border: solid red; */
    width: 100%;
@@ -492,6 +529,7 @@
    left: 8%;
  }
 
+
  .stack {
    /* border: solid rgb(61, 5, 5); */
    height: 266.89px;
@@ -508,12 +546,13 @@
 
  .about-me-column__galary__stackview-three img {
    /* border: solid pink; */
-   height: 100%;
-   margin-top: 17px;
+   height: 266px;
    position: absolute;
-   width: 100%;
-   right: 50px;
-   object-fit: contain;
+   margin-left: 40px;
+  
+   /* width: 100%;
+   right: 50px; */
+   /* object-fit: contain; */
  }
 
  .about-me-column__text {
@@ -532,7 +571,6 @@
    display: flex;
    flex-wrap: wrap;
    gap: 1%;
-   /* font-family: "inter"; */
  }
 
  .about-me-column__text__row-about h1 {

@@ -1,5 +1,8 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import '../css/styles.css';
+
+
 
 import dockerLogo from '../assets/images/Docker.svg';
 import cssLogo from '../assets/images/css.svg';
@@ -13,6 +16,7 @@ import pythonLogo from '../assets/images/python.png';
 import javaLogo from '../assets/images/java.png';
 import cLogo from '../assets/images/letter-c.png';
 import gitLogo from '../assets/images/git.png';
+
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
