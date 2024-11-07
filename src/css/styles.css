@@ -30,7 +30,7 @@ h1, h2, h3 {
 body, p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px; /* adjust as needed */
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -38,7 +38,7 @@ body, p {
 button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  text-transform: uppercase; /* optional, makes the button text stand out */
+  text-transform: uppercase;
 }
 
 button {
@@ -47,15 +47,14 @@ button {
   text-transform: uppercase;
   height: 48px;
   padding: 0 20px; 
-  border-radius: 6px; /* rounds the corners for a modern look */
-  border: none; /* removes default border */
+  border-radius: 6px; 
+  border: none; 
   cursor: pointer;
-  background-color: #007BFF; /* button background color */
-  color: #FFFFFF; /* text color */
-  transition: background-color 0.3s ease; /* smooth hover effect */
+  background-color: #007BFF;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease; 
 }
 
-/* Hover Effect */
 button:hover {
   background-color: #0056b3;
 }
@@ -70,7 +69,6 @@ button:hover {
    width: 100%;
    justify-content: space-between;
    align-items: center;
-   /* border:solid green; */
  }
 
  .nav-links li {
@@ -93,7 +91,6 @@ button:hover {
  }
 
  .logo img {
-   /* border: solid blue; */
    height: 4.25rem;
    object-fit: contain;
  }
@@ -232,7 +229,7 @@ button:hover {
  }
 
  .landing-column-2 {
-   /* border: solid rebeccapurple; */
+   border: solid rebeccapurple;
    /* padding-top: 3.38rem;
   padding-bottom: 3.38rem; */
    /* gap:38rem; */
@@ -242,10 +239,11 @@ button:hover {
    align-items: center;
    justify-content: center;
    /* height: auto; */
+   position: relative;
  }
 
  .landing-column-2__gallary-stack {
-   /* border: 5px solid pink; */
+   border: 5px solid pink;
    position: relative;
    height: 574.08px;
    width: 589.63px;
@@ -319,38 +317,33 @@ button:hover {
    border-radius: 218px;
  }
 
- .image-1 {
-   /*png-two*/
-   /* height: 5.63rem;
-  width: 8%; */
-   object-fit: contain;
+ .css-image {
+  /* border: solid yellow; */
    position: absolute;
-   right: 6%;
-   bottom: 0px;
+   margin-left: 70px;
+   /* bottom: 0px;
    top: 0px;
-   margin-top: auto;
-   margin-bottom: auto;
+   margin-top: auto; */
+   /* margin-bottom: auto; */
  }
 
  /* .column__row {
   border: solid rgb(21, 99, 99);
 } */
 
- .image-2 {
-   /*node js 4*/
+ /* .image-2 {
    height: 3.88rem;
    margin-top: 1.63rem;
    width: 5.5rem;
-   /* object-fit: cover; */
- }
+   object-fit: cover;
+ } */
 
- .image-3 {
-   /*docker 3*/
+ /* .image-3 {
    height: 5.13rem;
-   /* align-self: end;
+   align-self: end;
   width: 5.53rem;
-  object-fit: cover; */
- }
+  object-fit: cover;
+ } */
 
  .column__stack--view {
    /* border: 5px solid greenyellow; */
@@ -388,10 +381,10 @@ button:hover {
    margin: auto 0.5rem;
  }
 
- .image-4 {
+ /* .image-4 {
    height: 5.63rem;
    width: 8%;
-   /* object-fit: contain; */
+   object-fit: contain;
  }
 
  .image-5 {
@@ -399,7 +392,7 @@ button:hover {
    margin-top: 0.5rem;
    margin-right: 14.88rem;
    width: 5.75rem;
-   /* object-fit: cover; */
+   object-fit: cover;
  }
 
  .image-6 {
@@ -408,7 +401,7 @@ button:hover {
    margin-right: 11.88rem;
    width: 10%;
    object-fit: contain;
- }
+ } */
 
  .column__line {
    /* border: 5px solid saddlebrown; */
