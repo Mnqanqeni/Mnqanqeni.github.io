@@ -4,13 +4,14 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    bundle:path.resolve(__dirname, "src/js/index.js"), 
+    bundle: path.resolve(__dirname, "src/js/index.js"), 
   },
   output: {
-    filename: '[bundle][contenthash].js',   
+    filename: '[name].[contenthash].js',   
     path: path.resolve(__dirname, "dist"),
+    publicPath: '/',
     clean: true,
-    assetModuleFilename:'[name][ext]'
+    assetModuleFilename: 'assets/[name][ext]'
   },
   module: {
     rules: [
@@ -19,10 +20,9 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options:{
-            presets:['@babel/preset-env'],
+          options: {
+            presets: ['@babel/preset-env'],
           }
-         
         },
       },
       {
@@ -32,23 +32,20 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: "asset/resource",
-        // generator: {
-        //   filename: 'assets/[name][hash][ext][query]',  // Specify where to save the assets
-        // },
       },
     ],
   },
   devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Porfolio',
+      title: 'Portfolio',
       template: "src/template.html",
     }),
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src/assets'),  // Path to your source assets folder
-          to: path.resolve(__dirname, 'dist/assets'),    // Destination folder in the dist folder
+          from: path.resolve(__dirname, 'src/assets'), 
+          to: path.resolve(__dirname, 'dist/assets'), 
         },
       ],
     }),
@@ -57,7 +54,7 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, "dist"),
     },
-    port: 3001,
+    port: 3003,
     open: true,
     hot: true,
     compress: true,
