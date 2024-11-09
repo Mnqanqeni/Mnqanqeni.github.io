@@ -147,9 +147,9 @@ function updateText() {
   if (screenWidth < 320) {
     textContainer.textContent =
       "Hi, I'm Bayu, a full-stack developer. Take a look at my projects!";
-  } else if (screenWidth <  1131) {
+  } else if (screenWidth <  1284) {
     textContainer.textContent =
-      "I'm Ndiyakholwa, a full-stack developer with skills in HTML, CSS, JavaScript, and more. Check out my projects!";
+    "A lifelong learner and problem-solver who thrives on tackling challenges and pushing boundaries. I believe in the power of teamwork to enhance learning and address complex problems. Check out my projects below!";
   } else {
     textContainer.textContent =
       "Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.";
