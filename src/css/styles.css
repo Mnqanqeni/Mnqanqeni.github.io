@@ -16,8 +16,11 @@
  }
 
  body {
-  /* border: solid red; */
+  border: solid red;
    background-color: var(--primary);
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
    /* height: 100vh; */
 }
 
@@ -59,9 +62,11 @@ button:hover {
   .nav-bar {
     border: solid yellow;
    box-shadow: 0 10px 10px 0 var(--secondary);
-   /* padding: 0.3rem; */
-   /* margin-bottom: 3rem; */
    width: 100%;
+   position: fixed;
+   opacity: 1;
+   z-index: 3;
+   background-color: var(--primary);
  }
 
  .nav-div {
@@ -118,11 +123,13 @@ button:hover {
 
  /* landing page*/
  .profile {
-   padding: 1rem;
-   margin-top: 3rem;
+   padding: 16px;
+   padding-top: 48px;
+   margin-top: 48px;
    border: 2px solid green;
    display: flex;
    /* height: auto; */
+   width: 100%;
    height: 100vh;
    /*check check check*/
    /* overflow: hidden; */
@@ -184,11 +191,11 @@ button:hover {
 
  .landing-column-1__contact__button {
    color: var(--fourth);
-   padding-left: 1.25rem;
+   padding-left: 10px;
    padding-right: 1.25rem;
    font-size: 0.938rem;
    background-color: var(--secondary);
-   height: 2.625rem;
+   height: 50px;
    /* min-width: 128px; */
    border-radius: 0.313rem;
    /* border: solid yellow; */
@@ -222,6 +229,7 @@ button:hover {
    display: flex;
    align-items: center;
    padding-top: 25px;
+   padding-left: 10px;
    /* border: solid; */
  }
 
@@ -782,107 +790,7 @@ button:hover {
    position: relative;
  }
 
-/* Contact Section */
-#contact{
-  /* border: 1px solid yellow; */
-  margin-top:  100vh;
-  position: absolute;
-  width: 100%;
-  
-}
-.contact-content {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  /* border: solid orange; */
-  text-align: center;
-}
 
-.contact-content h2 {
-  /* border: solid ; */
-  font-size: 38px;
-  color: var(--fourth);
-  /* margin-bottom: 20px; */
-
-}
-.contact-content h2 span{
-  color: var(--secondary);
-}
-
-.contact-content p {
-  font-size: 1.2rem;
-  line-height: 2.6;
-}
-
-.contact-form{
-  /* border: solid green; */
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  flex-direction: column;
-  width: 60%;
-}
-
-.form-group{
-  /* border: solid grey; */
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-}
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  margin-bottom: 15px;
-  /* border: 2px solid var(--secondary); */
-  border-radius: 5px;
-  background-color: var(--fourth);
-  color: var(--primary);
-
-}
-
-.contact-form textarea {
-  height: 150px;
-}
-.contact-form button {
-  background-color:var(--secondary);
-  color:var(--fourth);
-  border: none;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
-
-.contact-form button:hover {
-  background-color: #00cbf8;
-}
-
-
-.contact-details a:hover {
-  color: var(--secondary);
-}
-
-.download-button {
-  border: none;
-  /* border: solid yellow; */
-  background-color: var(--secondary);
-  color: var(--fourth);
-
-  padding: 10px 10px;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-
-.download-button:hover {
-  background-color: #00cbf8;
-} 
 
                       
 /* footer{
@@ -898,15 +806,12 @@ button:hover {
 @media screen and (max-width:1282px) {
 
   .profile {
-    padding: 1rem;
-    margin-top: 3rem;
-    border: 2px solid green;
-    display: flex;
-    /* height: auto; */
-    height: 100vh;
+   border:6px solid;
     /*check check check*/
     /* overflow: hidden; */
-    min-height: 825px;
+    max-height: 800px;
+    /* padding-bottom: 30px; */
+    left: 900px;
  
   }
  
@@ -914,29 +819,32 @@ button:hover {
     border: 2px solid ;
     flex-direction: column;
     display: flex;
+    position: relative;
+    gap:270px;
   }
  
   .landing-column-1__text {
     border: 2px solid rgb(0, 255, 157);
-    /* gap: 20px; */
+
     display: flex;
     flex-direction: column;
-   
-    /* left: 50px; */
+    position: relative;
   }
  
   .landing-column-1__text__name {
-    /* border: solid gold; */
+    border: solid gold;
     display: flex;
     flex-direction: column;
     align-items: start;
+   
   }
  
   .landing-column-1__text__name h1 {
-    /* border: solid blue; */
+    border: solid blue;
     width: 100%;
     padding: 0.625rem;
     min-width: 539.367px;
+    
   }
  
   .landing-column-1__text__name h2 {
@@ -950,7 +858,7 @@ button:hover {
     line-height: auto;
     padding-left: 0.625rem;
     padding-top: 1.25rem;
-    font-size: 1.875rem;
+    font-size: 1.675rem;
  
   }
  
@@ -1027,18 +935,20 @@ button:hover {
     justify-content: center;
     /* height: auto; */
     position: relative;
-    left: 26px;
+    /* left: 60px; */
+   
  }
  
   .landing-column-2__gallary-stack {
     border: 5px solid pink;
     position: relative;
-    height: 50.88rem;
-    width: 45.852rem;
+    height: 45.88rem;
+    width: 27.852rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 26px;
+   
+    
     /* @media screen and (max-width:1052) {
      height: 30.88rem;
     width: 31.852rem;
@@ -1052,8 +962,8 @@ button:hover {
         rgba(0, 0, 0, 0.3),
         #84848400 80%);
     box-shadow: 2px 2px 0px 1px #00a8cd;
-    height: 25rem;
-    width: 19.375rem;
+    height: 23rem !important;
+    width: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1078,23 +988,23 @@ button:hover {
   .small-circle {
     bottom: 0px;
     margin: auto;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     transform: rotate(100deg);
     background: linear-gradient(225deg,
         #00a8cda6 0%,
         rgba(0, 0, 0, 0.3),
         #d9d9d900 99%);
     position: absolute;
-    left: 18.5rem;
-    top: 18.75rem;
+    left: 10.5rem;
+    top: 20.75rem;
     border-radius: 13.625rem;
   }
  
   .big-cirlce {
     /* border: solid palevioletred; */
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     transform: rotate(-71deg);
     background: linear-gradient(225deg,
         #00a8cda6 0%,
@@ -1102,8 +1012,8 @@ button:hover {
         #d9d9d900 99%);
  
     position: absolute;
-    right: 20.5rem;
-    top: 0px;
+    right: 10.5rem;
+    top: 50px;
     /* top: 0px;
    margin: auto; */
     border-radius: 13.625rem;
@@ -1113,7 +1023,7 @@ button:hover {
   .css-image {
    /* border: solid yellow; */
     position: absolute;
-    margin-left: 18.063rem;
+    margin-left: 15.063rem;
     z-index: -1;
     /* bottom: 0px;
     top: 0px;
@@ -1122,25 +1032,26 @@ button:hover {
   }
  .node-js-image{
    position: absolute;
-   margin-bottom: 420px;
+   margin-bottom: 370px;
    z-index: -1;
  }
  
  .figma-image{
    position: absolute;
-   margin-bottom: 320px;
-   margin-right: 300px;
+   margin-bottom: 350px;
+   margin-right: 240px;
    z-index: -1;
  }
  
  .js-image{
    position: absolute;
-   margin-bottom: 440px;
-   margin-left: 220px;
+   margin-bottom: 390px;
+   margin-left: 190px;
+   width: 75px;
  }
  .html-image{
    position: absolute;
-   margin-right: 360px;
+   margin-right: 300px;
    margin-top: 150px;
    
  }
@@ -1149,15 +1060,15 @@ button:hover {
    position: absolute;
    height: 100px;
    margin-bottom: 220px;
-   margin-left: 430px; /* not sure*/
+   margin-left: 380px; /* not sure*/
  }
  
  .python-image{
    position: absolute;
    height: 100px;
    opacity: 0.7; /* not sure*/ 
-   margin-top: 500px;
-   margin-left: 400px;
+   margin-top: 400px;
+   margin-left: 300px;
  }
  
   .column__logo {
@@ -1194,8 +1105,38 @@ button:hover {
  
  .main-image{
    /* border: 1px solid; */
-   margin-bottom: 7.938rem;
-   margin-right: 7.938rem;
+   margin-bottom: 3.938rem;
+   margin-right: 5.938rem;
+  width: 20rem;
  }
 }
 
+@media screen and (max-width:851px) {
+  .landing-column-1__text {
+    border: 2px solid rgb(0, 255, 157);
+    min-width: 399px;
+  }
+
+  .landing-column-1__hero-text{
+    font-size: 1.5rem;
+  }
+
+  .figma-image{
+    margin-bottom: 360px;
+    margin-right: 190px;
+    z-index: -1;
+  }
+
+  .html-image{
+    margin-right: 300px;
+    margin-top: 250px;
+    
+  }
+}
+
+@media screen and (max-width:753px) {
+  .landing-column-1__hero-text{
+    font-size: 1.5rem;
+    z-index: 3;
+  }
+}
