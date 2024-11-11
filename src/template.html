@@ -14,7 +14,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400&family=Montserrat:wght@700&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body>
@@ -23,13 +22,15 @@
       <div class="logo">
         <img src="assets/images/file.png" alt="logo" class="logo" />
       </div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="sidemenu">
         <li><a href="#">About me</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">My skill</a></li>
         <li><a href="#">Contact</a></li>
+        <img src="assets/icons/x-solid.svg" onclick="(function() { document.getElementById('sidemenu').style.display='none';  document.querySelector('.bar-icon').style.display='block';})()" class="nav-bar-icons x-icon">
+
       </ul>
-    </div>
+    <img src="assets/icons/bars-solid.svg"  onclick="(function() { document.getElementById('sidemenu').style.display='block'; document.querySelector('.bar-icon').style.display='none';})()"  class="nav-bar-icons bar-icon">
   </nav>
   <div class="landing-page">
     <div class="profile">
@@ -39,7 +40,6 @@
             <h1>HI I'm Ndiyakholwa Mnqanqeni</h1>
             <h2>Full-Stack Developer</h2>
           </div>
-          <!-- As an intermediate full-stack web developer, I create dynamic, user-friendly applications with scalable backends and responsive frontends. -->
           <p class="landing-column-1__hero-text">
           </p>
           <div class="landing-column-1__contact">
@@ -52,7 +52,7 @@
               <img src="assets/images/twitter-brands-solid.svg" alt="Twitter Image"
                 class="landing-column-1__contact__socials__twitter" />
             </div>
-          </div>
+          </div> 
           <div class="landing-column-1__CV-download">
             <img src="assets/images/download-solid.svg" alt="download Image"
               class="landing-column-1__CV-download__image" />
@@ -119,7 +119,7 @@
     <div class="frame-six__line"></div>
   </div>
 
-  <!-- <div class="certificate">
+  <div class="certificate">
     <div class="certificate-column">
       <div class="certificate-column__list">
         <div class="certificate-download">
@@ -134,7 +134,7 @@
       <button class="certificate-column__button">Show All</button>
     </div>
     <div class="frame-six__line"></div>
-  </div> -->
+  </div>
 
   <div class="project">
     <div class="project__column">

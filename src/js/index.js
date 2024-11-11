@@ -15,6 +15,8 @@ import javaLogo from "../assets/images/java.png";
 import cLogo from "../assets/images/letter-c.png";
 import gitLogo from "../assets/images/git.png";
 
+
+
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
   75,
@@ -25,8 +27,9 @@ const camera = new THREE.PerspectiveCamera(
 const renderer = new THREE.WebGLRenderer({
   canvas: document.getElementById("canvas"),
 });
+document.getElementById("canvas").style.height=window.innerHeight/2;
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableZoom = true;
+controls.enableZoom = false;
 controls.enablePan = true;
 controls.minDistance = 5;
 controls.maxDistance = 10;
@@ -139,22 +142,22 @@ document
     window.open("https://github.com/Mnqanqeni", "_blank");
   });
 
-const textContainer = document.querySelector(".landing-column-1__hero-text");
-console.log(textContainer);
-function updateText() {
-  const screenWidth = window.innerWidth;
-
-  if (screenWidth < 320) {
-    textContainer.textContent =
-      "Hi, I'm Bayu, a full-stack developer. Take a look at my projects!";
-  } else if (screenWidth <  1284) {
-    textContainer.textContent =
-    "A lifelong learner and problem-solver who thrives on tackling challenges and pushing boundaries. I believe in the power of teamwork to enhance learning and address complex problems. Check out my projects below!";
-  } else {
-    textContainer.textContent =
-      "Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.";
+  const textContainer = document.querySelector(".landing-column-1__hero-text");
+  console.log(textContainer);
+  function updateText() {
+    const screenWidth = window.innerWidth;
+  
+    if (screenWidth < 769) {
+      textContainer.textContent =
+        "A lifelong learner and problem-solver";
+    } else if (screenWidth < 1284) {
+      textContainer.textContent =
+        "A lifelong learner and problem-solver who thrives on tackling challenges and pushing boundaries. I believe in the power of teamwork to enhance learning and address complex problems. Check out my projects below!";
+    } else {
+      textContainer.textContent =
+        "Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.";
+    }
   }
-}
-
-window.addEventListener("load", updateText);
-window.addEventListener("resize", updateText);
+  
+  window.addEventListener("load", updateText);
+  window.addEventListener("resize", updateText);
