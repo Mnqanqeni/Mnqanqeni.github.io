@@ -7,7 +7,6 @@
   <title>
     <%= htmlWebpackPlugin.options.title%>
   </title>
-  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
@@ -20,15 +19,15 @@
   <nav class="nav-bar">
     <div class="nav-div">
       <div class="logo">
-        <img src="assets/images/file.png" alt="logo" class="logo" />
+        <img src="assets/images/file.png" alt="logo"   class="logo" />
       </div>
       <ul class="nav-links" id="sidemenu">
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">My skill</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#skills">My skill</a></li>
+        <li><a href="#contact">Contact</a></li>
         <img src="assets/icons/x-solid.svg" onclick="(function() { document.getElementById('sidemenu').style.display='none';  document.querySelector('.bar-icon').style.display='block';})()" class="nav-bar-icons x-icon">
-
       </ul>
     <img src="assets/icons/bars-solid.svg"  onclick="(function() { document.getElementById('sidemenu').style.display='block'; document.querySelector('.bar-icon').style.display='none';})()"  class="nav-bar-icons bar-icon">
   </nav>
@@ -43,7 +42,7 @@
           <p class="landing-column-1__hero-text">
           </p>
           <div class="landing-column-1__contact">
-            <button class="landing-column-1__contact__button">
+            <button class="landing-column-1__contact__button" onclick="location.href='#contact'">
               Contact <span>Me</span>
             </button>
             <div class="landing-column-1__contact__socials">
@@ -55,12 +54,10 @@
           </div> 
           <div class="landing-column-1__CV-download">
             <img src="assets/images/download-solid.svg" alt="download Image"
-              class="landing-column-1__CV-download__image" />
+              class="landing-column-1__CV-download__image" onclick="window.location.href='assets/docs/Ndiyakholwa_Mnqanqeni_Resume.pdf'" />
             <p class="landing-column-1__CV-download__text">Download CV</p>
           </div>
-        </div>
-
-      
+        </div>      
       </div>
       <div class="landing-column-2 flex-even">
         <div class="landing-column-2__gallary-stack">
@@ -82,7 +79,7 @@
     <div class="frame-six__line"></div>
   </div>
 
-  <div class="about-me">
+  <div class="about-me" id="about">
     <div class="about-me-column">
       <div class="about-me-column__galary">
         <div class="about-me-column__galary_box">
@@ -119,7 +116,7 @@
     <div class="frame-six__line"></div>
   </div>
 
-  <div class="certificate">
+  <div class="certificate" >
     <div class="certificate-column">
       <div class="certificate-column__list">
         <div class="certificate-download">
@@ -136,7 +133,7 @@
     <div class="frame-six__line"></div>
   </div>
 
-  <div class="project">
+  <div class="project" id="project">
     <div class="project__column">
       <div class="project__column__content">
         <div class="project__column__content__title-row">
@@ -203,7 +200,7 @@
     <div class="frame-six__line"></div>
   </div>
 
-  <div class="skills">
+  <div class="skills" id="skills">
     <h1>My <span>skills</span></h1>
     <p>
       As a Full-Stack Web Developer, here are the skills and tools I have
