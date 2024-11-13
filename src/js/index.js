@@ -3,18 +3,18 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import "../css/styles.css";
 import Typed from "typed.js";
 
-import dockerLogo from "../assets/images/Docker.svg";
-import cssLogo from "../assets/images/css.svg";
-import htmlLogo from "../assets/images/html.svg";
-import jsLogo from "../assets/images/js.png";
-import figmaLogo from "../assets/images/figma.svg";
-import expressLogo from "../assets/images/expressLogo.png";
-import nodesjLogo from "../assets/images/nodejs.svg";
-import postgressLogo from "../assets/images/PostgresSQL.svg";
-import pythonLogo from "../assets/images/python.png";
-import javaLogo from "../assets/images/java.png";
-import cLogo from "../assets/images/letter-c.png";
-import gitLogo from "../assets/images/git.png";
+import dockerLogo from "../assets/images/general/docker.svg";
+import cssLogo from "../assets/images/general/css.svg";
+import htmlLogo from "../assets/images/general/html.svg";
+import jsLogo from "../assets/images/general/js.png";
+import figmaLogo from "../assets/images/general/figma.svg";
+import expressLogo from "../assets/images/general/expressLogo.png"; 
+import nodesjLogo from "../assets/images/general/nodejs.svg";
+import postgressLogo from "../assets/images/general/PostgresSQL.svg";
+import pythonLogo from "../assets/images/general/python.png";
+import javaLogo from "../assets/images/general/java.png";
+import cLogo from "../assets/images/general/letter-c.png";
+import gitLogo from "../assets/images/general/git.png";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -134,12 +134,7 @@ document
       });
   });
 
-document
-  .getElementById("github-link")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    window.open("https://github.com/Mnqanqeni", "_blank");
-  });
+
 
 const textContainer = document.querySelector(".landing-column-1__hero-text");
 console.log(textContainer);
