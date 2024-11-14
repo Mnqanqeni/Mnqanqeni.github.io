@@ -583,50 +583,67 @@ button:hover {
    align-items: center;
  }
 
- .certificate-column {
-   /* border: solid red; */
-   gap: 28px;
-   display: flex;
-   align-self: stretch;
-   flex-direction: column;
-   /* align-items: center; */
-   /* max-width: 1142px; */
-   /* width: 100px; */
-   /* margin-left: auto;
-  margin-right: auto; */
- }
+ 
+ .certificate {
+  border: solid yellow;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
- .certificate-column__list {
-   gap: 24px;
-   display: flex;
-   align-self: stretch;
- }
+.certificate-column {
+  gap: 28px;
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+}
 
- .certificate-column__list img {
-   /* border: 3px solid green; */
-   width: 100%;
- }
+.certificate-column__list {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
- .certificate-column__button {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 34px;
-   color: var(--fourth);
-   padding-left: 10px;
-   padding-right: 10px;
-   background-color: var(--secondary);
-   margin: 0 auto 30px auto;
-   padding: 20px;
-   border-radius: 5px;
-   cursor: pointer;
-   transition: background-color 0.3s ease;
-   box-shadow: 1px 1px 5px 0px rgba(0, 168, 205, 0.5);
- }
+.certificate-column__list img {
+  border: 3px solid green;
+  width: 44.5rem;
+  @media screen and (max-width:1200px) { /*dooble check*/
+   width: 30.5rem;
+  }
+}
 
- .certificate-column__button:hover {
-   background-color: #008aa8;
- }
+.certificate-column__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  color: var(--fourth);
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--secondary);
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 1px 1px 5px 0px rgba(0, 168, 205, 0.5);
+}
+
+.certificate-column__button:hover {
+  background-color: #008aa8;
+}
+
+.show-all{
+ display:none;
+}
+
 
  .test {
    width: 760px;

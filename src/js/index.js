@@ -166,5 +166,26 @@ const typed = new Typed("#career", {
   loop: true,
 });
 
+const certificateShowAllButton=document.querySelector(".certificate-column__button");
+const certificateList = Array.from(document.querySelectorAll(".certificate-download")).slice(2);
+const isShowAll = certificateList[0].classList.contains("show-all");
+certificateShowAllButton.addEventListener("click",function(){
+  const currentScrollY = window.scrollY;
+  console.log(currentScrollY)
+  certificateList.forEach((cardCertificate)=>{
+    if(isShowAll){
+      cardCertificate.classList.remove("show-all");
+    }else{
+      cardCertificate.classList.add("show-all");
+    }
+  })
+  certificateShowAllButton.textContent = certificateList[0].classList.contains("show-all") ? "SHOW ALL" : "SHOW LESS";
+  if(certificateList[0].classList.contains("show-all") ){
+    console.log(currentScrollY)
+    window.scrollTo(0, currentScrollY);
+  }
+
+})
+
 window.addEventListener("load", updateText);
 window.addEventListener("resize", updateText);
