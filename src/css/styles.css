@@ -636,7 +636,6 @@ button:hover {
 
 .certificate-download p {
   display: flex;
-  /* border: solid ; */
   align-items: center;
   justify-self:center;
   gap:10px;
@@ -644,12 +643,10 @@ button:hover {
 }
 
 .certificate-download p span{
-  /* border: solid red; */
   align-self: end;
  
 }
 .certificate-download p img{
-  /* border: solid; */
   height: 20px;
   width: 20px;
   margin-bottom: 5px
@@ -657,64 +654,62 @@ button:hover {
 
  .test {
    width: 760px;
+
+   @media screen and (max-width:1569px) {
+    width: 600px;
+   }
+   @media screen and (max-width:1237px) {
+    width: 500px;
+   }
  }
 
  .project {
-   /* border: solid red; */
-   /* gap: 50px; */
    display: flex;
    align-self: stretch;
    flex-direction: column;
    align-items: center;
-   /* max-width: 1142px; */
    width: 100%;
-   /* margin-left: auto;
-  margin-right: auto; */
-
  }
 
  .project__column {
-   /* border: solid green; */
    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
  }
 
  .project__column__content {
-   /* border:solid yellow; */
-   /* gap: 10px; */
    display: flex;
-   /* width: 32%; */
    flex-direction: column;
    align-items: center;
  }
 
  .project__column__content p{
   width: 100%;
+  font-size: 25px;
  }
  .project__column__content__title-row {
-   /* border: solid orange; */
    display: flex;
    gap: 15px;
    padding: 30px;
-   /* flex:wrap; */
  }
 
  .project__column__content__title-row h2 {
-   /* border: solid; */
    align-self: end;
    color: var(--secondary);
  }
 
  .project__column p {
-   /* border: solid pink; */
    padding: 30px;
    font-size: 20px;
  }
 
  .project__list {
-   /* border: solid purple; */
-   gap: 5px;
+   gap: 20px;
    display: flex;
-   align-self: stretch;
+   justify-content: center;
+   align-items: center;
    flex-wrap: wrap;
 
  }
@@ -722,7 +717,8 @@ button:hover {
  .project__list__profile {
    display: flex;
    flex-direction: column;
-   /* border: solid orange; */
+   /* display: none; */
+
  }
 
  .project__list__profile__buttons {
@@ -742,31 +738,33 @@ button:hover {
    height: 34px;
    border-radius: 2px;
    padding: 10px;
+   transition: background-color 0.3s ease;
  }
 
+ .project__list__profile__buttons button:hover{
+  background-color: #008aa8;
+ }
  .project__column__button {
-   display: flex;
-   gap: 6px;
-   justify-self: center;
-   align-items: center;
-   /* border: solid blue; */
-   color: var(--fourth);
-   padding-left: 10px;
-   padding-right: 10px;
-   background-color: var(--secondary);
-   height: 34px;
-   border-radius: 2px;
-   margin-left: auto;
-   margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  color: var(--fourth);
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--secondary);
+  margin: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 1px 1px 5px 0px rgba(0, 168, 205, 0.5);
  }
 
- .arrow-right {
-   height: 20px;
-   margin-top: 2px;
-   margin-bottom: 2px;
-   width: 20px;
-   /* align-self: end; */
- }
+ .project__column__button:hover {
+  background-color: #008aa8;
+}
+
 
  .skills{
   display: flex;
