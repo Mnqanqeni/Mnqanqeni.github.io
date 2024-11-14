@@ -168,10 +168,13 @@ const typed = new Typed("#career", {
 
 const certificateShowAllButton=document.querySelector(".certificate-column__button");
 const certificateList = Array.from(document.querySelectorAll(".certificate-download")).slice(2);
-const isShowAll = certificateList[0].classList.contains("show-all");
+
+let currentScrollY = window.scrollY;
 certificateShowAllButton.addEventListener("click",function(){
-  const currentScrollY = window.scrollY;
-  console.log(currentScrollY)
+  const isShowAll = certificateList[0].classList.contains("show-all");
+  if(certificateList[0].classList.contains("show-all") ){
+    currentScrollY = window.scrollY;
+  }
   certificateList.forEach((cardCertificate)=>{
     if(isShowAll){
       cardCertificate.classList.remove("show-all");
@@ -180,10 +183,7 @@ certificateShowAllButton.addEventListener("click",function(){
     }
   })
   certificateShowAllButton.textContent = certificateList[0].classList.contains("show-all") ? "SHOW ALL" : "SHOW LESS";
-  if(certificateList[0].classList.contains("show-all") ){
-    console.log(currentScrollY)
     window.scrollTo(0, currentScrollY);
-  }
 
 })
 
