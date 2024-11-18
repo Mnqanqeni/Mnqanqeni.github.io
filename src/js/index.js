@@ -26,15 +26,13 @@ const camera = new THREE.PerspectiveCamera(
 const renderer = new THREE.WebGLRenderer({
   canvas: document.getElementById("canvas"),
 });
-document.getElementById("canvas").style.height = window.innerHeight / 2;
+document.getElementById("canvas").style.height = window.innerHeight/10;
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableZoom = false;
 controls.enablePan = true;
-controls.minDistance = 5;
-controls.maxDistance = 10;
 controls.maxPolarAngle = Math.PI / 2;
 renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.z = 10;
+camera.position.z = 7;
 renderer.setClearColor(0x141819);
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
@@ -175,17 +173,66 @@ certificateShowAllButton.addEventListener("click",function(){
   if(certificateList[0].classList.contains("show-all") ){
     currentScrollY = window.scrollY;
   }
-  certificateList.forEach((cardCertificate)=>{
+  certificateList.forEach((projectCard)=>{
     if(isShowAll){
-      cardCertificate.classList.remove("show-all");
+      projectCard.classList.remove("show-all");
     }else{
-      cardCertificate.classList.add("show-all");
+      projectCard.classList.add("show-all");
     }
   })
   certificateShowAllButton.textContent = certificateList[0].classList.contains("show-all") ? "SHOW ALL" : "SHOW LESS";
     window.scrollTo(0, currentScrollY);
 
 })
+
+const projectShowAllButton=document.querySelector(".project__column__button");
+const projectList = Array.from(document.querySelectorAll(".project__list__profile")).slice(2);
+
+let currentScrollY2 = window.scrollY;
+projectShowAllButton.addEventListener("click",function(){
+  const isShowAll = projectList[0].classList.contains("show-all");
+  if(projectList[0].classList.contains("show-all") ){
+    currentScrollY2 = window.scrollY;
+  }
+  projectList.forEach((projectCard)=>{
+    if(isShowAll){
+      projectCard.classList.remove("show-all");
+    }else{
+      projectCard.classList.add("show-all");
+    }
+  })
+  projectShowAllButton.textContent = projectList[0].classList.contains("show-all") ? "SHOW ALL" : "SHOW LESS";
+    window.scrollTo(0, currentScrollY2);
+
+})
+
+const modal = document.getElementById("project-info-modal");
+const modalTitle = document.getElementById("modal-title");
+const modalDescription = document.getElementById("modal-description");
+const closeBtn = document.querySelector(".close-btn");
+
+document.querySelectorAll(".btn-info").forEach((button) => {
+  button.addEventListener("click", () => {
+    const title = button.getAttribute("data-title");
+    const description = button.getAttribute("data-description");
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
+
+    modal.style.display = "flex";
+  });
+});
+
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
 
 window.addEventListener("load", updateText);
 window.addEventListener("resize", updateText);

@@ -230,55 +230,49 @@
           <img src="assets/images/semitone.png" class="test" />
           <div class="project__list__profile__buttons">
             <a href="https://github.com/Mnqanqeni/semitone-difference" target="_blank">
-              <button class="btn-source">
-                <i class="icon-code"></i> Source Code
-              </button>
+              <button class="btn-source"><i class="icon-code"></i> Source Code</button>
+            </a>
+            <a href="https://mnqanqeni.github.io/semitone-difference/" target="_blank">
+              <button class="btn-live"><i class="icon-play"></i> Live Demo</button>
             </a>
             <a>
-              <button class="btn-live">
-                <i class="icon-play"></i> Live Demo
-              </button>
-            </a>
-            <a>
-              <button class="btn-info">
+              <button class="btn-info" data-title="Semitone Difference" 
+                      data-description="A musical game to identify semitone differences in notes. Built with JavaScript and the canvas-confetti library.">
                 <i class="icon-info"></i> Project Info
               </button>
             </a>
           </div>
         </div>
-
+  
         <div class="project__list__profile">
           <img src="assets/images/ExpressForm.png" class="test" />
           <div class="project__list__profile__buttons">
-            <a href="https://github.com/Mnqanqeni/umuzi-node-sql-Express-forms-and-templates-assignment-javascript"
-              target="_blank">
-              <button class="btn-source">
-                <i class="icon-code"></i> Source Code
-              </button>
+            <a href="https://github.com/Mnqanqeni/express-forms" target="_blank">
+              <button class="btn-source"><i class="icon-code"></i> Source Code</button>
+            </a>
+            <a href="https://mnqanqeni.github.io/express-forms/" target="_blank">
+              <button class="btn-live"><i class="icon-play"></i> Live Demo</button>
             </a>
             <a>
-              <button class="btn-live">
-                <i class="icon-play"></i> Live Demo
-              </button>
-            </a>
-            <a>
-              <button class="btn-info">
+              <button class="btn-info" data-title="Express Form Builder" 
+                      data-description="A form builder app using Express.js and Pug to generate dynamic forms.">
                 <i class="icon-info"></i> Project Info
               </button>
             </a>
           </div>
         </div>
-
+  
         <div class="project__list__profile show-all">
           <img src="assets/images/MemoryGame.png" class="test" />
           <div class="project__list__profile__buttons">
-            <button class="btn-source">
-              <i class="icon-code"></i> Source Code
-            </button>
-            <button class="btn-live">
-              <i class="icon-play"></i> Live Demo
-            </button>
-            <button class="btn-info">
+            <a href="https://github.com/Mnqanqeni/memory-game" target="_blank">
+              <button class="btn-source"><i class="icon-code"></i> Source Code</button>
+            </a>
+            <a href="https://mnqanqeni.github.io/memory-game/" target="_blank">
+              <button class="btn-live"><i class="icon-play"></i> Live Demo</button>
+            </a>
+            <button class="btn-info" data-title="Memory Game" 
+                    data-description="A memory card game with emojis. Match cards to win. Built with JavaScript.">
               <i class="icon-info"></i> Project Info
             </button>
           </div>
@@ -290,12 +284,11 @@
     </div>
     <div class="frame-six__line"></div>
   </div>
-
+  
   <div class="skills" id="skills">
     <h1>My <span>skills</span></h1>
     <p>
-      As a Full-Stack Web Developer, here are the skills and tools I have
-      learned and used throughout the learning process.
+      As an intermediate Full-Stack Web Developer, these are the skills and tools I've learned.
     </p>
     <canvas id="canvas"></canvas>
   </div>
@@ -337,7 +330,13 @@
       </form>
     </div>
   </section>
-
+   <div id="project-info-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-title">Project Title</h2>
+      <p id="modal-description">Project Description</p>
+    </div>
+  </div>
   <footer>
     <p>&copy; 2023 My Website. All rights reserved.</p>
   </footer>
