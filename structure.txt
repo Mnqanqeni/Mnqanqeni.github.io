@@ -1,0 +1,101 @@
+./
+├── eslint.config.js
+├── .git/
+│   ├── branches/
+│   ├── config
+│   ├── description
+│   ├── HEAD
+│   ├── hooks/
+│   │   ├── applypatch-msg.sample*
+│   │   ├── commit-msg.sample*
+│   │   ├── fsmonitor-watchman.sample*
+│   │   ├── post-update.sample*
+│   │   ├── pre-applypatch.sample*
+│   │   ├── pre-commit.sample*
+│   │   ├── pre-merge-commit.sample*
+│   │   ├── prepare-commit-msg.sample*
+│   │   ├── pre-push.sample*
+│   │   ├── pre-rebase.sample*
+│   │   ├── pre-receive.sample*
+│   │   ├── push-to-checkout.sample*
+│   │   ├── sendemail-validate.sample*
+│   │   └── update.sample*
+│   ├── index
+│   ├── info/
+│   │   └── exclude
+│   ├── logs/
+│   │   ├── HEAD
+│   │   └── refs/
+│   │       ├── heads/
+│   │       │   ├── main
+│   │       │   └── react-version
+│   │       └── remotes/
+│   │           └── origin/
+│   │               └── HEAD
+│   ├── objects/
+│   │   ├── info/
+│   │   └── pack/
+│   │       ├── pack-b4cf2b30263fdd64ec9b6b953770e85484ad5481.idx
+│   │       ├── pack-b4cf2b30263fdd64ec9b6b953770e85484ad5481.pack
+│   │       └── pack-b4cf2b30263fdd64ec9b6b953770e85484ad5481.rev
+│   ├── packed-refs
+│   └── refs/
+│       ├── heads/
+│       │   ├── main
+│       │   └── react-version
+│       ├── remotes/
+│       │   └── origin/
+│       │       └── HEAD
+│       └── tags/
+├── .gitignore
+├── index.html
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── public/
+│   ├── assets/
+│   │   └── profile.jpg
+│   ├── favicon.ico
+│   ├── robots.txt
+│   └── vite.svg
+├── README.md
+├── src/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets/
+│   │   ├── logos/
+│   │   │   └── react.svg
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── Button.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   └── ProjectCard.jsx
+│   ├── data/
+│   │   ├── projects.js
+│   │   └── skills.js
+│   ├── hooks/
+│   │   └── useForm.js
+│   ├── index.css
+│   ├── main.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── NotFound.jsx
+│   ├── router.jsx
+│   ├── sections/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Resume.jsx
+│   │   └── Skills.jsx
+│   ├── styles/
+│   │   ├── globals.css
+│   │   └── theme.css
+│   └── utils/
+│       └── validateEmail.js
+├── structure.txt
+├── tailwind.config.js
+└── vite.config.js
+
+30 directories, 69 files
