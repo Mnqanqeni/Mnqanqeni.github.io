@@ -9,7 +9,7 @@ export default function Header() {
                 <div className="flex items-center gap-3">
                     <img src={logo} alt="Logo" className="h-10" />
                     <div className="flex flex-col items-start">
-                        <h1 className="text-fourth md:text-xl">Ndiyakholwa Mnqanqeni</h1>
+                        <h1 className="text-fourth text-xl">Ndiyakholwa Mnqanqeni</h1>
                         <h5 className="text-secondary">CODE CREATE INNOVATE</h5>
                     </div>
                 </div>
