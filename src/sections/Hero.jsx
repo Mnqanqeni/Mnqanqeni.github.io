@@ -41,7 +41,7 @@ export default function Hero() {
                     <p className="text-fourth text-sm">
                         I am a passionate full-stack developer with a keen interest in software engineering and cyber security. I specialize in creating dynamic and responsive web applications, and I am always eager.
                     </p>
-                    <img src={heroImage} alt="my image" className="object-contain max-h-[400px] bg-red-700 " />
+                    <img src={heroImage} alt="my image" className="object-contain max-h-[400px] " />
                 </div>
 
                 <div className="flex gap-4 mt-6">
