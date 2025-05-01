@@ -13,7 +13,7 @@ export default {
       },
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        playfair: ['Playfair Display', 'serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
       boxShadow: {

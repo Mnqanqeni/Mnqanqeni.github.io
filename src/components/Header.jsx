@@ -9,8 +9,8 @@ export default function Header() {
                 <div className="flex items-center gap-3 cursor-pointer">
                     <img src={logo} alt="Logo" className="h-12" />
                     <div className="flex flex-col items-start justify-center leading-tight">
-                        <h1 className="text-fourth text-xl">Ndiyakholwa Mnqanqeni</h1>
-                        <h6 className="text-secondary text-xs">CODE  CREATE INNOVATE</h6>
+                        <h1 className="text-fourth text-xl font-playfair">Ndiyakholwa Mnqanqeni</h1>
+                        <h6 className="text-secondary text-xs">CODE CREATE INNOVATE</h6>
                     </div>
                 </div>
                 <div>
