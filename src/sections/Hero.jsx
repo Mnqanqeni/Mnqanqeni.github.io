@@ -28,7 +28,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="flex flex-col md:flex-row items-center justify-between py-8 px-7">
+        <section className="flex flex-row items-center justify-between pt-10 px-7">
             <div className="space-y-4">
                 <h1 className="text-secondary text-2xl font-bold">Hi, I'm Ndiyakholwa Mnqanqeni</h1>
                 <h2 className="text-xl">
