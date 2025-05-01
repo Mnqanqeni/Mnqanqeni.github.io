@@ -45,10 +45,10 @@ export default function Hero() {
                 </div>
 
                 <div className="flex gap-4 mt-6">
-                    <button className="bg-secondary text-fourth px-5 py-2 rounded-lg hover:bg-secondary-dark transition duration-300 shadow-md">
-                        <a href="#contact">Contact Me</a>
-                    </button>
-
+                    <a href={cvFile} download className="flex items-center gap-2 mt-4 text-fourth">
+                    <img src={downloadIcon} alt="Download CV Icon" className="w-5 h-5" />
+                    <p className="text-sm">Download CV</p>
+                </a>
 
                     <a href="https://github.com/Mnqanqeni/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <img src={githubIcon} alt="GitHub Profile" className="w-6 h-6 hover:scale-110 transition-transform" />
@@ -60,13 +60,6 @@ export default function Hero() {
                         <img src={twitterIcon} alt="Twitter Profile" className="w-6 h-6 hover:scale-110 transition-transform" />
                     </a>
                 </div>
-
-
-
-                <a href={cvFile} download className="flex items-center gap-2 mt-4 text-fourth">
-                    <img src={downloadIcon} alt="Download CV Icon" className="w-5 h-5" />
-                    <p className="text-sm">Download CV</p>
-                </a>
             </div>
             <div className="w-full h-1-6 bg-gradient-frame-line" />
         </section>
