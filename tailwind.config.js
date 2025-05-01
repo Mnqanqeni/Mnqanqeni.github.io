@@ -19,6 +19,12 @@ export default {
       boxShadow: {
         navShadow: "0 10px 10px 0 #00a8cd",
       },
+      backgroundImage: {
+        'gradient-frame-line': 'linear-gradient(90deg, #00a8cd, #00a8cd00)',
+      },
+      height: {
+        '1-6': '0.4rem',
+      },
     },
   },
   plugins: [],
