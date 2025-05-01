@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="w-full h-auto bg-primary text-fourth Open-Sans">
       <Header/>
-
+      <Hero/>
     </div>
   );
 }
