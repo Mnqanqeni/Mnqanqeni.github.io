@@ -38,7 +38,11 @@ export default function Hero() {
 
 
                 <div className="w-full md:w-1/2 flex justify-center animate-fade-in-up">
-
+                <p className="text-fourth text-sm md:text-base">
+                    I am a passionate full-stack developer with a keen interest in software engineering and cyber security. I specialize in creating dynamic and responsive web applications, and I am always eager to learn new technologies and improve my skills.
+                    <br />
+                    I am currently seeking opportunities to work on exciting projects and collaborate with talented teams. Let's connect and explore how we can work together!
+                </p>
                     <img src={heroImage} alt="Illustration of Ndiyakholwa Mnqanqeni" className="object-contain max-h-[400px]" />
                 </div>
 
