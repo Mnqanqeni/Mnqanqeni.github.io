@@ -16,6 +16,9 @@ export default {
         serif: ['Playfair Display', 'serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      boxShadow: {
+        navShadow: "0 10px 10px 0 #00a8cd",
+      },
     },
   },
   plugins: [],
