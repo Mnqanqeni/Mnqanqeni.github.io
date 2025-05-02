@@ -1,8 +1,8 @@
 export default function Footer() {
     return (<div>
-            <div className="container mx-auto flex justiy-between items-center">
-                <h1 className="text-2xl font-bold">footer</h1>
-            </div>
+        <footer className="text-center text-fourth py-4">
+            <p>&copy; 2023 My Website. All rights reserved.</p>
+        </footer>
 
     </div>
     )

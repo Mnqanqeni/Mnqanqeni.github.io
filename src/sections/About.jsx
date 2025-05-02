@@ -2,21 +2,28 @@ import React from 'react';
 import aboutMeImage from '../assets/images/about-me.png';
 
 export default function About() {
-    return (
-        <section className="flex flex-col items-center justify-between gap-4 md:px-12 pt-14 md:pt-60 animate-fade-in-up">
-            <div className="">
-                <h1>About <span>Me</span></h1>
-            </div>
-            <div flex className="flex flex-row">
-                <img src={aboutMeImage}></img>
-                <div>I am someone fascinated by complexity and system interactions, and I
-                    thrive on the challenge of building meaningful products. I believe
-                    that teamwork is essential to success; sharing knowledge and
-                    collaborating with diverse minds leads to the best outcomes.
-                </div>
-            </div>
-            <div className="w-full h-1-6 bg-gradient-frame-line" />
-        </section>
-    )
+  return (
+    <section id="about" className="flex flex-col items-center justify-center py-12">
+      <div className="mb-8">
+        <h1 className="text-4xl font-bold">
+          About <span className="text-secondary">Me</span>
+        </h1>
+      </div>
 
+      <div className="flex flex-col md:flex-row items-center gap-10 max-w-5xl">
+        <img
+          src={aboutMeImage}
+          alt="About me"
+          className=" h-64 rounded-2xl"
+        />
+        <div className="text-gray-700 text-lg leading-relaxed max-w-xl">
+          I am someone fascinated by complexity and system interactions.
+          I enjoy solving challenging problems, building scalable software, and continuously learning how technology shapes the world.
+        </div>
+      </div>
+
+      {/* Divider Line */}
+      <div className="w-full h-1 mt-12 bg-gradient-frame-line" />
+    </section>
+  );
 }

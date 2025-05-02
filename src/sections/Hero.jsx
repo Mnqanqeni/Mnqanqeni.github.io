@@ -5,7 +5,7 @@ import linkedinIcon from '../assets/icons/linkedin-in-brands-solid (2).svg';
 import githubIcon from '../assets/icons/github-brands-solid.svg';
 import twitterIcon from '../assets/icons/twitter-brands-solid.svg';
 import downloadIcon from '../assets/icons/download-solid.svg';
-import cvFile from '../assets/doc/cv.pdf'; // Make sure you have the actual file
+import cvFile from '../assets/doc/cv.pdf';
 
 export default function Hero() {
     const el = useRef(null);
@@ -27,7 +27,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="flex flex-col items-center justify-between gap-4 md:px-12 pt-14 md:pt-60 ">
+        <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-44 ">
             <div className="w-full md:w-1/2 space-y-6 animate-fade-in-up">
                 <h1 className="text-fourth text-3xl md:text-4xl font-bold">
                     Hi, I'm Ndiyakholwa Mnqanqeni

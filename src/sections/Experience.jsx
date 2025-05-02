@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Skills() {
+export default function Experience() {
     return (
         <section className="flex flex-col items-center justify-between gap-4 md:px-12 pt-14 md:pt-60 animate-fade-in-up">
             <div className="text-4xl font-bold">
-                <h1>My <span>Skills</span></h1>
+                <h1>My <span>Resume</span></h1>
             </div>
             <div className="w-full h-1-6 bg-gradient-frame-line" />
         </section>
