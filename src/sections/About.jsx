@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="flex flex-col items-center justify-center py-12">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-3xl font-bold">
           About <span className="text-secondary">Me</span>
         </h1>
       </div>
