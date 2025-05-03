@@ -20,7 +20,6 @@ export default function Contact() {
               id="name"
               name="name"
               type="text"
-              placeholder="Your name"
               required
               className="w-full border-b-2 border-secondary bg-transparent p-2 focus:outline-none"
             />
@@ -29,9 +28,7 @@ export default function Contact() {
             <label htmlFor="lastName" className="block text-sm mb-1">Last Name</label>
             <input
               id="lastName"
-              name="lastName"
               type="text"
-              placeholder="Your last name"
               className="w-full border-b-2 border-secondary bg-transparent focus:outline-none p-2"
             />
           </div>
@@ -44,7 +41,6 @@ export default function Contact() {
               id="email"
               name="email"
               type="email"
-              placeholder="Your email"
               className="w-full border-b-2 border-secondary bg-transparent focus:outline-none p-2"
             />
           </div>
@@ -54,18 +50,17 @@ export default function Contact() {
               id="phone"
               name="phone"
               type="tel"
-              placeholder="Your phone number"
               className="w-full border-b-2 border-secondary bg-transparent focus:outline-none p-2"
             />
           </div>
         </div>
 
         <div className="relative">
-          <label htmlFor="message" className="block text-sm mb-1">Message</label>
+          <label htmlFor="message" className="block absolute text-sm mb-1">Message</label>
           <textarea
             id="message"
             name="message"
-            placeholder="Type your message..."
+
             className="w-full border-2 border-secondary bg-transparent p-2 min-h-[100px] focus:outline-none"
           />
         </div>
