@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col items-center py-16">
+    <section className="flex flex-col items-center px-5 py-16 w-full">
       <div className="text-center">
         <h1 className="text-3xl font-bold">
           Contact <span className="text-secondary">Me</span>
@@ -15,7 +15,7 @@ export default function Contact() {
       <form className="flex flex-col mt-8 w-full max-w-2xl gap-6">
         <div className="flex flex-row gap-4">
           <div className="flex-1 relative">
-            <label htmlFor="name" className="block text-sm mb-1">Name</label>
+            <label htmlFor="name" className="block text-sm mb-1 focus:outline-none focus:ring-0 focus:border-transparent">Name</label>
             <input
               id="name"
               name="name"
