@@ -21,7 +21,7 @@ export default function Header() {
                             <li className="hover:text-secondary cursor-pointer">About</li>
                             <li className="hover:text-secondary cursor-pointer">Projects</li>
                             <li className="hover:text-secondary cursor-pointer">Skills</li>
-                            <li className="hover:text-secondary cursor-pointer">Certification</li>
+                            <li className="hover:text-secondary cursor-pointer">Certifications</li>
                             <li className="hover:text-secondary cursor-pointer">Experience</li>
                             <li className="hover:text-secondary cursor-pointer">Contact</li>
 
