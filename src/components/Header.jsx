@@ -6,7 +6,9 @@ import xIcon from "../assets/icons/xmark-solid.svg";
 export default function Header() {
     const [dropdownOpen, setDropdownOpen] = React.useState(false);
     const toggleDropdown = () => setDropdownOpen(prev => !prev);
-  
+
+    const navItems = ["Home", "About", "Projects", "Skills", "Certifications", "Experience", "Contact"];
+
     return (
         <header className="w-full flex flex-col items-center">
             <nav className="flex fixed justify-between items-center p-2 shadow-navShadow z-50 bg-primary w-full">
@@ -18,51 +20,30 @@ export default function Header() {
                     </div>
                 </div>
                 <div>
-                    { !dropdownOpen && (
-                        <img
-                            src={navbar}
-                            alt="Navbar Icon"
-                            className="w-8 h-8 md:hidden cursor-pointer"
-                            onClick={toggleDropdown}
-                        />
+                    <img
+                        src={dropdownOpen ? xIcon : navbar}
+                        alt={dropdownOpen ? "Close Menu" : "Open Menu"}
+                        className="w-8 h-8 md:hidden cursor-pointer"
+                        onClick={toggleDropdown}
+                    />
 
-                    )}
-                    { dropdownOpen && (
-                        <img
-                            src={xIcon}
-                            alt="Navbar Icon"
-                            className="w-8 h-13 md:hidden cursor-pointer"
-                            onClick={toggleDropdown}
-                        />
-                    )}
-
-                    <div>
-                        <ul className="hidden md:flex gap-5 text-fourth font-playfair">
-                            <li className="hover:text-secondary cursor-pointer">Home</li>
-                            <li className="hover:text-secondary cursor-pointer">About</li>
-                            <li className="hover:text-secondary cursor-pointer">Projects</li>
-                            <li className="hover:text-secondary cursor-pointer">Skills</li>
-                            <li className="hover:text-secondary cursor-pointer">Certifications</li>
-                            <li className="hover:text-secondary cursor-pointer">Experience</li>
-                            <li className="hover:text-secondary cursor-pointer">Contact</li>
-
-                        </ul>
-                    </div>
+                    <ul className="hidden md:flex gap-5 text-fourth font-playfair">
+                        {navItems.map(item => (
+                            <li key={item} className="hover:text-secondary cursor-pointer">{item}</li>
+                        ))}
+                    </ul>
                 </div>
             </nav>
+
             {dropdownOpen && (
-                        <div className="w-1/2 md:hidden h-auto absolute right-0 top-16 bg-dark-gradient rounded-md p-4">
-                            <ul className="flex flex-col items-center gap-5 text-fourth font-playfair">
-                                <li className="hover:text-secondary cursor-pointer">Home</li>
-                                <li className="hover:text-secondary cursor-pointer">About</li>
-                                <li className="hover:text-secondary cursor-pointer">Projects</li>
-                                <li className="hover:text-secondary cursor-pointer">Skills</li>
-                                <li className="hover:text-secondary cursor-pointer">Certifications</li>
-                                <li className="hover:text-secondary cursor-pointer">Experience</li>
-                                <li className="hover:text-secondary cursor-pointer">Contact</li>
-                            </ul>
-                        </div>
-                    )}
+                <div className="w-1/2 md:hidden h-auto fixed right-0 top-16 bg-dark-gradient rounded-md p-4">
+                    <ul className="flex flex-col items-center gap-5 text-fourth font-playfair">
+                        {navItems.map(item => (
+                            <li key={item} className="hover:text-secondary cursor-pointer">{item}</li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </header>
     );
 }
