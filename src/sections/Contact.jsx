@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col items-center px-5 py-16 w-full">
+    <section className="flex flex-col items-center px-5 pt-16 w-full">
       <div className="text-center">
         <h1 className="text-3xl font-bold">
           Contact <span className="text-secondary">Me</span>
@@ -56,18 +56,18 @@ export default function Contact() {
         </div>
 
         <div className="relative">
-          <label htmlFor="message" className="block absolute text-sm mb-1">Message</label>
+          <label htmlFor="message" className="block absolute p-3">Message</label>
           <textarea
             id="message"
             name="message"
 
-            className="w-full border-2 border-secondary bg-transparent p-2 min-h-[100px] focus:outline-none"
+            className="w-full border-2 border-secondary bg-transparent p-2 min-h-[100px] focus:outline-none py-10"
           />
         </div>
 
         <button
           type="submit"
-          className="self-start bg-secondary text-fourth font-bold py-2 px-6 rounded"
+          className="bg-secondary text-fourth font-bold py-2 px-6 rounded"
         >
           Send Message
         </button>
