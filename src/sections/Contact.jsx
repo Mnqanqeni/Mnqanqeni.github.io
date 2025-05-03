@@ -15,14 +15,14 @@ export default function Contact() {
       <form className="flex flex-col mt-8 w-full max-w-2xl gap-6">
         <div className="flex flex-row gap-4">
           <div className="flex-1 relative">
-            <label htmlFor="name" className="block text-sm mb-1 focus:outline-none focus:ring-0 focus:border-transparent">Name</label>
+            <label htmlFor="name" className="block text-sm mb-1">Name</label>
             <input
               id="name"
               name="name"
               type="text"
               placeholder="Your name"
               required
-              className="w-full border-b-2 border-secondary bg-transparent p-2"
+              className="w-full border-b-2 border-secondary bg-transparent p-2 focus:outline-none"
             />
           </div>
           <div className="flex-1 relative">
@@ -32,7 +32,7 @@ export default function Contact() {
               name="lastName"
               type="text"
               placeholder="Your last name"
-              className="w-full border-b-2 border-secondary bg-transparent p-2"
+              className="w-full border-b-2 border-secondary bg-transparent focus:outline-none p-2"
             />
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function Contact() {
               name="email"
               type="email"
               placeholder="Your email"
-              className="w-full border-b-2 border-secondary bg-transparent p-2"
+              className="w-full border-b-2 border-secondary bg-transparent focus:outline-none p-2"
             />
           </div>
           <div className="flex-1 relative">
@@ -55,7 +55,7 @@ export default function Contact() {
               name="phone"
               type="tel"
               placeholder="Your phone number"
-              className="w-full border-b-2 border-secondary bg-transparent p-2"
+              className="w-full border-b-2 border-secondary bg-transparent focus:outline-none p-2"
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Contact() {
             id="message"
             name="message"
             placeholder="Type your message..."
-            className="w-full border-2 border-secondary bg-transparent p-2 min-h-[100px] focus-outline-none"
+            className="w-full border-2 border-secondary bg-transparent p-2 min-h-[100px] focus:outline-none"
           />
         </div>
 
