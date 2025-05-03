@@ -12,10 +12,10 @@ export default function Contact() {
         </p>
       </div>
 
-      <form className="flex flex-col mt-8 w-full max-w-2xl gap-6">
+      <form className="flex flex-col mt-8 w-full max-w-2xl gap-6  p-6 bg-dark-gradient ">
         <div className="flex flex-row gap-4">
           <div className="flex-1 relative">
-            <label htmlFor="name" className="block text-sm mb-1">Name</label>
+            <label htmlFor="name" className="block text-sm ">Name</label>
             <input
               id="name"
               name="name"
@@ -25,7 +25,7 @@ export default function Contact() {
             />
           </div>
           <div className="flex-1 relative">
-            <label htmlFor="lastName" className="block text-sm mb-1">Last Name</label>
+            <label htmlFor="lastName" className="block text-sm">Last Name</label>
             <input
               id="lastName"
               type="text"
@@ -36,7 +36,7 @@ export default function Contact() {
 
         <div className="flex flex-row gap-4">
           <div className="flex-1 relative">
-            <label htmlFor="email" className="block text-sm mb-1">Email</label>
+            <label htmlFor="email" className="block text-sm ">Email</label>
             <input
               id="email"
               name="email"
@@ -45,7 +45,7 @@ export default function Contact() {
             />
           </div>
           <div className="flex-1 relative">
-            <label htmlFor="phone" className="block text-sm mb-1">Phone Number</label>
+            <label htmlFor="phone" className="block text-sm ">Phone Number</label>
             <input
               id="phone"
               name="phone"
