@@ -21,7 +21,7 @@ export default {
       },
       backgroundImage: {
         'gradient-frame-line': 'linear-gradient(90deg, #00a8cd, #00a8cd00)',
-        'dark-gradient': 'linear-gradient(135deg, #1a1c1d, #2b2d2e)',
+        'dark-gradient': 'linear-gradient(135deg, #1a1c1d, #3f4244)',
       },
       height: {
         '1-6': '0.4rem',
