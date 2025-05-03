@@ -12,59 +12,113 @@ export default function Contact() {
         </p>
       </div>
 
-      <form className="flex flex-col mt-8 w-full max-w-2xl gap-6  p-6 bg-dark-gradient ">
+      <form className="flex flex-col mt-8 w-full max-w-2xl gap-6 p-6 bg-dark-gradient">
+        {/* Name and Last Name */}
         <div className="flex flex-row gap-4">
-          <div className="flex-1 relative">
-            <label htmlFor="name" className="block text-sm ">Name</label>
+          {/* First Name */}
+          <div className="relative w-full">
             <input
               id="name"
               name="name"
               type="text"
               required
-              className="w-full border-b-2 border-secondary bg-transparent p-2 focus:outline-none"
+              placeholder=" "
+              className="peer w-full border-b-2 border-secondary bg-transparent focus:outline-none pt-6"
             />
+            <label
+              htmlFor="name"
+              className="absolute left-0 top-1 text-sm text-gray-500 transition-all 
+                peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
+                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+            >
+              Name
+            </label>
           </div>
-          <div className="flex-1 relative">
-            <label htmlFor="lastName" className="block text-sm">Last Name</label>
+
+          {/* Last Name */}
+          <div className="relative w-full">
             <input
               id="lastName"
+              name="lastName"
               type="text"
-              className="w-full border-b-2 border-secondary bg-transparent focus:outline-none p-2"
+              required
+              placeholder=" "
+              className="peer w-full border-b-2 border-secondary bg-transparent focus:outline-none pt-6"
             />
+            <label
+              htmlFor="lastName"
+              className="absolute left-0 top-1 text-sm text-gray-500 transition-all 
+                peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
+                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+            >
+              Last Name
+            </label>
           </div>
         </div>
 
+        {/* Email and Phone */}
         <div className="flex flex-row gap-4">
-          <div className="flex-1 relative">
-            <label htmlFor="email" className="block text-sm ">Email</label>
+          {/* Email */}
+          <div className="relative w-full">
             <input
               id="email"
               name="email"
               type="email"
-              className="w-full border-b-2 border-secondary bg-transparent focus:outline-none p-2"
+              required
+              placeholder=" "
+              className="peer w-full border-b-2 border-secondary bg-transparent focus:outline-none pt-6"
             />
+            <label
+              htmlFor="email"
+              className="absolute left-0 top-1 text-sm text-gray-500 transition-all 
+                peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
+                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+            >
+              Email
+            </label>
           </div>
-          <div className="flex-1 relative">
-            <label htmlFor="phone" className="block text-sm ">Phone Number</label>
+
+          {/* Phone Number */}
+          <div className="relative w-full">
             <input
               id="phone"
               name="phone"
               type="tel"
-              className="w-full border-b-2 border-secondary bg-transparent focus:outline-none p-2"
+              required
+              placeholder=" "
+              className="peer w-full border-b-2 border-secondary bg-transparent focus:outline-none pt-6"
             />
+            <label
+              htmlFor="phone"
+              className="absolute left-0 top-1 text-sm text-gray-500 transition-all 
+                peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
+                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+            >
+              Phone Number
+            </label>
           </div>
         </div>
 
-        <div className="relative">
-          <label htmlFor="message" className="block absolute p-3">Message</label>
+        {/* Message */}
+        <div className="relative w-full">
           <textarea
             id="message"
             name="message"
-
-            className="w-full border-2 border-secondary bg-transparent p-2 min-h-[100px] focus:outline-none py-10"
+            required
+            placeholder=" "
+            className="peer w-full border-2 border-secondary bg-transparent focus:outline-none pt-6 pb-2 min-h-[120px]"
           />
+          <label
+            htmlFor="message"
+            className="absolute left-2 top-1 text-sm text-gray-500 transition-all 
+              peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
+              peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+          >
+            Message
+          </label>
         </div>
 
+        {/* Submit Button */}
         <button
           type="submit"
           className="bg-secondary text-fourth font-bold py-2 px-6 rounded"
