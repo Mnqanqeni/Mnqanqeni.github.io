@@ -10,14 +10,14 @@ export default function Contact() {
                         I’m open to collaborations — reach out below!
                     </p>
                 </div>
-                <form className="flex flex-col items-center mt-8 bg-red-700">
+                <form className="flex flex-col mt-8 ">
                     <div className="flex flex-col md:flex-row gap-4">
                         <div>
                             <label for="name">Name</label>
                             <input
                                 type="text"
                                 placeholder="Your Name"
-                                className="border-2 border-secondary "
+                                className="border-b-2 border-secondary bg-transparent "
                             />
                         </div>
                         <div>
@@ -25,7 +25,7 @@ export default function Contact() {
                             <input
                                 type="text"
                                 placeholder="Your Email"
-                                className="border-2 border-secondary "
+                                className="border-b-2 border-secondary bg-transparent "
                             />
                         </div>
                     </div>
@@ -35,7 +35,7 @@ export default function Contact() {
                         <input
                             type="email"
                             placeholder="Your Email"
-                            className="border-2 border-secondary "
+                            className="border-b-2 border-secondary bg-transparent "
                         />
                     </div>
                     <div>
@@ -43,7 +43,7 @@ export default function Contact() {
                         <input
                             type="tel"
                             placeholder="Your Phone Number"
-                            className="border-2 border-secondary "
+                            className="border-b-2 border-secondary bg-transparent "
                         />
                     </div>
 
@@ -51,7 +51,7 @@ export default function Contact() {
                         <label for="message">Message</label>
                         <textarea
                             placeholder="Your Message"
-                            className="border-2 border-secondary "
+                            className="border-b-2 border-secondary bg-transparent "
                         />
                     </div>
                     <button
