@@ -29,7 +29,9 @@ export default function Contact() {
               htmlFor="name"
               className="absolute left-0 top-1 text-sm text-gray-500 transition-all 
                 peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
-                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary
+                after:ml-1 after:text-red-500 after:transition-opacity
+                peer-focus:after:content-['*'] peer-placeholder-shown:after:content-['']"
             >
               Name
             </label>
@@ -49,7 +51,9 @@ export default function Contact() {
               htmlFor="lastName"
               className="absolute left-0 top-1 text-sm text-gray-500 transition-all 
                 peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
-                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary
+                after:ml-1 after:text-red-500 after:transition-opacity
+                peer-focus:after:content-['*'] peer-placeholder-shown:after:content-['']"
             >
               Last Name
             </label>
@@ -72,7 +76,9 @@ export default function Contact() {
               htmlFor="email"
               className="absolute left-0 top-1 text-sm text-gray-500 transition-all 
                 peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
-                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary
+                after:ml-1 after:text-red-500 after:transition-opacity
+                peer-focus:after:content-['*'] peer-placeholder-shown:after:content-['']"
             >
               Email
             </label>
@@ -92,7 +98,9 @@ export default function Contact() {
               htmlFor="phone"
               className="absolute left-0 top-1 text-sm text-gray-500 transition-all 
                 peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
-                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+                peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary
+                after:ml-1 after:text-red-500 after:transition-opacity
+                peer-focus:after:content-['*'] peer-placeholder-shown:after:content-['']"
             >
               Phone Number
             </label>
@@ -106,19 +114,21 @@ export default function Contact() {
             name="message"
             required
             placeholder=" "
-            className="peer w-full border-2 border-secondary bg-transparent focus:outline-none pt-6 pb-2 min-h-[120px]"
+            className="peer w-full border-2 border-secondary bg-transparent focus:outline-none pt-6 pb-2 min-h-[120px] px-2"
           />
           <label
             htmlFor="message"
             className="absolute left-2 top-1 text-sm text-gray-500 transition-all 
               peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 
-              peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary"
+              peer-focus:top-1 peer-focus:text-sm peer-focus:text-secondary
+              after:ml-1 after:text-red-500 after:transition-opacity
+              peer-focus:after:content-['*'] peer-placeholder-shown:after:content-['']"
           >
             Message
           </label>
         </div>
 
-        {/* Submit Button */}
+        {/* Submit */}
         <button
           type="submit"
           className="bg-secondary text-fourth font-bold py-2 px-6 rounded"

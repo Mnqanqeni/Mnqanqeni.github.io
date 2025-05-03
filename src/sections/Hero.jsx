@@ -27,7 +27,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-44 ">
+        <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-44  px-4">
             <div className="w-full md:w-1/2 space-y-6 animate-fade-in-up">
                 <h1 className="text-fourth text-3xl md:text-4xl font-bold">
                     Hi, I'm Ndiyakholwa Mnqanqeni
