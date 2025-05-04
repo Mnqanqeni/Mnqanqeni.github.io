@@ -16,7 +16,7 @@ export default function About() {
           alt="About me"
           className=" h-64 rounded-2xl"
         />
-        <div className="text-gray-700 text-lg leading-relaxed max-w-xl">
+        <div className="text-fourth text-lg leading-relaxed max-w-xl">
           I am someone fascinated by complexity and system interactions.
           I enjoy solving challenging problems, building scalable software, and continuously learning how technology shapes the world.
         </div>
