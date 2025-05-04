@@ -2,17 +2,17 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col items-center px-5 pt-16 w-full">
+    <section className="flex flex-col items-center p-8 w-full">
       <div className="text-center">
         <h1 className="text-3xl font-bold">
           Contact <span className="text-secondary">Me</span>
         </h1>
-        <p className="text-[#ffffffb2] text-xs mt-2">
+        <p className="text-[#ffffffb2] text-xl md:text-2xl mt-2">
           I’m open to collaborations — reach out below!
         </p>
       </div>
 
-      <form className="flex flex-col mt-8 w-full max-w-2xl gap-6 p-6 bg-dark-gradient">
+      <form className="flex flex-col mt-8 w-full max-w-7xl gap-6 md:gap-10 p-6 bg-dark-gradient">
         {/* Name and Last Name */}
         <div className="flex flex-row gap-4">
           {/* First Name */}

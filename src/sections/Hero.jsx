@@ -40,8 +40,7 @@ export default function Hero() {
                 <div>
                     <div className="flex flex-row  w-full justify-center items-center gap-4 mt-6">
                         <p className="flex-1 text-fourth text-base">
-                            I started my journey with a curiosity for how the web works and turned that into a mission:
-                            to build meaningful, scalable applications that solve real problems.
+                        Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions."
                         </p>
                         <div className="flex-1 flex justify-center items-center relative">
                             <div className="h-full w-full bg-gradient-to-tr from-transparent via-black/30 shadow-customBlue to-cyan-500/80 flex justify-center items-center z-10">
