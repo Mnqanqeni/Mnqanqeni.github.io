@@ -39,7 +39,7 @@ export default function Hero() {
                         </h2>
                     </div>
                     <div>
-                        <div className="flex flex-row w-full justify-center animate-fade-in-up">
+                        <div className="flex flex-row w-full justify-center items-center border-2 border-accent rounded-lg p-4 mt-4">
                             <p className="text-fourth text-sm">
                                 I am a passionate full-stack developer with a keen interest in software engineering and cyber security. I specialize in creating dynamic and responsive web applications, and I am always eager.
                             </p>
