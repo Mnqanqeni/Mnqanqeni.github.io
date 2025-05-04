@@ -10,7 +10,7 @@ export default function About() {
         </h1>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center gap-10 max-w-5xl">
+      <div className="flex flex md:flex-row items-center gap-10 max-w-5xl">
         <img
           src={aboutMeImage}
           alt="About me"
