@@ -11,12 +11,12 @@ export default function About() {
       </div>
 
       <div className="flex flex-col md:flex-row items-center relative justify-center">
-        <div className="flex flex-col relative">
-          <div className="w-[416.55px] h-[443.92px] relative flex left-[0px]">
-            {/* Stackview One */}
-            <div className="h-[326px] w-[326px] rotate-[-48deg] bg-gradient-to-br from-[#00a8cda5] to-transparent absolute left-[15%] rounded-full" />
+        <div className="flex flex-col relative flex-1">
+          <div className="w-[416.55px] h-[443.92px] relative flex">
+            {/* big circle */}
+            <div className="h-[300px] w-[300px] rotate-[-48deg] bg-gradient-to-br from-[#00a8cda5] to-transparent absolute left-[15%] rounded-full" />
 
-            {/* Stackview Two */}
+            {/* small circle */}
             <div className="h-[162px] w-[162px] bg-gradient-to-br from-[#00a8cda5] to-transparent absolute bottom-[0.39px] rounded-[80px]" />
 
             {/* Stackview Three */}
@@ -34,12 +34,12 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="text-fourth text-lg leading-relaxed max-w-xl">
+        </div> 
+      </div>
+      <div className="text-fourth flex-[0.3] text-lg leading-relaxed max-w-xl">
           I am someone fascinated by complexity and system interactions.
           I enjoy solving challenging problems, building scalable software, and continuously learning how technology shapes the world.
         </div>
-      </div>
       <div className="w-full h-1-6 bg-gradient-frame-line" />
     </section>
   );
