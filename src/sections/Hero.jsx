@@ -28,39 +28,46 @@ export default function Hero() {
 
     return (
         <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-44  px-4">
-            <div className="w-full md:w-1/2 space-y-6 animate-fade-in-up">
-                <h1 className="text-fourth text-3xl md:text-4xl font-bold">
-                    Hi, I'm Ndiyakholwa Mnqanqeni
-                </h1>
-                <h2 className="text-fourth text-xl md:text-2xl">
-                    I'm a <span ref={el} className="text-accent font-semibold"></span>
-                </h2>
+            <div>
+                <div>
+                    <div>
+                        <h1 className="text-fourth text-3xl md:text-4xl font-bold">
+                            Hi, I'm Ndiyakholwa Mnqanqeni
+                        </h1>
+                        <h2 className="text-fourth text-xl md:text-2xl">
+                            I'm a <span ref={el} className="text-accent font-semibold"></span>
+                        </h2>
+                    </div>
+                    <div>
+                        <div className="flex flex-row w-full justify-center animate-fade-in-up">
+                            <p className="text-fourth text-sm">
+                                I am a passionate full-stack developer with a keen interest in software engineering and cyber security. I specialize in creating dynamic and responsive web applications, and I am always eager.
+                            </p>
+                            <img src={heroImage} alt="my image" className="object-contain max-h-[400px] " />
+                        </div>
+                    </div>
+                    <div className="flex gap-4 mt-6">
+                        <button className="bg-accent text-white px-4 bg-secondary py-2 rounded-md hover:bg-accent-dark transition duration-300">
+                            <a href="#projects">Contact Me</a>
+                        </button>
+                        <a href={cvFile} download className="flex items-center gap-2 mt-4 text-fourth">
+                            <img src={downloadIcon} alt="Download CV Icon" className="w-5 h-5" />
+                            <p className="text-sm">Download CV</p>
+                        </a>
 
-
-                <div className="w-full flex justify-center animate-fade-in-up">
-                    <p className="text-fourth text-sm">
-                        I am a passionate full-stack developer with a keen interest in software engineering and cyber security. I specialize in creating dynamic and responsive web applications, and I am always eager.
-                    </p>
-                    <img src={heroImage} alt="my image" className="object-contain max-h-[400px] " />
-                </div>
-
-                <div className="flex gap-4 mt-6">
-                    <a href={cvFile} download className="flex items-center gap-2 mt-4 text-fourth">
-                    <img src={downloadIcon} alt="Download CV Icon" className="w-5 h-5" />
-                    <p className="text-sm">Download CV</p>
-                </a>
-
-                    <a href="https://github.com/Mnqanqeni/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <img src={githubIcon} alt="GitHub Profile" className="w-6 h-6 hover:scale-110 transition-transform" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/ndiyakholwamnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <img src={linkedinIcon} alt="LinkedIn Profile" className="w-6 h-6 hover:scale-110 transition-transform" />
-                    </a>
-                    <a href="https://twitter.com/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <img src={twitterIcon} alt="Twitter Profile" className="w-6 h-6 hover:scale-110 transition-transform" />
-                    </a>
+                        <a href="https://github.com/Mnqanqeni/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <img src={githubIcon} alt="GitHub Profile" className="w-6 h-6 hover:scale-110 transition-transform" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/ndiyakholwamnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <img src={linkedinIcon} alt="LinkedIn Profile" className="w-6 h-6 hover:scale-110 transition-transform" />
+                        </a>
+                        <a href="https://twitter.com/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <img src={twitterIcon} alt="Twitter Profile" className="w-6 h-6 hover:scale-110 transition-transform" />
+                        </a>
+                    </div>
                 </div>
             </div>
+
             <div className="w-full h-1-6 bg-gradient-frame-line" />
         </section>
     );
