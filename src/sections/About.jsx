@@ -3,7 +3,7 @@ import aboutMeImage from '../assets/images/about-me.png';
 
 export default function About() {
   return (
-    <section id="about" className="flex flex-col items-center justify-center py-12 px-4">
+    <section id="about" className="flex flex-col items-center justify-center p-8 px-4">
       <div className='flex flex-col items-center justify-center gap-8 py-4'>
         <div className="mb-8 ">
           <h1 className="text-3xl font-bold">
