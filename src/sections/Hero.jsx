@@ -31,7 +31,7 @@ export default function Hero() {
             <div>
                 <div>
                     <div>
-                        <h1 className="text-fourth text-3xl md:text-4xl font-bold">
+                        <h1 className="text-fourth text-2xl md:text-4xl font-bold">
                             Hi, I'm Ndiyakholwa Mnqanqeni
                         </h1>
                         <h2 className="text-fourth text-xl md:text-2xl">
@@ -39,7 +39,7 @@ export default function Hero() {
                         </h2>
                     </div>
                     <div>
-                        <div className="flex flex-row w-full justify-center items-center border-2 border-accent rounded-lg p-4 mt-4">
+                        <div className="flex flex-row w-full justify-center items-center border-2 border-accent rounded-lg pt-4 mt-4">
                             <p className="text-fourth text-sm">
                                 I am a passionate full-stack developer with a keen interest in software engineering and cyber security. I specialize in creating dynamic and responsive web applications, and I am always eager.
                             </p>
