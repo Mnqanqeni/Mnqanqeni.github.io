@@ -47,8 +47,8 @@ export default function Hero() {
                                 <img src={heroImage} alt="my image" className="object-contain max-h-[400px]" />
                             </div>
 
-                            <div className="absolute w-[10rem] h-[10rem] bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full right-10 bottom-20 animate-fadeIn move-left">hey</div>
-                            <div className="absolute w-[10rem] h-[10rem] bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full rotate-[240deg] left-16 top-24 animate-fadeIn move-right">hi</div>
+                            <div className="absolute w-[10rem] h-[10rem] bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full right-10 bottom-20 animate-fadeIn move-left"></div>
+                            <div className="absolute w-[10rem] h-[10rem] bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full rotate-[240deg] left-16 top-24 animate-fadeIn move-right"></div>
                         </div>
                     </div>
                 </div>

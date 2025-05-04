@@ -36,7 +36,7 @@ export default function Header() {
             </nav>
 
             {dropdownOpen && (
-                <div className="w-1/2 md:hidden h-auto fixed right-0 top-16 bg-dark-gradient rounded-md p-4">
+                <div className="w-1/2 md:hidden h-auto fixed right-0 top-16 bg-dark-gradient rounded-md p-4 z-50">
                     <ul className="flex flex-col items-center gap-5 text-fourth font-playfair">
                         {navItems.map(item => (
                             <li key={item} className="hover:text-secondary cursor-pointer">{item}</li>
