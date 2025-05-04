@@ -40,7 +40,8 @@ export default function Hero() {
                 <div>
                     <div className="flex flex-row  w-full justify-center items-center gap-4 mt-6">
                         <p className="flex-1 text-fourth text-base">
-                        I'm a passionate full-stack developer with a strong interest in software engineering and cybersecurity. I specialize in building dynamic, responsive web applications and am always eager to learn and grow in the tech industry.
+                            I started my journey with a curiosity for how the web works and turned that into a mission:
+                            to build meaningful, scalable applications that solve real problems.
                         </p>
                         <div className="flex-1 flex justify-center items-center relative">
                             <div className="h-full w-full bg-gradient-to-tr from-transparent via-black/30 shadow-customBlue to-cyan-500/80 flex justify-center items-center z-10">
@@ -55,7 +56,7 @@ export default function Hero() {
                 <div className="flex flex-col items-center justify-between gap-4 mt-14 w-full">
                     <div className="flex flex-row items-center justify-between gap-2 w-full">
                         <button className="bg-accent text-white px-4 bg-secondary py-2 rounded-md hover:bg-accent-dark transition duration-300">
-                        Get in Touch
+                            Get in Touch
                         </button>
                         <div className="flex gap-4">
                             <a href="https://github.com/Mnqanqeni/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
