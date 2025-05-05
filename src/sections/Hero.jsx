@@ -33,31 +33,31 @@ export default function Hero() {
                     <h1 className="text-fourth text-2xl md:text-4xl font-bold">
                         Hi, I'm Ndiyakholwa Mnqanqeni
                     </h1>
-                    <h2 className="text-fourth text-xl md:text-2xl">
+                    <h2 className="text-xl md:text-2xl text-secondary">
                         I'm a <span ref={el} className="text-accent font-semibold"></span>
                     </h2>
                 </div>
                 <div>
                     <div className="flex flex-row  w-full justify-center items-center gap-4 mt-6">
-                        <p className="flex-1 text-fourth text-base">
-                        Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions."
+                        <p className="flex-1 text-fourth text-base leading-relaxed md:text-xl">                         
+                        Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js."
                         </p>
                         <div className="flex-1 flex justify-center items-center relative">
-                            <div className="h-full w-full bg-gradient-to-tr from-transparent via-black/30 shadow-customBlue to-cyan-500/80 flex justify-center items-center z-10">
+                            <div className="h-full w-auto bg-gradient-to-tr from-transparent via-black/30 shadow-customBlue to-cyan-500/80 flex justify-center items-center z-10">
                                 <img src={heroImage} alt="my image" className="object-contain max-h-[400px]" />
                             </div>
 
-                            <div className="absolute w-[10rem] h-[10rem] bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full right-10 bottom-20 animate-fadeIn move-left"></div>
-                            <div className="absolute w-[10rem] h-[10rem] bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full rotate-[240deg] left-16 top-24 animate-fadeIn move-right"></div>
+                            <div className="absolute w-44 md:w-80 h-44  md:h-80 bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full right-[40%] bottom-[50%] animate-fadeIn move-left"></div>
+                            <div className="absolute w-44 md:w-80 h-44  md:h-80 bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full rotate-[240deg] left-[40%] top-[50%] animate-fadeIn move-right"></div>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-between gap-4 mt-14 w-full">
                     <div className="flex flex-row items-center justify-between gap-2 w-full">
-                        <button className="bg-accent text-white px-4 bg-secondary py-2 rounded-md hover:bg-accent-dark transition duration-300">
+                        <button className="text-fourth px-6 bg-secondary min-w-[10rem] py-2 rounded-md hover:bg-accent-dark transition duration-300">
                             Get in Touch
                         </button>
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 z-50">
                             <a href="https://github.com/Mnqanqeni/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <img src={githubIcon} alt="GitHub Profile" className="w-10 h-10 hover:scale-110 transition-transform" />
                             </a>
