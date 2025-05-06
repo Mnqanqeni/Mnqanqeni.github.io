@@ -29,7 +29,7 @@ export default function Hero() {
     return (
         <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-44  px-4">
             <div className="flex flex-col items-center justify-center">
-                <div>
+                <div className="md:self-start z-10">
                     <h1 className="text-fourth text-2xl md:text-4xl font-bold">
                         Hi, I'm Ndiyakholwa Mnqanqeni
                     </h1>
@@ -39,18 +39,19 @@ export default function Hero() {
                 </div>
                 <div>
                     <div className="flex flex-row  w-full justify-center items-center gap-4 mt-6">
-                        <p className="flex-1 text-fourth text-base leading-relaxed md:text-xl">                         
-                        Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js."
+                        <p className="flex-1 md:hidden text-fourth text-base leading-relaxed">
+                            Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js."
                         </p>
-                        <p>
-                        "Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
+                        <p className="hidden md:block flex-1 text-fourth leading-relaxed text-2xl">
+                            Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
                         </p>
                         <div className="flex-1 flex justify-center items-center relative">
                             <div className="h-full w-auto bg-gradient-to-tr from-transparent via-black/30 shadow-customBlue to-cyan-500/80 flex justify-center items-center z-10">
                                 <img src={heroImage} alt="my image" className="object-contain max-h-[400px]" />
                             </div>
 
-                            <div className="absolute w-44 md:w-80 h-44  md:h-80 bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full right-[40%] bottom-[50%] animate-fadeIn move-left"></div>
+                            <div className="absolute w-44 md:w-80 lg:w-96 h-44  md:h-80 lg:h-96  bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full right-[40%] lg:right-[50%] bottom-[50%]  lg:bottom-[50%] animate-fadeIn move-left"></div>
+                            <div className="absolute w-44 md:w-80 lg:w-96 h-44  md:h-80 lg:h-96 bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full rotate-[240deg] left-[40%] top-[50%] animate-fadeIn move-right"></div>
                             <div className="absolute w-44 md:w-80 h-44  md:h-80 bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full rotate-[240deg] left-[40%] top-[50%] animate-fadeIn move-right"></div>
                         </div>
                     </div>
@@ -60,15 +61,15 @@ export default function Hero() {
                         <button className="text-fourth px-6 bg-secondary min-w-[10rem] py-2 rounded-md hover:bg-accent-dark transition duration-300">
                             Get in Touch
                         </button>
-                        
 
-                    <div>
-                        <a href={cvFile} download className="hidden  md:flex justify-center items-end gap-2 mt-4 text-fourth">
-                            <img src={downloadIcon} alt="Download CV Icon" className=" w-8 h-8" />
-                            <span className="text-xl h-6">Download My CV</span>
-                        </a>
 
-                    </div>
+                        <div>
+                            <a href={cvFile} download className="hidden  md:flex justify-center items-end gap-2 mt-4 text-fourth">
+                                <img src={downloadIcon} alt="Download CV Icon" className=" w-8 h-8" />
+                                <span className="text-xl h-6">Download My CV</span>
+                            </a>
+
+                        </div>
 
                         <div className="flex gap-4 z-10">
                             <a href="https://github.com/Mnqanqeni/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
