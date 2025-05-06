@@ -15,8 +15,18 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    const MIN_DURATION = 2000; 
+    const start = Date.now();
+
     const handleLoad = () => {
-      setIsLoaded(true);
+      const elapsed = Date.now() - start;
+      const remaining = MIN_DURATION - elapsed;
+
+      if (remaining > 0) {
+        setTimeout(() => setIsLoaded(true), remaining);
+      } else {
+        setIsLoaded(true);
+      }
     };
 
     if (document.readyState === 'complete') {
@@ -29,7 +39,7 @@ function App() {
 
   return (
     <div className="w-full h-auto bg-primary text-fourth Open-Sans overflow-x-hidden">
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+      {!isLoaded && <LoadingScreen />}
       {isLoaded && (
         <>
           <Header />
