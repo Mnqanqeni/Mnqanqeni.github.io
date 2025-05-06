@@ -57,7 +57,7 @@ export default function Hero() {
                         <button className="text-fourth px-6 bg-secondary min-w-[10rem] py-2 rounded-md hover:bg-accent-dark transition duration-300">
                             Get in Touch
                         </button>
-                        <div className="flex gap-4 z-50">
+                        <div className="flex gap-4 z-10">
                             <a href="https://github.com/Mnqanqeni/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <img src={githubIcon} alt="GitHub Profile" className="w-10 h-10 hover:scale-110 transition-transform" />
                             </a>

@@ -1,13 +1,13 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import about from "../assets/images/about-me.png";
+
 const projects = [
     {
       title: "Portfolio Website",
       description: "A personal portfolio built with React and Tailwind to showcase my projects.",
       categories: ["Frontend", "Full-Stack"],
       level: "Beginner",
-      image: {about},
+      image: "../assets/images/about-me.png",
       liveDemo: "https://yourportfolio.com",
       repo: "https://github.com/yourusername/portfolio",
       techStack: ["React", "Tailwind CSS", "Vite"],
