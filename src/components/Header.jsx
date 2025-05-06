@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header className="w-full flex flex-col items-center">
             <nav className="flex fixed justify-between items-center p-2 shadow-navShadow z-50 bg-primary w-full">
-                <div className="flex items-center gap-3 cursor-pointer">
+                <div href="#home" className="flex items-center gap-3 cursor-pointer">
                     <img src={logo} alt="Logo" className="h-12" />
                     <div className="flex flex-col items-start justify-center leading-tight">
                         <h1 className="text-fourth text-xl font-playfair">Ndiyakholwa Mnqanqeni</h1>
@@ -36,10 +36,10 @@ export default function Header() {
             </nav>
 
             {dropdownOpen && (
-                <div className="w-1/2 md:hidden h-auto fixed right-0 top-16 bg-dark-gradient rounded-md p-4 z-50">
+                <div className="w-full h-full md:hidden fixed  top-16 bg-dark-gradient rounded-md p-4 z-50 opacity-90">
                     <ul className="flex flex-col items-center gap-5 text-fourth font-playfair">
                         {navItems.map(item => (
-                            <li key={item} className="hover:text-secondary cursor-pointer">{item}</li>
+                            <li key={item} className={ `hover:text-secondary cursor-pointer transform transition-transform duration-200`} onClick={toggleDropdown}>{item}</li>
                         ))}
                     </ul>
                 </div>
