@@ -42,12 +42,12 @@ export default function Header() {
 
             {dropdownOpen && (
                 <div className="w-full h-screen md:hidden fixed top-16 left-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ease-in-out animate-fade-slide-down">
-                    <div className="p-6 shadow-2xl bg-primary text-fourth border border-white/10">
+                    <div className="p-6 h-full shadow-2xl bg-primary text-fourth border border-white/10">
                         <ul className="flex flex-col items-center gap-6 font-playfair text-lg">
                             {navItems.map((item) => (
                                 <li
                                     key={item}
-                                    className="hover:text-secondary hover:bg-white/10 px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-center w-full"
+                                    className="hover:text-secondary hover:bg-red-600 px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-center w-full"
                                     onClick={toggleDropdown}
                                 >
                                     <a href={`#${item.toLowerCase()}`}>{item}</a>
