@@ -97,7 +97,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="flex flex-col items-center justify-between">
+        <section id="projects" className="flex flex-col items-center justify-between">
             <div className="text-3xl font-bold py-16">
                 <h1> <span className="text-secondary">My </span>Projects</h1>
             </div>

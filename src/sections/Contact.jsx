@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col items-center p-8 w-full">
+    <section id="contact"className="flex flex-col items-center p-8 w-full">
       <div className="text-center">
         <h1 className="text-3xl font-bold">
           Contact <span className="text-secondary">Me</span>

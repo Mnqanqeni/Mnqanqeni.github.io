@@ -15,7 +15,7 @@ export default function Header() {
 
 
     return (
-        <header className="w-full flex flex-col items-center">
+        <header id="home" className="w-full flex flex-col items-center">
             <nav className="flex fixed justify-between items-center p-2 shadow-navShadow z-50 bg-primary w-full">
                 <div href="#home" className="flex items-center gap-3 cursor-pointer">
                     <img src={logo} alt="Logo" className="h-12" />
@@ -34,7 +34,7 @@ export default function Header() {
 
                     <ul className="hidden md:flex gap-5 text-fourth font-playfair">
                         {navItems.map(item => (
-                            <li key={item} className="hover:text-secondary cursor-pointer">{item}</li>
+                            <li key={item} className="hover:text-secondary cursor-pointer"><a href={`#${item.toLowerCase()}`}>{item}</a></li>
                         ))}
                     </ul>
                 </div>
@@ -47,7 +47,7 @@ export default function Header() {
                             {navItems.map((item) => (
                                 <li
                                     key={item}
-                                    className="hover:text-secondary hover:bg-red-600 px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-center w-full"
+                                    className="hover:text-secondary px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-center w-full"
                                     onClick={toggleDropdown}
                                 >
                                     <a href={`#${item.toLowerCase()}`}>{item}</a>
@@ -57,7 +57,6 @@ export default function Header() {
                     </div>
                 </div>
             )}
-
 
         </header>
     );

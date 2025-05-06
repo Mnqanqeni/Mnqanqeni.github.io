@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Experience() {
     return (
-        <section className="flex flex-col items-center justify-between">
+        <section id="experience" className="flex flex-col items-center justify-between">
             <div className="text-3xl font-bold py-16">
                 <h1> <span className="text-secondary">My </span>Experience</h1>
             </div>
