@@ -27,7 +27,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-44  px-4">
+        <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-44  px-8">
             <div className="flex flex-col items-center justify-center">
                 <div>
                     <h1 className="text-fourth text-2xl md:text-4xl font-bold">
@@ -39,8 +39,8 @@ export default function Hero() {
                 </div>
                 <div>
                     <div className="flex flex-row  w-full justify-center items-center gap-4 mt-6">
-                        <p className="flex-1 text-fourth text-base leading-relaxed md:text-xl">                         
-                        Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js."
+                        <p className="flex-1 text-fourth text-base leading-relaxed md:text-xl">
+                            Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js."
                         </p>
                         <div className="flex-1 flex justify-center items-center relative">
                             <div className="h-full w-auto bg-gradient-to-tr from-transparent via-black/30 shadow-customBlue to-cyan-500/80 flex justify-center items-center z-10">
@@ -52,33 +52,57 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center justify-between gap-4 mt-14 w-full">
-                    <div className="flex flex-row items-center justify-between gap-2 w-full">
-                        <button className="text-fourth px-6 bg-secondary min-w-[10rem] py-2 rounded-md hover:bg-accent-dark transition duration-300">
+                <div className="flex flex-col items-center gap-6 mt-36 w-full pr-52">
+                    <div className="flex flex-col md:flex-row items-center justify-between w-full gap-6">
+
+                        {/* Get in Touch Button */}
+                        <button className="text-white font-semibold bg-secondary hover:bg-accent-dark transition duration-300 px-6 py-3 rounded-md shadow-md min-w-[10rem]">
                             Get in Touch
                         </button>
-                        <div className="flex gap-4 z-10">
-                            <a href="https://github.com/Mnqanqeni/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <img src={githubIcon} alt="GitHub Profile" className="w-10 h-10 hover:scale-110 transition-transform" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/ndiyakholwamnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                <img src={linkedinIcon} alt="LinkedIn Profile" className="w-10 h-10 hover:scale-110 transition-transform" />
-                            </a>
-                            <a href="https://twitter.com/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                                <img src={twitterIcon} alt="Twitter Profile" className="w-10 h-10 hover:scale-110 transition-transform" />
-                            </a>
-                        </div>
 
-                    </div>
-
-                    <div>
-                        <a href={cvFile} download className="hidden  md:flex justify-center items-end gap-2 mt-4 text-fourth">
-                            <img src={downloadIcon} alt="Download CV Icon" className=" w-8 h-8" />
-                            <span className="text-xl h-6">Download My CV</span>
+                        {/* Download CV */}
+                        <a
+                            href={cvFile}
+                            download
+                            className="hidden md:flex items-center gap-2 text-fourth hover:text-accent-dark transition duration-300"
+                        >
+                            <img src={downloadIcon} alt="Download CV" className="w-6 h-6" />
+                            <span className="text-lg font-medium">Download My CV</span>
                         </a>
 
+                        {/* Social Icons */}
+                        <div className="flex gap-4">
+                            <a
+                                href="https://github.com/Mnqanqeni/Mnqanqeni"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                                className="transition-transform hover:scale-110"
+                            >
+                                <img src={githubIcon} alt="GitHub" className="w-8 h-8" />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/ndiyakholwamnqanqeni"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                                className="transition-transform hover:scale-110"
+                            >
+                                <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" />
+                            </a>
+                            <a
+                                href="https://twitter.com/Mnqanqeni"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Twitter"
+                                className="transition-transform hover:scale-110"
+                            >
+                                <img src={twitterIcon} alt="Twitter" className="w-8 h-8" />
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <div className="w-full h-1-6 bg-gradient-frame-line" />
         </section>
