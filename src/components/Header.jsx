@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import logo from '../assets/logos/logo.png';
 import navbar from "../assets/icons/bars-solid.svg";
 import xIcon from "../assets/icons/xmark-solid.svg";
@@ -8,6 +9,10 @@ export default function Header() {
     const toggleDropdown = () => setDropdownOpen(prev => !prev);
 
     const navItems = ["Home", "About", "Projects", "Skills", "Certifications", "Experience", "Contact"];
+    useEffect(() => {
+        document.body.style.overflow = dropdownOpen ? 'hidden' : 'auto';
+    }, [dropdownOpen]);
+
 
     return (
         <header className="w-full flex flex-col items-center">
@@ -36,14 +41,24 @@ export default function Header() {
             </nav>
 
             {dropdownOpen && (
-                <div className="w-full h-full md:hidden fixed  top-16 bg-dark-gradient rounded-md p-4 z-50 opacity-90">
-                    <ul className="flex flex-col items-center gap-5 text-fourth font-playfair">
-                        {navItems.map(item => (
-                            <li key={item} className={ `hover:text-secondary cursor-pointer transform transition-transform duration-200`} onClick={toggleDropdown}>{item}</li>
-                        ))}
-                    </ul>
+                <div className="w-full h-screen md:hidden fixed top-16 left-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ease-in-out animate-fade-slide-down">
+                    <div className="p-6 shadow-2xl bg-primary text-fourth border border-white/10">
+                        <ul className="flex flex-col items-center gap-6 font-playfair text-lg">
+                            {navItems.map((item) => (
+                                <li
+                                    key={item}
+                                    className="hover:text-secondary hover:bg-white/10 px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-center w-full"
+                                    onClick={toggleDropdown}
+                                >
+                                    <a href={`#${item.toLowerCase()}`}>{item}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             )}
+
+
         </header>
     );
 }
