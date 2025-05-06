@@ -42,6 +42,9 @@ export default function Hero() {
                         <p className="flex-1 text-fourth text-base leading-relaxed md:text-xl">                         
                         Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js."
                         </p>
+                        <p>
+                        "Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
+                        </p>
                         <div className="flex-1 flex justify-center items-center relative">
                             <div className="h-full w-auto bg-gradient-to-tr from-transparent via-black/30 shadow-customBlue to-cyan-500/80 flex justify-center items-center z-10">
                                 <img src={heroImage} alt="my image" className="object-contain max-h-[400px]" />
