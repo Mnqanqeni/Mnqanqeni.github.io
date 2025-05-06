@@ -15,7 +15,7 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const MIN_DURATION = 2000; 
+    const MIN_DURATION = 6000; 
     const start = Date.now();
 
     const handleLoad = () => {
