@@ -21,8 +21,8 @@ export default function LoadingScreen(onComplete) {
     return (
         <div className="fixed inset-0 flex items-center justify-center flex-col bg-primary text-gray-100  h-screen bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent">
         <div className=" text-4xl font-mono font-bold"><span ref={el}> | </span></div>
-        <div className="w-[200px] h-[2px] bg-gray-800 rounded relative overflow-hidden">
-            <div className="w-[40%] h-full bg-blue-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar">
+        <div className="w-[250px] h-[2px] bg-fourth rounded relative overflow-hidden">
+            <div className="w-full h-full bg-secondary shadow-customBlue animate-loading-bar">
                 {" "}
             </div>
         </div>
