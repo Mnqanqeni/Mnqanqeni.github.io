@@ -72,8 +72,8 @@ export default function Hero() {
                     </div>
 
                     <div>
-                        <a href={cvFile} download className="flex justify-center items-end gap-2 mt-4 text-fourth">
-                            <img src={downloadIcon} alt="Download CV Icon" className="w-8 h-8" />
+                        <a href={cvFile} download className="hidden  md:flex justify-center items-end gap-2 mt-4 text-fourth">
+                            <img src={downloadIcon} alt="Download CV Icon" className=" w-8 h-8" />
                             <span className="text-xl h-6">Download My CV</span>
                         </a>
 
