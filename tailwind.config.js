@@ -20,6 +20,9 @@ export default {
         navShadow: "0 10px 10px 0 #00a8cd",
         customBlue: '4px 4px 0px 0px #00a8cd',
         customBlueXl: '6px 6px 0px 0px #00a8cd',
+        customBlueXlAll: '6px 6px 6px 6px #00a8cd, -6px -6px -6px -6px #00a8cd',
+        customBlueXlAllHover: '6px 6px 0px 0px #00a8cd, -6px -6px 0px 0px #00a8cd, -4px 4px 0px 0px #00a8cd, 4px -4px 0px 0px #00a8cd',
+        customBlueXlAllHover2: '6px 6px 0px 0px #00a8cd, -6px -6px 0px 0px #00a8cd, -4px 4px 0px 0px #00a8cd, 4px -4px 0px 0px #00a8cd, inset -4px -4px 0px 0px #00a8cd',
       },
       backgroundImage: {
         'gradient-frame-line': 'linear-gradient(90deg, #00a8cd, #00a8cd00)',
