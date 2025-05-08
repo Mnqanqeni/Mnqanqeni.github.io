@@ -62,3 +62,9 @@
 .scrollbar::-webkit-scrollbar-track {
   background-color: #edf2f7;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation: none !important;
+  }
+}
