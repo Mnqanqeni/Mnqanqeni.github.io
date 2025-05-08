@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import heroImage from '../assets/images/hero2.png';
-import linkedinIcon from '../assets/icons/linkedin-in-brands-solid (2).svg';
+import linkedinIcon from '../assets/icons/linkedin-in-brands-solid.svg';
 import githubIcon from '../assets/icons/github-brands-solid.svg';
 import twitterIcon from '../assets/icons/twitter-brands-solid.svg';
 import downloadIcon from '../assets/icons/download-solid.svg';

@@ -32,3 +32,20 @@
     animation: fade-slide-down 0.4s ease-out;
   }
   
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scroll-animate {
+    animation: scroll-left 30s linear infinite;
+  }
+  
+  .scroll-animate:hover {
+    animation-play-state: paused;
+  }
+  
