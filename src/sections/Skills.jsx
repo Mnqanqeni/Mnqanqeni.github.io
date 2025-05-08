@@ -33,7 +33,7 @@ function App() {
       <h1 className="text-3xl font-bold"> <span className="text-secondary">My </span>Skills</h1>
 
       <div className="flex flex-wrap items-center justify-center gap-4">
-        {[...golfProps,...golfProps,...golfProps].map((golfProp, index) => (
+        {[...golfProps].map((golfProp, index) => (
           <div key={index} className="mx-4 min-w-[100px]">
             <GolfBall golfProp={golfProp} />
           </div>
