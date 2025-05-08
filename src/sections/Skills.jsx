@@ -13,8 +13,8 @@ import python from '../assets/icons/python.png';
 import postcsSQL from '../assets/icons/postgresSQL.svg';
 
 const golfProps = [
-  { label: css, value: '80%' },
-  { label: html, value: '70%' },
+  // { label: css, value: '80%' },
+  // { label: html, value: '70%' },
   { label: javascript, value: '60%' },
   { label: docker, value: '80%' },
   { label: express, value: '70%' },
