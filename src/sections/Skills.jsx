@@ -23,18 +23,28 @@ const golfProps = [
   { label: nodejs, value: '70%' },
   { label: python, value: '60%' },
   { label: postcsSQL, value: '80%' },
+  { label: nodejs, value: '70%' },
+  { label: python, value: '60%' },
+  { label: postcsSQL, value: '80%' },
+  { label: nodejs, value: '70%' },
+  { label: python, value: '60%' },
+  { label: postcsSQL, value: '80%' },
+  { label: nodejs, value: '70%' },
+  { label: python, value: '60%' },
+  { label: postcsSQL, value: '80%' },
+
 
 ]
 
 
 function App() {
   return (
-    <section id="skills" className="flex flex-col items-center justify-between py-16">
+    <section id="skills" className="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200">
       <h1 className="text-3xl font-bold"> <span className="text-secondary">My </span>Skills</h1>
 
-      <div className="flex flex-nowrap items-center overflow-x-auto justify-center gap-4">
+      <div className="flex gap-4 scroll-animate hover:pause-animation w-max">
         {[...golfProps].map((golfProp, index) => (
-          <div key={index} className="mx-4 min-w-[100px]">
+          <div key={index} className="w-32 h-32 md:min-h-[100px] md:min-w-[100px] bg-white">
             <GolfBall golfProp={golfProp} />
           </div>
         ))}
