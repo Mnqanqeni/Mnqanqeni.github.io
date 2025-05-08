@@ -37,7 +37,7 @@ const golfProps = [
 ]
 
 
-function App() {
+function Skills() {
   return (
     <section id="skills" className="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200">
       <h1 className="text-3xl font-bold"> <span className="text-secondary">My </span>Skills</h1>
@@ -56,4 +56,4 @@ function App() {
 }
 
 
-export default App;
+export default Skills;
