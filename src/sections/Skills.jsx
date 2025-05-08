@@ -61,7 +61,7 @@ function App() {
       <h1 className="text-3xl font-bold"> <span className="text-secondary">My </span>Skills</h1>
       <div className="w-full overflow-x-auto whitespace-nowrap scrollbar scrollbar-thumb-gray-500 scrollbar-track-gray-200">
         <div className="inline-flex gap-4 w-max">
-          <Marquee pauseOnHover gradient={false} speed={220}>
+          <Marquee pauseOnHover gradient={false} speed={60}>
             {[...golfProps, ...golfProps].map((golfProp, index) => (
               <div key={index} className="mx-4 min-w-[100px]">
                 <GolfBall golfProp={golfProp} />
