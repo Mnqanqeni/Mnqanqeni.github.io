@@ -49,3 +49,16 @@
     animation-play-state: paused;
   }
   
+  
+.scrollbar::-webkit-scrollbar {
+  height: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a0aec0;
+  border-radius: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #edf2f7;
+}

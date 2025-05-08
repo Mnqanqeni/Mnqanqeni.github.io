@@ -57,42 +57,24 @@ import Marquee from 'react-fast-marquee';
 
 function App() {
   return (
-    <section id="skills" className="flex flex-col items-center justify-between">
-
-      <div className="text-3xl font-bold py-16">
-        <h1> <span className="text-secondary">My </span>Skills</h1>
-        <div className="relative w-full overflow-hidden">
-          <div
-            className="flex gap-4 scroll-animate hover:pause-animation w-max"
-          >
-            {/* Repeat golfProps twice for seamless loop */}
+    <section id="skills" className="flex flex-col items-center justify-between py-16">
+      <h1 className="text-3xl font-bold"> <span className="text-secondary">My </span>Skills</h1>
+      <div className="w-full overflow-x-auto whitespace-nowrap scrollbar scrollbar-thumb-gray-500 scrollbar-track-gray-200">
+        <div className="inline-flex gap-4 w-max">
+          <Marquee pauseOnHover gradient={false} speed={220}>
             {[...golfProps, ...golfProps].map((golfProp, index) => (
-              <div key={index} className="min-w-[100px]">
+              <div key={index} className="mx-4 min-w-[100px]">
                 <GolfBall golfProp={golfProp} />
               </div>
-            ))}       </div>
+            ))}
+          </Marquee>
         </div>
       </div>
-      <div className="w-full h-1-6 bg-gradient-frame-line" />
+      <div className="w-full h-1-6 bg-gradient-frame-line mt-8" />
     </section>
 
   );
 }
-// function App() {
-//   return (
-//     <div className="relative w-full overflow-hidden">
-//       <div
-//         className="flex gap-4 scroll-animate hover:pause-animation w-max"
-//       >
-//         {/* Repeat golfProps twice for seamless loop */}
-//         {[...golfProps, ...golfProps].map((golfProp, index) => (
-//           <div key={index} className="min-w-[100px]">
-//             <GolfBall golfProp={golfProp} />
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
+
 
 export default App;
