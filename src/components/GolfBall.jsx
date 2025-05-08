@@ -63,7 +63,7 @@ function GolfBallMesh({ golfProp }) {
 
 export default function GolfBall({ golfProp }) {
     return (
-        <div className="w-30 h-30 md:w-90 md:h-90 p-2">
+        <div className="w-30 h-30 md:w-96 md:h-96 p-2">
             <Canvas>
                 <ambientLight intensity={0.5} />
                 <directionalLight position={[2, 2, 5]} intensity={1.2} />

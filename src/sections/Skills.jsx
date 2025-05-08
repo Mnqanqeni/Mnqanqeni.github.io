@@ -39,17 +39,19 @@ const golfProps = [
 
 function Skills() {
   return (
-    <section id="skills" className="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200">
-      <h1 className="text-3xl font-bold"> <span className="text-secondary">My </span>Skills</h1>
-
-      <div className="flex gap-4 scroll-animate hover:pause-animation w-max">
-        {[...golfProps].map((golfProp, index) => (
-          <div key={index} className="w-32 h-32 md:min-h-[100px] md:min-w-[100px] bg-white">
-            <GolfBall golfProp={golfProp} />
-          </div>
-        ))}
+    <section id="skills" className="flex flex-col items-center">
+      <h1 className="text-3xl font-bold mt-6"> <span className="text-secondary">My </span>Skills</h1>
+      <div className='w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200'>
+        <div className="flex gap-4 scroll-animate hover:pause-animation w-max">
+          {[...golfProps].map((golfProp, index) => (
+            <div key={index} className="w-32 h-32 md:w-96 md:h-96 bg-primary">
+              <GolfBall golfProp={golfProp} />
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="w-full h-1-6 bg-gradient-frame-line mt-8" />
+
+      <div className="w-full h-1-6 bg-gradient-frame-line mt-9 md:mt-8" />
     </section>
 
   );
