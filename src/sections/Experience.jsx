@@ -89,7 +89,7 @@ const TimelineItem = ({ title, org, location, date, description, index }) => (
 
 export default function Experience() {
   return (
-    <section className="bg-primary py-20 px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="bg-primary py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold ">Education <span className="text-secondary">and Experience</span></h2>
 
