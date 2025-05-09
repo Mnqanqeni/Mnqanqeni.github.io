@@ -34,7 +34,7 @@ export default function Hero() {
                         Hi, I'm Ndiyakholwa Mnqanqeni
                     </h1>
                     <h2 className="text-xl md:text-2xl text-secondary">
-                        I'm a <span ref={el} className="text-accent font-semibold"></span>
+                        a <span ref={el} className="text-accent font-semibold"></span>
                     </h2>
                 </div>
                 <div>
