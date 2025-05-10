@@ -16,6 +16,7 @@ import django from '../assets/icons/django-96.png';
 import nodejs from '../assets/icons/nodejs.svg';
 import python from '../assets/icons/python.png';
 import postcsSQL from '../assets/icons/postgresql-96.png';
+import linux from '../assets/icons/linux-100.png';
 
 
 export default function Hero() {
@@ -106,8 +107,7 @@ export default function Hero() {
                             <img src={nodejs} alt="Node.js icon"  className="hidden lg:block absolute" />
                             <img src={python} alt="Python icon"  className="hidden lg:block absolute w-24 h-24 right-[200px] top-[450px] " />
                             <img src={postcsSQL} alt="PostgreSQL icon"  className="hidden lg:block absolute right-[100px] bottom-[450px] -z-1 opacity-20 " />
-
-                            <img></img>
+                            <img src={linux} alt="linux" className="hidden lg:block absolute w-80 h-80 right-[1000px] top-[330px] -z-1 opacity-10"/>
                         </div>
                     </div>
                 </div>
