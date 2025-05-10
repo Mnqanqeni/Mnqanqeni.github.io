@@ -11,8 +11,8 @@ import html from '../assets/icons/html.svg';
 import javascript from '../assets/icons/js.png';
 import docker from '../assets/icons/docker.svg';
 import express from '../assets/icons/expressLogo.png';
-import git from '../assets/icons/git.png';
-import c from '../assets/icons/letter-c.png';
+import reactIcon from '../assets/icons/react-96.png';
+import django from '../assets/icons/django-96.png';
 import nodejs from '../assets/icons/nodejs.svg';
 import python from '../assets/icons/python.png';
 import postcsSQL from '../assets/icons/postgresql-96.png';
@@ -101,8 +101,8 @@ export default function Hero() {
                             <img src={javascript} alt="JavaScript icon"  className="hidden lg:block absolute left-[540px] bottom-[390px] -z-1 opacity-80" />
                             <img src={docker} alt="Docker icon"  className="hidden lg:block absolute w-20 h-20 left-[670px] top-[40px]" />
                             <img src={express} alt="Express icon"  className="hidden lg:block absolute w-32 h-20 left-[200px] top-[500px] opacity-50" />
-                            {/* <img src={git} alt="Git icon"  className="hidden lg:block absolute" /> */}
-                            {/* <img src={c} alt="C icon"  className="hidden lg:block absolute" /> */}
+                            <img src={django} alt="Django icon"  className="hidden lg:block absolute right-[800px]" />
+                            <img src={reactIcon} alt="React icon"  className="hidden lg:block absolute left-[800px] opacity-50" />
                             <img src={nodejs} alt="Node.js icon"  className="hidden lg:block absolute" />
                             <img src={python} alt="Python icon"  className="hidden lg:block absolute w-24 h-24 right-[200px] top-[450px] " />
                             <img src={postcsSQL} alt="PostgreSQL icon"  className="hidden lg:block absolute right-[100px] bottom-[450px] -z-1 opacity-20 " />
