@@ -41,7 +41,6 @@ function Skills() {
           ))}
         </div>
       </div>
-
       <div className="w-full h-1-6 bg-gradient-frame-line mt-9 md:mt-8" />
     </section>
 

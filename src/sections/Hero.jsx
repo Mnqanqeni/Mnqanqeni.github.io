@@ -38,19 +38,46 @@ export default function Hero() {
                     </h2>
                 </div>
                 <div>
-                    <div className="flex flex-row  w-full justify-center items-center gap-4 mt-6">
-                        <p className="flex-1 md:hidden text-fourth text-base leading-relaxed z-10">
-                            Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js."
-                        </p>
-                        <p className="hidden md:block lg:hidden flex-1 text-fourth leading-relaxed text-2xl z-10">
-                            Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
-                        </p>
-                        <p className="hidden lg:block xl:hidden flex-1 text-fourth leading-relaxed text-2xl z-10">
-                            Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.  With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions. 
-                        </p>
-                        <p className="hidden lg:hidden xl:block flex-1 text-fourth leading-relaxed text-2xl z-10">
-                            Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.  With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions. 
-                        </p>
+                    <div className="flex flex-row  w-full justify-between items-center  mt-6">
+                        <div className="flex-1">
+                            <p className=" md:hidden text-fourth text-base leading-relaxed z-10">
+                                Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js."
+                            </p>
+                            <p className="hidden md:block lg:hidden  text-fourth leading-relaxed text-2xl z-10">
+                                Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
+                            </p>
+                            <p className="hidden lg:block xl:hidden  text-fourth leading-relaxed text-2xl z-10">
+                                Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.  With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
+                            </p>
+
+                            <p className="hidden lg:hidden xl:block  text-fourth leading-relaxed text-2xl z-10">
+                                Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.  With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
+                            </p>
+                            <div className="hidden lg:flex flex-col gap-4">
+                                <div className="flex flex-row gap-8">
+                                    <button className="text-fourth px-6 bg-secondary min-w-[10rem] py-2 rounded-md hover:bg-accent-dark transition duration-300">
+                                        Get in Touch
+                                    </button>
+
+                                    <a href="https://github.com/Mnqanqeni/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                        <img src={githubIcon} alt="GitHub Profile" className="w-10 h-10 hover:scale-110 transition-transform" />
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/ndiyakholwamnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                        <img src={linkedinIcon} alt="LinkedIn Profile" className="w-10 h-10 hover:scale-110 transition-transform" />
+                                    </a>
+                                    <a href="https://twitter.com/Mnqanqeni" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                        <img src={twitterIcon} alt="Twitter Profile" className="w-10 h-10 hover:scale-110 transition-transform" />
+                                    </a>
+                                </div>
+                                <div className="flex">
+                                    <a href={cvFile} download className="justify-center items-end gap-2 text-fourth">
+                                        <img src={downloadIcon} alt="Download CV Icon" className=" w-8 h-8" />
+                                        <span className="text-xl h-6">Download My CV</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="flex-1 flex justify-center items-center relative">
                             <div className="h-full w-auto bg-gradient-to-tr from-transparent via-black/30 shadow-customBlue xl:shadow-customBlueXl to-cyan-500/80 flex justify-center items-center z-10">
                                 <img src={heroImage} alt="my image" className="object-contain max-h-[400px] lg:max-h-[600px]" />
@@ -58,11 +85,10 @@ export default function Hero() {
 
                             <div className="absolute w-44 md:w-80 lg:w-96 h-44  md:h-80 lg:h-96  bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full right-[40%] lg:right-[50%] bottom-[50%]  lg:bottom-[50%] animate-fadeIn move-left"></div>
                             <div className="absolute w-44 md:w-80 lg:w-[28rem] h-44  md:h-80 lg:h-[28rem] bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full rotate-[240deg] left-[40%] lg:left-[45%] top-[50%] animate-fadeIn move-right"></div>
-                            {/* <div className="absolute w-44 md:w-80 h-44  md:h-80 bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full rotate-[240deg] left-[40%] top-[50%] animate-fadeIn move-right"></div> */}
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center justify-between gap-4 mt-5 md:mt-32 py-8 w-full  xl:w-2/3 xl:self-start">
+                <div className="flex flex-col items-center justify-between gap-4 mt-5 md:mt-32 py-8 w-full  xl:w-2/3 xl:self-start lg:hidden">
                     <div className="flex flex-row items-center justify-between gap-2 w-full">
                         <button className="text-fourth px-6 bg-secondary min-w-[10rem] py-2 rounded-md hover:bg-accent-dark transition duration-300">
                             Get in Touch
