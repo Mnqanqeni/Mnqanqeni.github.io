@@ -25,21 +25,16 @@ export default function About() {
         {/* Text Content */}
         <div className="flex flex-col flex-1 text-fourth gap-4 px-4 text-3xl">
           <div className="hidden md:block">
-            <h1 className="text-3xl font-bold mb-4">
+            <h1 className="text-2xl font-bold mb-4">
               About <span className="text-secondary">Me</span>
             </h1>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col text-xl md:text-lg gap-4'>
               <p>
-                I am someone fascinated by complexity and system interactions, and I
-                thrive on the challenge of building meaningful products. I believe
-                that teamwork is essential to success; sharing knowledge and
-                collaborating with diverse minds leads to the best outcomes.
+                Welcome to my portfolio!  I consider myself a tech enthusiast, though that wasn’t always the case.  I used to say I disliked some aspects of technology and label them name like boring and so on, but I've realized it was simply because I knew so little to none about them.  The more I learning, the more the dots connect, the more it clicks, the more I love, and the more exciting everything about technology is.</p>
+
+              <p>Now  I am a passionate Software Engineer who is committed to developing dependable, high-performance products that address real-world challenges.  I specialize at transforming difficult concepts into clear, efficient code and intuitive user experiences.  Whether I'm creating scalable backend systems or responsive frontends, I bring creativity, precision, and a strong desire to learn to every project I work on.
               </p>
-              <p className="">
-                I believe that every feature should align with business goals and
-                enhance the user experience. I enjoy collaborating to bring creative
-                ideas to life, turning visions into fully realized digital products.
-              </p>
+
             </div>
 
           </div>
@@ -50,15 +45,9 @@ export default function About() {
       {/* Mobile-only second paragraph */}
       <div className="flex flex-col md:hidden text-fourth px-4 mt-4 text-xl gap-4">
         <p>
-          I am someone fascinated by complexity and system interactions, and I
-          thrive on the challenge of building meaningful products. I believe
-          that teamwork is essential to success; sharing knowledge and
-          collaborating with diverse minds leads to the best outcomes.
-        </p>
-        <p>
-          I believe that every feature should align with business goals and
-          enhance the user experience. I enjoy collaborating to bring creative
-          ideas to life, turning visions into fully realized digital products.
+          Welcome to my portfolio!  I consider myself a tech enthusiast, though that wasn’t always the case.  I used to say I disliked some aspects of technology and label them name like boring and so on, but I've realized it was simply because I knew so little to none about them.  The more I learning, the more the dots connect, the more it clicks, the more I love, and the more exciting everything about technology is.</p>
+
+        <p>Now  I am a passionate Software Engineer who is committed to developing dependable, high-performance products that address real-world challenges.  I specialize at transforming difficult concepts into clear, efficient code and intuitive user experiences.  Whether I'm creating scalable backend systems or responsive frontends, I bring creativity, precision, and a strong desire to learn to every project I work on.
         </p>
       </div>
 

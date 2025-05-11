@@ -4,6 +4,15 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      xs: '480px',     // extra small
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      'brp1': '1350px',
+      'brp2': '1800px',
+    },
     extend: {
       colors: {
         primary: '#141819',
@@ -33,6 +42,7 @@ export default {
       },
     },
   },
+  
   plugins: [
     require('tailwind-scrollbar'),
   ],

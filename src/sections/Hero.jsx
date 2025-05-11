@@ -20,10 +20,11 @@ import linux from '../assets/icons/linux-100.png';
 
 
 export default function Hero() {
-    const el = useRef(null);
+    const mobileTypedRef = useRef(null);
+    const desktopTypedRef = useRef(null);
 
     useEffect(() => {
-        const typed = new Typed(el.current, {
+        const options = {
             strings: [
                 "Fullstack Developer",
                 "Software Engineer",
@@ -33,38 +34,55 @@ export default function Hero() {
             backSpeed: 50,
             backDelay: 3000,
             loop: true,
-        });
-
-        return () => typed.destroy();
+        };
+    
+        const mobileTyped = new Typed(mobileTypedRef.current, options);
+        const desktopTyped = new Typed(desktopTypedRef.current, options);
+    
+        return () => {
+            mobileTyped.destroy();
+            desktopTyped.destroy();
+        };
     }, []);
-
+    
     return (
         <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-44  px-4">
             <div className="flex flex-col items-center justify-center">
-                <div className="md:self-start z-10">
+                <div className="md:self-start z-10  lg:hidden">
                     <h1 className="text-fourth text-2xl md:text-4xl font-bold">
                         Hi, I'm Ndiyakholwa Mnqanqeni
                     </h1>
                     <h2 className="text-xl md:text-2xl text-secondary">
-                        a <span ref={el} className="text-accent font-semibold"></span>
+                        a <span ref={mobileTypedRef} className="text-accent font-semibold"></span>
                     </h2>
                 </div>
                 <div>
                     <div className="flex flex-row  w-full justify-between items-center  mt-6">
-                        <div className="flex-1 flex flex-col gap-14">
-                            <p className=" md:hidden text-fourth text-base leading-relaxed z-10">
-                                Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js."
-                            </p>
-                            <p className="hidden md:block lg:hidden  text-fourth leading-relaxed text-2xl z-10">
-                                Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
-                            </p>
-                            <p className="hidden lg:block xl:hidden  text-fourth leading-relaxed text-2xl z-10">
-                                Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.  With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
-                            </p>
+                        <div className="flex-1 flex flex-col gap-16">
+                            <div className="hidden lg:block md:self-start z-10 ">
+                                <h1 className="text-fourth text-2xl md:text-4xl font-bold">
+                                    Hi, I'm Ndiyakholwa Mnqanqeni
+                                </h1>
+                                <h2 className="text-xl md:text-2xl text-secondary">
+                                    a <span ref={desktopTypedRef} className="text-accent font-semibold"></span>
+                                </h2>
+                            </div>
 
-                            <p className="hidden lg:hidden xl:block  text-fourth leading-relaxed text-2xl z-10">
-                                Welcome to my portfolio! I'm Ndiyakholwa, a full-stack developer excited about creating responsive and user-friendly web applications. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.  With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions. With foundational skills in HTML, CSS, JavaScript, Node.js, Express, Docker, and PostgreSQL, I focus on building functional solutions.
-                            </p>
+                            <div className="flex flex-col gap-4 text-base md:text-lg lg:text-xl xl:text-2xl text-fourth leading-relaxed z-10">
+                                <p>Turning curiosity into code, and ideas into impact.</p>
+                                <div>
+                                    <p className="hidden md:block">I'm a Software Engineer passionate about crafting elegant, end-to-end solutions—from backend architecture to frontend experiences.</p>
+                                    <p className="md:hidden">I'm a Software Engineer building elegant, full-stack solutions.</p>
+                                </div>
+                                <div>
+                                    <p className="hidden md:block">Let's create something meaningful—one line of code at a time.</p>
+                                    <p className="md:hidden">Let’s build something meaningful.</p>
+                                </div>
+                                <p className="hidden">Explore my work and feel free to reach out if you’ve got something exciting in mind.</p>
+
+                            </div>
+
+
                             <div className="hidden lg:flex flex-col gap-8">
                                 <div className="flex flex-row gap-8">
                                     <button className="text-fourth px-6 bg-secondary min-w-[10rem] py-2 rounded-md hover:bg-accent-dark transition duration-300">
@@ -97,18 +115,35 @@ export default function Hero() {
 
                             <div className="absolute w-44 md:w-80 lg:w-96 h-44  md:h-80 lg:h-96  bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full right-[40%] lg:right-[50%] bottom-[50%]  lg:bottom-[50%] animate-fadeIn move-left"></div>
                             <div className="absolute w-44 md:w-80 lg:w-[28rem] h-44  md:h-80 lg:h-[28rem] bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent rounded-full rotate-[240deg] left-[40%] lg:left-[45%] top-[50%] animate-fadeIn move-right"></div>
-                            <img src={css} alt="CSS icon"  className="hidden lg:block absolute right-[210px] -z-1 opacity-20"/>
-                            <img src={html} alt="HTML icon"  className="hidden lg:block absolute left-[250px] top-[250px] -z-1 opacity-50" />
-                            <img src={javascript} alt="JavaScript icon"  className="hidden lg:block absolute left-[540px] bottom-[390px] -z-1 opacity-80" />
-                            <img src={docker} alt="Docker icon"  className="hidden lg:block absolute w-20 h-20 left-[670px] top-[40px]" />
-                            <img src={express} alt="Express icon"  className="hidden lg:block absolute w-32 h-20 left-[200px] top-[500px] opacity-50" />
-                            <img src={django} alt="Django icon"  className="hidden lg:block absolute right-[800px]" />
-                            <img src={reactIcon} alt="React icon"  className="hidden lg:block absolute left-[800px] opacity-50" />
-                            <img src={nodejs} alt="Node.js icon"  className="hidden lg:block absolute" />
-                            <img src={python} alt="Python icon"  className="hidden lg:block absolute w-24 h-24 right-[200px] top-[450px] " />
-                            <img src={postcsSQL} alt="PostgreSQL icon"  className="hidden lg:block absolute right-[100px] bottom-[450px] -z-1 opacity-20 " />
-                            <img src={linux} alt="linux" className="hidden lg:block absolute w-80 h-80 right-[1000px] top-[330px] -z-1 opacity-10"/>
+
+                            <img src={css} alt="CSS icon" className="hidden brp1:block absolute right-6 sm:right-20 lg:right-[210px] top-10  opacity-20 w-10 sm:w-16 lg:w-20" />
+
+                            <img src={html} alt="HTML icon" className="hidden brp1:block absolute left-10 sm:left-20 lg:left-[250px] top-40 sm:top-52 lg:top-[250px]  opacity-50 w-10 sm:w-14 lg:w-20" />
+
+                            <img src={javascript} alt="JavaScript icon" className="hidden brp1:block absolute left-[0%] bottom-[92%] opacity-80 w-24" />
+
+                            <img src={docker} alt="Docker icon" className="hidden brp1:block absolute w-28 h-auto right-[17%] bottom-[70%]" />
+
+                            <img src={express} alt="Express icon" className="hidden lg:block  absolute h-20 w-auto  left-[10%] top-[110%] opacity-50" />
+
+                            <img src={django} alt="Django icon" className="hidden lg:block  absolute right-[85%] top-20 w-30" />
+
+                            <img src={reactIcon} alt="React icon" className="hidden lg:block  absolute left-[85%] top-36 opacity-50 w-20" />
+
+                            <img src={nodejs} alt="Node.js icon" className="hidden lg:block absolute right-[47%] bottom-[100%] w-20 opacity-50" />
+
+                            <img src={python} alt="Python icon" className="hidden lg:block absolute right-[20%] top-[100%] w-32 h-auto opacity-50" />
+
+                            <img src={postcsSQL} alt="PostgreSQL icon" className="hidden lg:block  absolute left-[80%]  bottom-[100%]  opacity-20 w-28" />
+
+                            <img
+                                src={linux}
+                                alt="Linux"
+                                className="hidden lg:block absolute right-[100%] top-[90%] -z-1 w-44  h-auto opacity-50"
+                            />
                         </div>
+
+
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-between gap-4 mt-5 md:mt-32 py-8 w-full  xl:w-2/3 xl:self-start lg:hidden">
