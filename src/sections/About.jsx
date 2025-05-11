@@ -25,10 +25,10 @@ export default function About() {
         {/* Text Content */}
         <div className="flex flex-col flex-1 text-fourth gap-4 px-4 text-3xl">
           <div className="hidden md:block">
-            <h1 className="text-2xl font-bold mb-4">
+            <h1 className="text-2xl font-bold xl:text-4xl mb-4">
               About <span className="text-secondary">Me</span>
             </h1>
-            <div className='flex flex-col text-xl md:text-lg gap-4'>
+            <div className='flex flex-col text-xl md:text-xl xl:text-3xl gap-4'>
               <p>
                 Welcome to my portfolio!  I consider myself a tech enthusiast, though that wasn’t always the case.  I used to say I disliked some aspects of technology and label them name like boring and so on, but I've realized it was simply because I knew so little to none about them.  The more I learning, the more the dots connect, the more it clicks, the more I love, and the more exciting everything about technology is.</p>
 

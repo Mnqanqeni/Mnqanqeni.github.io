@@ -46,10 +46,10 @@ export default function Hero() {
     }, []);
     
     return (
-        <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-44  px-4">
+        <section className="flex flex-col items-center justify-between gap-4 pt-28  md:pt-40  px-4">
             <div className="flex flex-col items-center justify-center">
-                <div className="md:self-start z-10  lg:hidden">
-                    <h1 className="text-fourth text-2xl md:text-4xl font-bold">
+                <div className="md:self-start z-10  lg:hidden mb-5 md:mb-0">
+                    <h1 className=" text-fourth text-2xl md:text-4xl font-bold">
                         Hi, I'm Ndiyakholwa Mnqanqeni
                     </h1>
                     <h2 className="text-xl md:text-2xl text-secondary">
@@ -57,28 +57,28 @@ export default function Hero() {
                     </h2>
                 </div>
                 <div>
-                    <div className="flex flex-row  w-full justify-between items-center  mt-6">
+                    <div className="flex flex-row  w-full justify-between items-center">
                         <div className="flex-1 flex flex-col gap-16">
-                            <div className="hidden lg:block md:self-start z-10 ">
-                                <h1 className="text-fourth text-2xl md:text-4xl font-bold">
+                            <div className="hidden lg:flex flex-col gap-3 md:self-start z-10 ">
+                                <h1 className="text-fourth text-2xl md:text-5xl font-bold">
                                     Hi, I'm Ndiyakholwa Mnqanqeni
                                 </h1>
-                                <h2 className="text-xl md:text-2xl text-secondary">
+                                <h2 className="text-xl md:text-3xl text-secondary">
                                     a <span ref={desktopTypedRef} className="text-accent font-semibold"></span>
                                 </h2>
                             </div>
 
-                            <div className="flex flex-col gap-4 text-base md:text-lg lg:text-xl xl:text-2xl text-fourth leading-relaxed z-10">
+                            <div className="flex flex-col gap-4 text-base sm:text-xl md:text-xl xl:text-3xl text-fourth leading-relaxed z-10">
                                 <p>Turning curiosity into code, and ideas into impact.</p>
                                 <div>
-                                    <p className="hidden md:block">I'm a Software Engineer passionate about crafting elegant, end-to-end solutions—from backend architecture to frontend experiences.</p>
+                                    <p className="hidden md:block">I'm a Software Engineer who enjoys developing elegant, end-to-end solutions, from backend architecture to frontend experiences.</p>
                                     <p className="md:hidden">I'm a Software Engineer building elegant, full-stack solutions.</p>
                                 </div>
                                 <div>
-                                    <p className="hidden md:block">Let's create something meaningful—one line of code at a time.</p>
+                                    <p className="hidden md:block">Let's build something important, one line of code at a time.Converting curiosity into code, and ideas into effect.</p>
                                     <p className="md:hidden">Let’s build something meaningful.</p>
                                 </div>
-                                <p className="hidden">Explore my work and feel free to reach out if you’ve got something exciting in mind.</p>
+                                <p className="hidden md:block">Explore my work and feel free to reach out if you’ve got something exciting in mind.</p>
 
                             </div>
 
@@ -176,7 +176,7 @@ export default function Hero() {
 
                 </div>
             </div>
-            <div className="w-full h-1-6 bg-gradient-frame-line lg:mt-56" />
+            <div className="w-full h-1-6 bg-gradient-frame-line lg:mt-36" />
         </section>
     );
 }
