@@ -11,7 +11,7 @@ export default function Projects() {
             <div className="text-3xl font-bold xl:text-5xl py-16">
                 <h1> <span className="text-secondary">My </span>Projects</h1>
             </div>
-            <div className="flex flex-col gap-4  items-center justify-center">
+            <div className="flex flex-col gap-4">
                 <label className="block text-lg text-white">Level:</label>
                 <select id="filter-level" className="p-2 rounded bg-secondary w-full">
                     <option value="">All Levels</option>
@@ -39,9 +39,15 @@ export default function Projects() {
                             ))}
                         </select>
                     </div>
-
+                    
 
                 </div>
+                <button
+                        
+                        className="w-full mt-4 py-2 px-4 rounded-md bg-cyan-600 hover:bg-cyan-700 text-white font-medium transition"
+                    >
+                        Clear Filters
+                    </button>
 
             </div>
             <div className="flex flex-wrap justify-center gap-8">
