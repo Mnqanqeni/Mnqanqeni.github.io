@@ -4,7 +4,7 @@ import aboutMeImage from '../assets/images/about-me.png';
 export default function About() {
   return (
     <section id="about" className="flex flex-col items-center justify-center px-4 py-8">
-      <h1 className=" md:hidden text-3xl font-bold m-8">
+      <h1 className=" md:hidden text-3xl font-bold m-8 xl:text-4xl">
         About <span className="text-secondary">Me</span>
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-between relative">
@@ -25,7 +25,7 @@ export default function About() {
         {/* Text Content */}
         <div className="flex flex-col flex-1 text-fourth gap-4 px-4 text-3xl">
           <div className="hidden md:block">
-            <h1 className="text-2xl font-bold xl:text-4xl mb-4">
+            <h1 className="text-2xl font-bold xl:text-5xl mb-4">
               About <span className="text-secondary">Me</span>
             </h1>
             <div className='flex flex-col text-xl md:text-xl xl:text-3xl gap-4'>

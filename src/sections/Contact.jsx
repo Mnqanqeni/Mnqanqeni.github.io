@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="contact"className="flex flex-col items-center p-8 w-full">
       <div className="text-center">
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl font-bold xl:text-5xl">
           Contact <span className="text-secondary">Me</span>
         </h1>
         <p className="text-[#ffffffb2] text-xl md:text-2xl mt-2">

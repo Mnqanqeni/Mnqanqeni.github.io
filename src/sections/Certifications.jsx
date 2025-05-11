@@ -7,7 +7,7 @@ export default function Certification() {
 
     return (
         <section id="certifications" className="flex flex-col items-center justify-between w-full h-auto">
-            <div className="text-3xl font-bold py-16">
+            <div className="text-3xl font-bold py-16 xl:text-5xl">
                 <h1> <span className="text-secondary">My </span>Certifications</h1>
             </div >
             <div className="flex flex-wrap justify-center gap-8">

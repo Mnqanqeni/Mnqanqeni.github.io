@@ -6,7 +6,7 @@ import { projects } from "../data/projects";
 export default function Projects() {
     return (
         <section id="projects" className="flex flex-col items-center justify-between w-full h-auto">
-            <div className="text-3xl font-bold py-16">
+            <div className="text-3xl font-bold xl:text-5xl py-16">
                 <h1> <span className="text-secondary">My </span>Projects</h1>
             </div>
             <div className="flex flex-wrap justify-center gap-8">
