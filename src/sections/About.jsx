@@ -9,7 +9,7 @@ export default function About() {
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-between relative">
         {/* Image and Circles */}
-        <div className="relative flex-1 flex items-center justify-center my-2">
+        <div className="relative flex-1/2 flex items-center justify-center my-2">
           <div className="relative w-[416px] h-[444px] left-8 md:left-0">
             <div className="h-[300px] w-[300px] rotate-[-48deg] bg-gradient-to-br from-[#00a8cda5] to-transparent absolute left-[15%] rounded-full" />
             <div className="h-[162px] w-[162px] bg-gradient-to-br from-[#00a8cda5] to-transparent absolute bottom-0 rounded-[80px]" />

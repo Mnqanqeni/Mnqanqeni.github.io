@@ -33,5 +33,4 @@ export const skillsList = {
   NODE: "Node.js",
   EXPRESS: "Express",
   DOCKER: "Docker",
-  MUSIC_THEORY: "Music Theory"
 };
