@@ -19,10 +19,10 @@ export default function LoadingScreen({ onComplete }) {
 
     return (
         <div className="inset-0 flex items-center justify-center flex-col bg-primary text-gray-100 min-h-screen bg-gradient-to-br from-cyan-500/60 via-black/30 to-transparent">
-            <h1 className="pl-4 text-4xl font-mono font-bold min-w-[12ch] min-h-[1em]">
+            <h1 className="pl-8 text-4xl font-mono font-bold min-w-[12ch] min-h-[1em]">
                 <span ref={el}> | </span>
             </h1>
-            <div className="w-[240px] h-[3px] bg-fourth rounded relative overflow-hidden">
+            <div className="w-[200px] h-[3px] bg-fourth rounded relative overflow-hidden">
                 <div className="w-full h-full bg-secondary shadow-customBlue animate-loading-bar">
                     {" "}
                 </div>
