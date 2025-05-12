@@ -6,7 +6,7 @@ export const projects = [
   {
     title: "Portfolio Website",
     description: "A personal portfolio built with React and Tailwind to showcase my projects.",
-    categories: [categories.FRONTEND, categories.FULLSTACK],
+    categories: [categories.FRONTEND],
     level: levels.INTERMEDIATE,
     image: {
       src: "/images/portfolio.png",
@@ -30,7 +30,7 @@ export const projects = [
   {
     title: "Personal Blog",
     description: "A blog platform built with Django and React, allowing users to comment and share posts.",
-    categories: [categories.FULLSTACK],
+    categories: [categories.FULLSTACK,categories.FULLSTACK],
     level: levels.INTERMEDIATE,
     image: {
       src: "/images/ecommerce.png",
@@ -63,7 +63,7 @@ export const projects = [
   {
     title: "Memory Game",
     description: "A fun memory game built with JavaScript and CSS animations.",
-    categories: [categories.FRONTEND, categories.GAME],
+    categories: [categories.FRONTEND, categories.GAME_DEVELOPMENT],
     level: levels.BEGINNER,
     image: {
       src: "/images/memory-game.png",
@@ -80,7 +80,7 @@ export const projects = [
   {
     title: "Express Form",
     description: "A simple form submission app using Express.js, PostgreSQL, and Docker Compose.",
-    categories: [categories.BACKEND, categories.FULLSTACK],
+    categories: [categories.FRONTEND,categories.BACKEND, categories.FULLSTACK],
     level: levels.INTERMEDIATE,
     image: {
       src: "/images/express-form.png",
@@ -93,7 +93,9 @@ export const projects = [
       skillsList.NODE,
       skillsList.EXPRESS,
       skillsList.POSTGRESQL,
-      skillsList.DOCKER
+      skillsList.DOCKER,
+      skillsList.HTML,
+      skillsList.CSS
     ],
     createdDate: "2024-12",
     latestUpdate: "2024-12",
@@ -102,7 +104,7 @@ export const projects = [
   {
     title: "Semitone Differences",
     description: "A JavaScript script to calculate semitone differences between musical notes.",
-    categories: [categories.GAME, categories.JAVASCRIPT],
+    categories: [categories.GAME_DEVELOPMENT, categories.FRONTEND],
     level: levels.BEGINNER,
     image: {
       src: "/images/semitone.png",
@@ -115,7 +117,6 @@ export const projects = [
       skillsList.JAVASCRIPT,
       skillsList.HTML,
       skillsList.CSS,
-      skillsList.MUSIC_THEORY
     ],
     createdDate: "2024-12",
     latestUpdate: "2025-02",
