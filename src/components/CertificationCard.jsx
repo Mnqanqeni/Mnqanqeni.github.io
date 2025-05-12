@@ -16,6 +16,32 @@ export default function CertificationCard({certification}) {
       </p>
 
       <div className="mb-4">
+        <span className="text-sm font-medium text-secondary">Level:</span>
+        <div className="flex flex-wrap gap-2 mt-1">
+            <span
+              className="bg-slate-800/40 text-fourth px-3 py-1 rounded-full text-xs border border-fourth/30"
+            >
+              {certification.level}
+            </span>
+        </div>
+      </div>
+
+
+      <div className="mb-4">
+        <span className="text-sm font-medium text-secondary">Categories:</span>
+        <div className="flex flex-wrap gap-2 mt-1">
+          {certification.categories.map((category,index) => (
+            <span
+              key={index}
+              className="bg-slate-800/40 text-fourth px-3 py-1 rounded-full text-xs border border-fourth/30"
+            >
+              {category}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div className="mb-4">
         <span className="text-sm font-medium text-secondary">Skills Covered:</span>
         <div className="flex flex-wrap gap-2 mt-1">
           {certification.skills.map((skill) => (

@@ -17,7 +17,7 @@ export const certificationsList = [
     issuedDate: "October 2024",
     credentialId: "FCC123456",
     certificateUrl: "https://freecodecamp.org/certificate/example",
-    categories: [categories.WEB_DEVELOPMENT, categories.JAVASCRIPT],
+    categories: [categories.WEB_DEVELOPMENT],
     level: levels.INTERMEDIATE
   },
   {
@@ -54,7 +54,7 @@ export const certificationsList = [
     issuedDate: "August 2023",
     credentialId: "CS50123456",
     certificateUrl: "https://cs50.harvard.edu/certificates/intro",
-    categories: [categories.CS50, categories.COMPUTER_SCIENCE],
+    categories: [categories.COMPUTER_SCIENCE,categories.BACKEND,categories.FRONTEND, categories.DATABASES,categories.SOFTWARE_ENGINEERING,categories.WEB_DEVELOPMENT],
     level: levels.BEGINNER
   },
   {
@@ -73,7 +73,7 @@ export const certificationsList = [
     issuedDate: "June 2024",
     credentialId: "AWS-CLD-789012",
     certificateUrl: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
-    categories: [categories.AWS, categories.CLOUD],
+    categories: [categories.CLOUD],
     level: levels.BEGINNER
   },
   {
@@ -94,7 +94,7 @@ export const certificationsList = [
     issuedDate: "July 2024",
     credentialId: "AWS-SAA-654321",
     certificateUrl: "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
-    categories: [categories.AWS, categories.CLOUD, categories.BACKEND],
+    categories: [categories.SOFTWARE_ENGINEERING, categories.CLOUD, categories.BACKEND],
     level: levels.INTERMEDIATE
   }
 ];

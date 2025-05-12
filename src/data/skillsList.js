@@ -33,4 +33,13 @@ export const skillsList = {
   NODE: "Node.js",
   EXPRESS: "Express",
   DOCKER: "Docker",
+  C: "C",
+  WEB_DEVELOPMENT: "Web Development",
+  COMPUTER_SCIENCE_FUNDAMENTALS: "Computer Science Fundamentals",
+  HIGH_AVAILABILITY: "High Availability",
+  NETWORKING: "Networking",
+  STORAGE: "Storage",
+  RDS: "RDS",
+  VPC: "VPC",
+  CLOUD_FORMATION: "CloudFormation"
 };
