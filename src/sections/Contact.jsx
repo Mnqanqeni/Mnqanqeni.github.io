@@ -23,7 +23,6 @@ export default function Contact() {
         setStatus({ message: 'Message sent successfully!', type: 'success' });
         form.current.reset();
 
-        // auto-close modal after 4s
         setTimeout(closeModal, 4000);
       })
       .catch((error) => {
