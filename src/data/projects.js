@@ -28,6 +28,78 @@ export const projects = [
     ],
     videoDemo: "https://youtu.be/example1"
   },
+  {
+    title: "Portfolio Website",
+    status: statuses.COMPLETED,
+    description: "A personal portfolio built with React and Tailwind to showcase my projects.",
+    categories: [categories.FRONTEND],
+    level: levels.INTERMEDIATE,
+    image: {
+      src: "/images/portfolio.png",
+      thumbnail: "/images/thumbnails/portfolio-thumb.png",
+      alt: "Screenshot of personal portfolio website"
+    },
+    liveDemo: "https://ndiyakholwa-mnqanqeni.netlify.app/",
+    repo: "https://github.com/Mnqanqeni/Mnqanqeni.github.io",
+    repoFullName: "Mnqanqeni/Mnqanqeni.github.io",
+    techStack: [
+      skillsList.REACT,
+      skillsList.TAILWIND,
+      skillsList.VITE,
+      skillsList.JAVASCRIPT,
+      skillsList.FRAMER,
+      skillsList.REST_API
+    ],
+    videoDemo: "https://youtu.be/example1"
+  },
+  {
+    title: "Portfolio Website",
+    status: statuses.COMPLETED,
+    description: "A personal portfolio built with React and Tailwind to showcase my projects.",
+    categories: [categories.FRONTEND],
+    level: levels.INTERMEDIATE,
+    image: {
+      src: "/images/portfolio.png",
+      thumbnail: "/images/thumbnails/portfolio-thumb.png",
+      alt: "Screenshot of personal portfolio website"
+    },
+    liveDemo: "https://ndiyakholwa-mnqanqeni.netlify.app/",
+    repo: "https://github.com/Mnqanqeni/Mnqanqeni.github.io",
+    repoFullName: "Mnqanqeni/Mnqanqeni.github.io",
+    techStack: [
+      skillsList.REACT,
+      skillsList.TAILWIND,
+      skillsList.VITE,
+      skillsList.JAVASCRIPT,
+      skillsList.FRAMER,
+      skillsList.REST_API
+    ],
+    videoDemo: "https://youtu.be/example1"
+  },
+  {
+    title: "Portfolio Website",
+    status: statuses.COMPLETED,
+    description: "A personal portfolio built with React and Tailwind to showcase my projects.",
+    categories: [categories.FRONTEND],
+    level: levels.INTERMEDIATE,
+    image: {
+      src: "/images/portfolio.png",
+      thumbnail: "/images/thumbnails/portfolio-thumb.png",
+      alt: "Screenshot of personal portfolio website"
+    },
+    liveDemo: "https://ndiyakholwa-mnqanqeni.netlify.app/",
+    repo: "https://github.com/Mnqanqeni/Mnqanqeni.github.io",
+    repoFullName: "Mnqanqeni/Mnqanqeni.github.io",
+    techStack: [
+      skillsList.REACT,
+      skillsList.TAILWIND,
+      skillsList.VITE,
+      skillsList.JAVASCRIPT,
+      skillsList.FRAMER,
+      skillsList.REST_API
+    ],
+    videoDemo: "https://youtu.be/example1"
+  },
   // {
   //   title: "Personal Blog",
   //   status: statuses.IN_PROGRESS,

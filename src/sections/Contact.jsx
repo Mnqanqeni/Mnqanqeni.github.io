@@ -35,20 +35,20 @@ export default function Contact() {
 
   return (
     <>
-      <section id="contact" className="flex flex-col items-center p-8 w-full">
-        <div className="text-center">
+      <section id="contact" className="flex flex-col items-center w-full">
+        <div className="text-center mt-16">
           <h1 className="text-3xl font-bold xl:text-5xl">
             Contact <span className="text-secondary">Me</span>
           </h1>
-          <p className="text-[#ffffffb2] text-xl md:text-2xl mt-2">
-            I’m open to collaborations — reach out below!
+          <p className="text-[#ffffffb2] m-4 text-xl md:text-2xl">
+          Got a project or idea? Let’s make something awesome together! Reach out below.
           </p>
         </div>
 
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col mt-8 w-full max-w-7xl gap-6 md:gap-10 p-6 bg-dark-gradient"
+          className="flex flex-col mt-2 w-full max-w-7xl gap-6 md:gap-10 p-6 bg-dark-gradient"
         >
           {/* Name and Last Name */}
           <div className="flex flex-row gap-4">

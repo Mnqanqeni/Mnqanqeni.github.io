@@ -1,55 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import cvFile from '../assets/doc/cv.pdf';
+import {timeLineData} from "../data/timeLineData"
 
-const timelineData = {
-  education: [
-    {
-      title: "Software Engineering",
-      org: "WeThinkCode_",
-      location: "Cape Town, South Africa",
-      date: "Feb 2023 – Dec 2024",
-      description: [
-        "Peer-to-peer learning model with no lectures.",
-        "Projects in Java, Python, and systems engineering.",
-        "Focus on algorithms, data structures, and networking.",
-      ],
-    },
-    {
-      title: "Web Development",
-      org: "Umuzi Academy",
-      location: "Johannesburg, South Africa",
-      date: "Jan 2024 – Present",
-      description: [
-        "Hands-on projects using JavaScript, Node.js, and PostgreSQL.",
-        "Agile methodology and version control with Git.",
-        "Real-world client-facing team work.",
-      ],
-    },
-  ],
-  experience: [
-    {
-      title: "Frontend Developer Intern",
-      org: "Umuzi",
-      location: "Remote",
-      date: "Jan 2024 – Present",
-      description: [
-        "Built React-based dashboards and internal tools.",
-        "Implemented reusable components and UI logic.",
-        "Collaborated in a remote agile team.",
-      ],
-    },
-    {
-      title: "Teaching Assistant",
-      org: "WeThinkCode_",
-      location: "Cape Town",
-      date: "Jul 2023 – Dec 2023",
-      description: [
-        "Facilitated peer learning sessions and code reviews.",
-        "Supported students with debugging and test-driven development.",
-      ],
-    },
-  ],
-};
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -89,14 +42,14 @@ const TimelineItem = ({ title, org, location, date, description, index }) => (
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-primary py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto text-center mb-12">
+    <section id="experience" className="bg-primary px-4 sm:px-6 lg:px-8 scroll-mt-24">
+      <div className="max-w-6xl mx-auto text-center m-12">
         <h2 className="text-3xl font-bold xl:text-5xl ">Education <span className="text-secondary">and Experience</span></h2>
 
         <a
-          href="/resume.pdf"
+          href={cvFile}
           download
-          className="inline-block mt-6 px-6 py-2 text-sm font-medium text-white bg-secondary rounded-full shadow hover:bg-accent/90 transition"
+          className="inline-block mt-8 px-8 py-4 text-sm font-medium text-white bg-secondary rounded-full shadow hover:bg-accent/90 transition"
         >
           Download Resume
         </a>
@@ -114,7 +67,7 @@ export default function Experience() {
           <h3 className="text-2xl font-semibold text-secondary mb-6 border-b border-secondary/20 pb-2">
             Education
           </h3>
-          {timelineData.education.map((item, index) => (
+          {timeLineData.education.map((item, index) => (
             <TimelineItem key={index} {...item} index={index} />
           ))}
         </motion.div>
@@ -130,11 +83,11 @@ export default function Experience() {
           <h3 className="text-2xl font-semibold text-secondary mb-6 border-b border-secondary/20 pb-2">
             Experience
           </h3>
-          {timelineData.experience.map((item, index) => (
+          {timeLineData.experience.map((item, index) => (
             <TimelineItem
               key={index}
               {...item}
-              index={index + timelineData.education.length}
+              index={index + timeLineData.education.length}
             />
           ))}
         </motion.div>
