@@ -1,8 +1,8 @@
 import { FaCertificate, FaExternalLinkAlt } from "react-icons/fa";
 
-export default function CertificationCard({certification}) {
+export default function CertificationCard({certification,index,visibleCount}) {
   return (
-    <div className="bg-gradient-to-br from-black/50 via-slate-900/60 to-cyan-800/40 shadow-customBlueXl backdrop-blur-md text-fourth rounded-3xl m-5 p-8 max-w-md min-w-10 transition-transform hover:scale-[1.02] duration-300">
+    <div className={`${index<visibleCount? "block":"hidden"} bg-gradient-to-br from-black/50 via-slate-900/60 to-cyan-800/40 shadow-customBlueXl backdrop-blur-md text-fourth rounded-3xl m-5 p-8 max-w-md min-w-10 transition-transform hover:scale-[1.02] duration-300`}>
       <header className="flex items-center mb-4">
         <FaCertificate className="text-yellow-400 text-3xl mr-3" aria-hidden="true" />
         <div>
