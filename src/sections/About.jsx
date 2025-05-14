@@ -14,10 +14,10 @@ export default function About() {
             <div className="h-[300px] w-[300px] rotate-[-48deg] bg-gradient-to-br from-[#00a8cda5] to-transparent absolute left-[15%] rounded-full" />
             <div className="h-[162px] w-[162px] bg-gradient-to-br from-[#00a8cda5] to-transparent absolute bottom-0 rounded-[80px]" />
             <div className="absolute inset-0">
-              <div className="h-[267px] w-[267px] bg-gradient-to-b from-[#00a8cd] to-transparent rotate-[5deg] absolute bottom-[70px] left-[40px] shadow-[4px_4px_0px_0px_#00a8cd]" />
-              <div className="h-[267px] w-[267px] bg-gradient-to-br from-black to-transparent absolute bottom-[15%] left-[8%]">
+            <div className="h-[267px] w-[267px] bg-gradient-to-b from-[#00a8cd] to-transparent rotate-[5deg] absolute bottom-[70px] left-[40px] shadow-[4px_4px_0px_0px_#00a8cd]" />
+            <div className="h-[267px] w-[267px] bg-gradient-to-br from-black to-transparent absolute bottom-[15%] left-[8%]">
                 <img src={aboutMeImage} alt="About me" className="h-[266px] absolute ml-[40px]" />
-              </div>
+            </div>
             </div>
           </div>
         </div>
