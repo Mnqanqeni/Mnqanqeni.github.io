@@ -29,10 +29,13 @@ export default function About() {
               About <span className="text-secondary">Me</span>
             </h1>
             <div className='flex flex-col text-xl md:text-xl xl:text-3xl gap-4'>
-              <p>
-                Welcome to my portfolio!  I consider myself a tech enthusiast, though that wasn’t always the case.  I used to say I disliked some aspects of technology and label them name like boring and so on, but I've realized it was simply because I knew so little to none about them.  The more I learning, the more the dots connect, the more it clicks, the more I love, and the more exciting everything about technology is.</p>
+              <p>Welcome to My Digital Workshop</p>
+              <p>I’m a tech enthusiast, but that wasn’t always the case. I used to say I disliked certain aspects of technology, calling them boring or uninteresting. But I eventually realized those feelings came from not understanding them. The more I learned and started connecting the dots, the more everything made sense. The more it clicked, the more I fell in love with technology. I’ve come to believe that nothing is truly boring, it’s usually just unfamiliar. Now, I’m genuinely curious about everything related to tech.</p>
 
-              <p>Now  I am a passionate Software Engineer who is committed to developing dependable, high-performance products that address real-world challenges.  I specialize at transforming difficult concepts into clear, efficient code and intuitive user experiences.  Whether I'm creating scalable backend systems or responsive frontends, I bring creativity, precision, and a strong desire to learn to every project I work on.
+              <p>
+                Today, I'm a dedicated Software Engineer with a mission to build reliable, high-performance solutions that solve real-world problems. My specialty lies in translating complex concepts into clean, efficient code and creating intuitive user experiences.
+                Whether I'm architecting scalable backend systems or crafting responsive frontends, I approach each project with creativity, precision, and an insatiable curiosity. Every line of code is an opportunity to learn, improve, and create something meaningful.
+                Let me show you what happens when passion meets persistence.
               </p>
 
             </div>
