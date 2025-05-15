@@ -41,5 +41,8 @@ export const skillsList = {
   STORAGE: "Storage",
   RDS: "RDS",
   VPC: "VPC",
-  CLOUD_FORMATION: "CloudFormation"
+  CLOUD_FORMATION: "CloudFormation",
+  WEBPACK: "Webpack",
+  JASMINE: "Jasmine",
+  GITHUB_ACTIONS: "GitHub Actions",
 };

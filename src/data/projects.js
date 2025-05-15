@@ -91,7 +91,7 @@ export const projects = [
     title: "Semitone Differences",
     status: statuses.COMPLETED,
     description: "A JavaScript script to calculate semitone differences between musical notes.",
-    categories: [categories.GAME_DEVELOPMENT, categories.FRONTEND],
+    categories: [categories.GAME_DEVELOPMENT, categories.FRONTEND, categories.CI_CD],
     level: levels.BEGINNER,
     image: {
       src: "/images/semitone.png",
@@ -101,7 +101,7 @@ export const projects = [
     liveDemo: "https://mnqanqeni.github.io/semitone-difference/",
     repo: "https://github.com/Mnqanqeni/semitone-difference",
     repoFullName: "Mnqanqeni/semitone-difference",
-    techStack: [skillsList.JAVASCRIPT, skillsList.HTML, skillsList.CSS],
+    techStack: [skillsList.JAVASCRIPT, skillsList.HTML, skillsList.CSS,skillsList.WEBPACK,skillsList.GITHUB_ACTIONS],
     videoDemo: "https://youtu.be/example7"
   }
 ];
