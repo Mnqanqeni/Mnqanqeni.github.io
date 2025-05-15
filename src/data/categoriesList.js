@@ -12,7 +12,8 @@ export const categories = {
     DATABASES: "Databases",
     SECURITY: "Security",
     COMPUTER_SCIENCE:"Computer Science",
-    CI_CD: "CI/CD"
+    CI_CD: "CI/CD",
+    TESTING: "Testing"
   };
   
   
