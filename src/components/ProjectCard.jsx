@@ -19,10 +19,18 @@ export default function ProjectCard({ project,index,visibleCount }) {
     const fetchRepoDates = async () => {
       try {
         const res = await axios.get(`https://api.github.com/repos/${project.repoFullName}`);
-        const data = {
-          created: new Date(res.data.created_at).toLocaleDateString(),
-          updated: new Date(res.data.updated_at).toLocaleDateString(),
-        };
+        const formatDate = (isoString) =>
+  new Date(isoString).toLocaleDateString("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+const data = {
+  created: formatDate(res.data.created_at),
+  updated: formatDate(res.data.updated_at),
+};
+
 
         localStorage.setItem(`repoDates-${project.repoFullName}`, JSON.stringify(data));
         localStorage.setItem(`repoFetched-${project.repoFullName}`, today);
