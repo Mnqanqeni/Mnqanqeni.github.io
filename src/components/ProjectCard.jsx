@@ -3,7 +3,7 @@ import { FaExternalLinkAlt, FaGithub, FaVideo } from "react-icons/fa";
 import axios from "axios";
 import project1 from "../assets/images/project-1.png";
 
-export default function ProjectCard({ project,index,visibleCount }) {
+export default function ProjectCard({ project, index, visibleCount }) {
   const [repoDates, setRepoDates] = useState({ created: "", updated: "" });
 
   useEffect(() => {
@@ -20,16 +20,16 @@ export default function ProjectCard({ project,index,visibleCount }) {
       try {
         const res = await axios.get(`https://api.github.com/repos/${project.repoFullName}`);
         const formatDate = (isoString) =>
-  new Date(isoString).toLocaleDateString("en-US", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+          new Date(isoString).toLocaleDateString("en-US", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          });
 
-const data = {
-  created: formatDate(res.data.created_at),
-  updated: formatDate(res.data.updated_at),
-};
+        const data = {
+          created: formatDate(res.data.created_at),
+          updated: formatDate(res.data.updated_at),
+        };
 
 
         localStorage.setItem(`repoDates-${project.repoFullName}`, JSON.stringify(data));
@@ -45,7 +45,7 @@ const data = {
   }, [project.repoFullName]);
 
   return (
-    <div className={`${index<visibleCount? "block":"hidden"} bg-gradient-to-br from-black/50 via-slate-900/60 to-cyan-800/40 shadow-customBlueXl backdrop-blur-md text-fourth rounded-3xl m-5 p-8 max-w-md min-w-10 transition-transform hover:scale-[1.02] duration-300`}>
+    <div className={`${index < visibleCount ? "block" : "hidden"} bg-gradient-to-br from-black/50 via-slate-900/60 to-cyan-800/40 shadow-customBlueXl backdrop-blur-md text-fourth rounded-3xl m-5 p-8 max-w-md min-w-10 transition-transform hover:scale-[1.02] duration-300`}>
       <img
         src={project1}
         alt={project.title}
