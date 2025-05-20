@@ -1,0 +1,104 @@
+.
+├── dist
+├── eslint.config.js
+├── index.html
+├── LICENSE
+├── node_modules
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── public
+│   ├── assets
+│   │   ├── logo2.png
+│   │   └── logo.svg
+│   └── robots.txt
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   ├── doc
+│   │   │   └── cv.pdf
+│   │   ├── icons
+│   │   │   ├── bars-solid.svg
+│   │   │   ├── css.svg
+│   │   │   ├── django-96.png
+│   │   │   ├── docker-96.png
+│   │   │   ├── docker.svg
+│   │   │   ├── download-solid.svg
+│   │   │   ├── expressLogo.png
+│   │   │   ├── github-brands-solid.svg
+│   │   │   ├── git.png
+│   │   │   ├── html.svg
+│   │   │   ├── js.png
+│   │   │   ├── letter-c.png
+│   │   │   ├── linkedin-in-brands-solid.svg
+│   │   │   ├── linux-100.png
+│   │   │   ├── main_image.png
+│   │   │   ├── nodejs.svg
+│   │   │   ├── postgresql-24.png
+│   │   │   ├── postgresql-96.png
+│   │   │   ├── postgresSQL.svg
+│   │   │   ├── python.png
+│   │   │   ├── react-96.png
+│   │   │   ├── twitter-brands-solid.svg
+│   │   │   └── xmark-solid.svg
+│   │   ├── images
+│   │   │   ├── about-me1.png
+│   │   │   ├── about-me2.png
+│   │   │   ├── about-me.png
+│   │   │   ├── hero1.png
+│   │   │   ├── hero22.png
+│   │   │   ├── hero2.png
+│   │   │   ├── hero.png
+│   │   │   ├── portfolio.jpeg
+│   │   │   ├── portfolio.png
+│   │   │   ├── profile2.png
+│   │   │   ├── project-1.png
+│   │   │   └── semitone.png
+│   │   └── logos
+│   │       └── logo.png
+│   ├── components
+│   │   ├── Button.jsx
+│   │   ├── CardFilters.jsx
+│   │   ├── CertificationCard.jsx
+│   │   ├── Footer.jsx
+│   │   ├── GolfBall.jsx
+│   │   ├── Header.jsx
+│   │   ├── LoadingScreen.jsx
+│   │   ├── ProjectCard.jsx
+│   │   └── ProjectFilter.jsx
+│   ├── data
+│   │   ├── categoriesList.js
+│   │   ├── certificationsList.js
+│   │   ├── levelsList.js
+│   │   ├── projects.js
+│   │   ├── skillsList.js
+│   │   ├── statusList.js
+│   │   └── timeLineData.js
+│   ├── hooks
+│   │   └── useForm.js
+│   ├── index.css
+│   ├── main.jsx
+│   ├── pages
+│   │   ├── Home.jsx
+│   │   └── NotFound.jsx
+│   ├── router.jsx
+│   ├── sections
+│   │   ├── About.jsx
+│   │   ├── Certifications.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Projects.jsx
+│   │   └── Skills.jsx
+│   ├── styles
+│   │   ├── globals.css
+│   │   └── theme.css
+│   └── utils
+│       └── validateEmail.js
+├── structure.text
+├── tailwind.config.js
+└── vite.config.js
+
+18 directories, 84 files
